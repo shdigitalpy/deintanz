@@ -1,0 +1,67 @@
+.tanzstunde {
+    min-height: 600px;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.tanzstundebox {
+    background: rgba(31,8,49,0.03);
+    width:800px;
+    padding: 3rem;
+    border: 1px solid rgba(31,8,49,0.2);;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.tanzstundebox p {
+    line-height:1.7rem;
+}
+
+.tanzflex {
+    display: flex;
+
+}
+
+.tanzflexitem1 {
+    min-width: 150px;
+
+}
+
+.tanzflexitem2 {
+    min-width: 400px;
+
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  background: linear-gradient(71deg, rgba(255,232,130,1) 2%, rgba(230,100,100,1) 100%);
+  padding: 1.2rem;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  margin: 2rem 1rem 0 0;
+  opacity: 0.7;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: var(--white);
+  background: none;
+  background-color: var(--black);
+  opacity: 1;
+}

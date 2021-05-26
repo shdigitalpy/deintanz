@@ -1,0 +1,143 @@
+/* background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%),url(../public/images/hintergrund4.png); */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Open Sans", "Helvetica Neue", "Helvetica", "sans-serif";
+  scroll-behavior: smooth;
+  
+  
+}
+
+:root {
+  --black: #1c1c1b;
+  --red:  #ea5a56;
+  --white:  white;
+  --lila: #200020;
+}
+
+html, body {
+  height: 100%;
+  width: 100%; 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+  font-weight: 900;
+  
+  
+}
+
+h2 {
+  font-size: clamp(1.3rem, 1.7vw, 2.2rem);
+  font-weight: 800;
+  
+  
+}
+
+
+h3, h4 {
+  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+  font-weight: 700;
+ 
+}
+
+h5 {
+  font-size: clamp(0.9rem, 1.6vw, 1.6rem);
+  font-weight: 500;
+ 
+}
+
+p {
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  color: var(--blue);
+  font-weight: 500;
+ 
+}
+
+hr {
+  margin-top: 1.5rem;
+}
+
+
+small {
+  font-size: 0.7rem !important;
+}
+
+
+ul li {
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+
+.padding {
+  padding: 5% 0;
+}
+
+.padding-top {
+  padding: 5% 0 0 0;
+}
+
+.btn {
+  font-size: 0.9rem;
+  color: var(--caparol) !important;
+  text-decoration: none;
+  background: var(--dunkelrot);
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  margin: 15% 1%;
+  opacity: 0.5;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  opacity: 1;
+}
+
+.btn2 {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.btn2:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}

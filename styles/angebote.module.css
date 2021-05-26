@@ -1,0 +1,15 @@
+.angebote {
+	background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 282px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angebotebox {
+	width:700px;
+}

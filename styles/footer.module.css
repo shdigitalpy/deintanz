@@ -1,0 +1,22 @@
+.footerwrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	background-color: var(--red);
+}
+
+
+.footerbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:500px;
+}
+
+.footerwrapper a:hover {
+	color: var(--white) !important;
+}
+
+
