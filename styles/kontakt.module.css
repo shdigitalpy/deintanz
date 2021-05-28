@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	padding: 1rem 0;
 }
 
@@ -15,20 +16,46 @@
 
 }
 
+@media screen and (max-width: 768px) {
+   .kontaktbox {
+  width:70%;
+}
+  }
+
+
 .maps {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	padding: 1rem 0;
 	margin: 2rem 0;
 
 }
 
+@media screen and (max-width: 1024px) {
+   .maps {
+  margin: 0;
+  padding:0;
+}
+  }
+
+
+
 .mapsbox {
 	width: 35%;
 	background: linear-gradient(0deg, rgba(255,232,130,0.86) 0%, rgba(230,100,100,0.86) 100%);
 	padding: 6rem;
-
 	border-radius: 25px;
 }
 
+@media screen and (max-width: 1024px) {
+   .mapsbox {
+  width:100%;
+  border-radius: 0;
+}
+  }
+
+.icon {
+	color: var(--red);
+}

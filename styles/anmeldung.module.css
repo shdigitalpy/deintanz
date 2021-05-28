@@ -1,0 +1,82 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: var(--white);
+	background: url(../public/images/hintergrund3.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+
+.anmeldeformular {
+	width: 60%;
+	background: var(--orange);
+	margin: 5rem 0;
+	
+}
+
+@media screen and (max-width: 768px) {
+  .anmeldeformular {
+    width: 100%;
+    margin: 0;
+
+  }
+}
+
+.anmeldeheader {
+	margin: 4rem 0 0 0;
+	text-align: center;
+}
+
+
+.anmeldewrapper {
+	padding: 3rem;
+
+
+}
+
+.h1success {
+	color: var(--lila);
+	font-size: clamp(1rem, 1.1vw, 1.2rem);
+	padding: 2rem;
+}
+
+
+.anmeldeinfos {
+	margin: 1rem 0;
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: var(--white);
+	width: 60%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .anmeldeinfos {
+    width: 100%;
+
+  }
+}
+
+.anmeldebox {
+	margin: 1rem 0;
+	
+}
+
+.anmeldeinfos h2,
+.anmeldeinfos h3,
+.anmeldeinfos p {
+	color: var(--black);
+}
+
+.anmeldeinfos p {
+	padding: 5px 0;
+}

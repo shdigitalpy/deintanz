@@ -1,5 +1,6 @@
 import Layout from './../components/layout'
 import AngeboteHeader from './../components/AngeboteHeader'
+import AnmeldungForm from './../components/AnmeldungForm'
 import Head from 'next/head'
 
 
@@ -13,6 +14,7 @@ export default function Anmeldung() {
 			
 		<Head>
 	     <title>Anmeldung</title>
+
 	      </Head>
 
 
@@ -20,6 +22,7 @@ export default function Anmeldung() {
 
 		<AngeboteHeader title="Anmeldung" description="Willkommen auf der Anmeldungsseite. Hier können Sie Ihr Kind für unsere Tanz- und Bewegungsstunde eintragen." />
 
+		<AnmeldungForm />
 
 			</Layout>
 

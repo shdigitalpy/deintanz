@@ -1,3 +1,32 @@
+.geist {
+  background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+   .geist {
+  min-height: 50vh;
+}
+  }
+
+
+.geistbox {
+  width:700px;
+}
+
+@media screen and (max-width: 768px) {
+   .geistbox {
+  width:300px;
+}
+  }
+
 .fp {
     min-height: 600px;
     width:100%;
@@ -18,7 +47,6 @@
 }
 
 .fp p {
-  font-size: 1.5rem;
   line-height:2rem;
 }
 
@@ -26,6 +54,7 @@
     min-height: 600px;
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     background: linear-gradient(90deg, rgba(253,220,128,0.28335084033613445) 34%, rgba(234,90,86,0.16010154061624648) 70%),url(../public/images/kursraum.jpg);
@@ -44,6 +73,8 @@
 
 }
 
+
+
 .fpcontact {
   background-color: var(--lila);
   color: var(--white);
@@ -60,6 +91,12 @@
   
 
 }
+
+@media screen and (max-width: 768px) {
+   .fpcontactbox {
+  width:70%;
+}
+  }
 
 
 .btn {

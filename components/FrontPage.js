@@ -105,7 +105,7 @@ export default function AngeboteHeader() {
       	<p>Bei Fragen im Bezug auf meine Angebote oder meine Person, stehe ich dir gerne zur Verfügung. Ich freue mich von dir zu hören.</p>
       	
 
-      	<Link href="/" passHref>
+      	<Link href="/kontakt" passHref>
 		    <a className={frontpageStyles.btn2}>Zum Kontakt</a>
 		  </Link>
 

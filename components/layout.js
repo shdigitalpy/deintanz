@@ -1,21 +1,39 @@
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import layoutStyles from '../styles/layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Nav from './Nav'
 import Footer from './Footer'
+import Sidebar from './../components/Sidebar'
+
 
 const name = 'DeinTanz'
 export const siteTitle = 'DeinTanz aktuell'
 
+
 export default function Layout({ children, home }) {
+
+
+
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+
+  }
+
+
+
   return (
 
     <>
 
       <div className={layoutStyles.layout}>
-      <Nav />
+
+      <Nav toggle={toggle} />
+
+      <Sidebar isOpen={isOpen} toggle={toggle} />
 
         
       <Head>
@@ -38,7 +56,8 @@ export default function Layout({ children, home }) {
       
     <Footer />
 
-    </div>
+
+      </div>
 
     </>
   )

@@ -39,22 +39,25 @@ export default function Kontakt() {
        <div className={kontaktStyles.kontakt}>
        		
        		<div className={kontaktStyles.kontaktbox}>
-       			<FontAwesomeIcon icon={faUser} size="3x" /><br />
-       			<p>Regula Leemann</p><br />
+       			<FontAwesomeIcon className={kontaktStyles.icon} icon={faUser} size="3x" /><br />
+       			<br /><br />
+            <p>Regula Leemann</p>
        			<p>Tanz & Bewegung</p>
        		</div>
 
        		<div className={kontaktStyles.kontaktbox}>
-       			<FontAwesomeIcon icon={faEnvelope} size="3x" /><br />
-       			<p>E-Mail</p><br />
+       			<FontAwesomeIcon className={kontaktStyles.icon} icon={faEnvelope} size="3x" /><br />
+       			<br /><br />
+            <p>E-Mail</p>
        			<p><Link href="emailto:regula@deintanz.ch">
 			      <a>regula@deintanz.ch</a>
 			      </Link></p>
        		</div>
 
        		<div className={kontaktStyles.kontaktbox}>
-       			<FontAwesomeIcon icon={faPhone} size="3x" /><br />
-       			<p>Telefon</p><br />
+       			<FontAwesomeIcon className={kontaktStyles.icon} icon={faPhone} size="3x" /><br />
+       			<br /><br />
+            <p>Telefon</p>
        			<p><Link href="tel:+41 78 763 30 65">
           <a><p>+41 78 763 30 65</p></a>
           </Link></p>

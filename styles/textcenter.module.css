@@ -6,6 +6,17 @@
   text-align: center;
 }
 
+.fpcoronabox {
+  width: 600px;
+  
+}
+
+@media screen and (max-width: 768px) {
+   .fpcoronabox {
+  width:70%;
+}
+  }
+
 .fpcorona hr {
   width: 100px;
   margin: auto;

@@ -16,6 +16,8 @@ export default function TextCenter (props) {
 
 		<>
 			<div className={textcenterStyles.fpcorona}>
+
+        <div className={textcenterStyles.fpcoronabox}>
      	
      	<div>
      	<p>{props.p}</p><br />
@@ -25,6 +27,8 @@ export default function TextCenter (props) {
       	<p>{props.p1}</p>
       	<p>{props.p2}</p>
       	</div>
+
+        </div>{/*end fpcoronabox*/}
         
 
       </div>{/*end element*/}

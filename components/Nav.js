@@ -1,8 +1,12 @@
+import React from 'react'
 import styles from '../styles/nav.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Sidebar from './../components/Sidebar'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
-export default function Nav () {
+export default function Nav ({toggle}) {
+
 
 return (
 
@@ -17,29 +21,35 @@ return (
       src="/images/deintanz-logo.png" // Route of the image file
       height={68} // Desired size with correct aspect ratio
       width={331} // Desired size with correct aspect ratio
-      alt="Your Name"
+      alt="deintanz-logo"
       /></a>
       </Link>
       </div>
 
       <div className={styles.menu}>
-    <div className={styles.mainitem}><Link href="/angebote">
-      <a>Kurse</a>
-      </Link></div>
-    <div className={styles.mainitem}><Link href="/anmeldung">
-      <a>Anmeldung</a>
-      </Link></div>
-    <div className={styles.mainitem}><Link href="/ueber-mich">
-      <a>Über mich</a>
-      </Link></div>
-    <div className={styles.mainitem}><Link href="/kontakt">
-      <a>Kontakt</a>
-      </Link></div>
+      <div className={styles.mainitem}><Link href="/angebote">
+        <a>Kurse</a>
+        </Link></div>
+      <div className={styles.mainitem}><Link href="/anmeldung">
+        <a>Anmeldung</a>
+        </Link></div>
+      <div className={styles.mainitem}><Link href="/ueber-mich">
+        <a>Über mich</a>
+        </Link></div>
+      <div className={styles.mainitem}><Link href="/kontakt">
+        <a>Kontakt</a>
+        </Link></div>
 
+        
+        
 
       </div>
 
+      <div className={styles.navicon}><GiHamburgerMenu onClick={toggle} /></div>
+
        </nav>
+
+       
 
     </>
 

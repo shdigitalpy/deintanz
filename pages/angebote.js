@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Layout from './../components/layout'
 import AngeboteHeader from './../components/AngeboteHeader'
 import TanzStunde from './../components/TanzStunde'
+import KurseSlider from './../components/KurseSlider'
 
 
 export default function Angebote() {
@@ -20,6 +21,8 @@ export default function Angebote() {
       <AngeboteHeader title="Kurse" description="Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein." />
 
       <TanzStunde />
+
+      <KurseSlider />
       
       <div>
 

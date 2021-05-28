@@ -1,0 +1,70 @@
+.memain {
+	background: url(../public/images/hintergrund3.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+}
+
+
+.mewrapper {
+	margin: 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;
+
+}
+
+.meitem1 {
+	width: 500px;
+
+}
+
+@media screen and (max-width: 768px) {
+   .meitem1 {
+  width:70%;
+}
+  }
+
+
+.meitem2 {
+	padding: 2rem;
+	width: 500px;	
+}
+
+@media screen and (max-width: 768px) {
+   .meitem2 {
+  width:65%;
+}
+  }
+
+
+.mewrapper2 {
+	margin: 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.mewrapper2 h2,
+.mewrapper2 p {
+	text-align: center;
+}
+
+.mebox2 {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	width: 600px;
+	margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+   .mebox2 {
+  width:70%;
+}
+  }

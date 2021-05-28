@@ -1,11 +1,11 @@
 .tanzstunde {
     min-height: 600px;
     width:100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5rem 0;
+    flex-wrap: wrap;
 }
 
 .tanzstundebox {
@@ -18,12 +18,22 @@
     border-radius: 25px;
 }
 
+@media screen and (max-width: 768px) {
+   .tanzstundebox {
+  width:90%;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+}
+  }
+
 .tanzstundebox p {
     line-height:1.7rem;
 }
 
 .tanzflex {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -32,10 +42,25 @@
 
 }
 
+@media screen and (max-width: 768px) {
+   .tanzflexitem1 p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+  }
+
+
 .tanzflexitem2 {
     min-width: 400px;
 
 }
+
+@media screen and (max-width: 768px) {
+   .tanzflexitem2 {
+      border-bottom: 1px solid var(--lila);
+}
+  }
 
 .btn {
   font-size: 1rem;
