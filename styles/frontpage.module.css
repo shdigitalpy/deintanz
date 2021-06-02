@@ -200,12 +200,11 @@
 }
 
 .probe {
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: 1rem 0;
     background-color: var(--red);
 
 }

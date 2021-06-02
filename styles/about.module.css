@@ -28,7 +28,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .meitem1 {
   width:70%;
 }
@@ -40,11 +40,13 @@
 	width: 500px;	
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .meitem2 {
-  width:65%;
+   	padding: 1rem 0;
+  width:70%;
 }
   }
+
 
 
 .mewrapper2 {
@@ -88,7 +90,7 @@
 	margin: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .mebox2 {
   width:70%;
 }

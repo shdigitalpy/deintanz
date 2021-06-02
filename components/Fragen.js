@@ -31,7 +31,7 @@ export default function Fragen (props) {
 
         	<Link href="/kontakt">
 			      <a><Image
-			      src="/images/weitere-kurse.jpg" // Route of the image file
+			      src="/images/weitere-kurse.webp" // Route of the image file
 			      height={3456} // Desired size with correct aspect ratio
 			      width={5184} // Desired size with correct aspect ratio
 			      alt="deintanz-logo"
