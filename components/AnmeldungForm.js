@@ -48,7 +48,7 @@ export default function AnmeldungForm() {
 
           <br />
 
-          <p>Bevor du dich anmeldest, lese bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>.</p>
+          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>.</p>
           
 
             </div>  
@@ -189,14 +189,14 @@ export default function AnmeldungForm() {
           <div id="infos" className={anmeldungStyles.anmeldeinfos}>
                 
             <div className={anmeldungStyles.anmeldebox}>
-              <h2>Allgemeine Infos</h2>
+              <h2>Allgemeine Informationen zur Anmeldung</h2>
               <br/>
 
               <div>
               <h3>Abrechnung</h3>
               <br />
-              <p>Kosten pro Quartal, CHF 145.00.</p>
-              <p>Die Rechnung wird vor Quartalsbeginn per Mail Versand.</p>
+              <p>Preis pro Quartal, CHF 145.00.</p>
+              <p>Die Rechnung wird vor Quartalsbeginn per E-Mail versendet. Die Quartale werden wie folgt aufgeteilt:</p>
               <p>1. Quartal: Weihnachtsferien bis Frühlingsferien</p>
               <p>2. Quartal: Frühlingsferien bis Sommerferien
               </p>
@@ -211,7 +211,7 @@ export default function AnmeldungForm() {
             <div>
             <h3>Kurseinstieg       
             </h3>
-            <p>Jederzeit möglich, die Rechung wird angepasst.
+            <p>Ein Einstieg ist jederzeit möglich, die Rechung kann auch an kürzere Zeiträume als ein ganzes Quartal angepasst werden. Sie zahlen dann nur die effektive Zeit, in der Ihr Kind dabei war.
             </p>
             </div>
 
@@ -223,23 +223,24 @@ export default function AnmeldungForm() {
             <br />
             <div>
             <h3>Versicherung</h3>
-            <p>Ist Sache der Kursteilnehmenden.</p>
+            <p>Die Versicherung ist die Sache der Kursteilnehmenden. Bitte klären Sie alles Notwendige direkt mit Ihrer Versicherung ab.
+            </p>
             </div>
             <br />
             <div>
             <h3>Absenzen</h3>
-            <p>Müssen immer der Kursleitung mitgeteilt werden.</p>
-            <p>Bei krankheitsbedingter Abwesenheit ab 3 Wochen kann gegen Vorlage eines ärztlichen Attests eine Gutschrift gewährt werden.</p>
+            <p>Allfällige Absenzen müssen der Kursleitung vorgängig mitgeteilt werden. 
+            Für krankheitsbedingte Abwesenheit ab 3 Wochen kann gegen Vorlage eines ärztlichen Attests eine Gutschrift gewährt werden.</p>
             </div>
             <br />
             <div>
             <h3>Kursabmeldung</h3>
-            <p>Muss 2 Wochen vor Quartalsende schriftlich mitgeteilt werden.</p>
+            <p>Eine Abmeldung vom Kurs ist bis 2 Wochen vor Quartalsende möglich, die Abmeldung muss schriftlich bei der Kursleitung eingehen.</p>
             </div>
             <br />
             <div>
             <h3>Datenschutz</h3>
-            <p>Ihre Daten werden vertraulich behandelt und nicht für öffentliche Zwecke verwendet.</p>
+            <p>Alle Ihre Daten werden absolut vertraulich behandelt und nicht an Dritte weitergegeben.</p>
             </div>
 
 

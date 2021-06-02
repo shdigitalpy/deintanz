@@ -17,8 +17,20 @@ export default function AboutMe() {
        <div className={aboutmeStyles.meitem1}>
           	<p>Regula Leemann</p>
        <h2>Lässt Sinne tanzen</h2>
-        <p>Ich bin Regula Leemann, eine angehende Tanz- und Bewegungstherapeutin aus Winterthur und selbst Mami von zwei Kindern. Mein Leben ist nicht immer nur geradlinig verlaufen, verschiede Hürden habe ich überwunden. Unterstützt haben mich dabei immer Bewegung, Tanz, Musik und die Natur, wie auch die Menschen an meiner Seite. Im Laufe meines eigenen Entwicklungsprozesses habe ich gemerkt, dass ich meiner Intuition und meinem Körper vertrauen kann. Diese Erfahrungen haben mich ans Integrative Ausbildungszentrum (iac) geführt, zur Ausbildung als Tanz- und Bewegungstherapeutin. Ich weiss, ich bin am richtigen Ort angekommen. Ich freue mich nun, mich Schritt für Schritt auf dieses Berufsfeld zuzubewegen und natürlich besonders auf mein erstes Projekt</p>
-      
+        <p>Ich bin <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin aus Winterthur und 
+        selbst Mami von zwei Kindern.</p>
+        
+        <p>Mein Leben ist nicht immer nur geradlinig verlaufen, verschiedene Herausforderungen habe ich erfolgreich gemeistert. 
+        Eine wichtige Rolle haben dabei immer Bewegung, Tanz, die Musik, die Natur wie auch die 
+        Menschen an meiner Seite gespielt.
+        Im Laufe meines eigenen Entwicklungsprozesses habe ich gemerkt, dass ich meiner 
+        Intuition und meinem Körper vertrauen kann. Diese Erfahrungen haben mich ans <Link href="https://iac.ch/">
+           <a><b>integrativen Ausbildungszentrum iac</b></a>
+            </Link> geführt, zur Ausbildung als Tanz- und Bewegungstherapeutin. 
+        </p>
+        <p>Am richtigen Ort angekommen ist es mir eine Freude, mich Schritt 
+        für Schritt auf dieses Berufsfeld zuzubewegen. Dass mein eigenes Projekt 
+        «Dein Tanz» mich auf diesem Weg begleitet, erfüllt mich sehr.</p>
       </div>
 
       <div className={aboutmeStyles.meitem2}>

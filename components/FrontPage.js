@@ -14,8 +14,11 @@ export default function FrontPage() {
       <div className={frontpageStyles.fp}>       
           <div className={frontpageStyles.fp1}>
 		       <h2>Tanz- & Bewegungsstunden für Kinder</h2>
-		        <p>Bei "Dein Tanz" können sich die Kinder in kleinen Gruppen frei entfalten, in ihrer Einzigartigkeit. Bei "Dein Tanz" gibt es kein richtig oder falsch.</p>
-		        <br /><p>Tanzen fördert die körperliche und geistige Entwicklung von Kindern. Beim gemeinsamen Spielen, Tanzen, Musizieren und Malen können sie Energien loswerden, ihre Kreativität entdecken, Emotionen ausleben und den Umgang miteinander lernen. Bei Entspannungsübungen mit Geschichten zum Träumen können sie zum Schluss wieder zur Ruhe kommen.</p>
+		        <p>Bei «Dein Tanz» können sich Kinder, jedes für sich einzigartig, in kleinen Gruppen frei entfalten. Es gibt kein Richtig oder Falsch.</p>
+		        <br /><p>Tanzen fördert die körperliche und geistige Entwicklung. Beim gemeinsamen Spielen, 
+		        Tanzen, Musizieren oder Malen können die Kinder überschüssige Energien loswerden und dabei die eigene Kreativität entdecken. 
+		        Die Tanz- und Bewegungsstunde möchte den Kindern die Gelegenheit bieten, Emotionen auszuleben und den Umgang mit anderen Kindern zu erlernen. 
+		        Zum Abschluss helfen liebevolle Geschichten zum Träumen dabei, die Kinder nach den lebhaften Aktivitäten wieder zur Ruhe kommen zu lassen.</p>
 		      
 		        <Link href="/angebote" passHref>
 				   <a className={frontpageStyles.btn}>Mehr erfahren</a>
@@ -32,11 +35,13 @@ export default function FrontPage() {
      		
 
      		<div className={frontpageStyles.fpbox}>
-     			<h2>Kursleiterin</h2>
+     			<h2>Ich bin die Kursleiterin</h2>
      			<br />
      			<h3>Bewegung & Natur sind wichtige Bestandteile meines Lebens</h3>
      			<br />
-     			<p>Ich bin Regula Leemann, eine angehende Tanz- und Bewegungstherapeutin am integrativen Ausbildungszentrum iac und selbst Mami von zwei Kindern. Ich freue mich, deinem Kind meine wertvollen Erfahrungen spielerisch näher zu bringen.</p>
+     			<p>Meine Name ist <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin am <Link href="https://iac.ch/">
+				   <a><b>integrativen Ausbildungszentrum iac</b></a>
+				    </Link> und selbst Mami von zwei Kindern. Ich freue mich, Ihrem Kind meine wertvollen Erfahrungen spielerisch näher zu bringen.</p>
      			<br />
      			<Image
           src="/images/regula-leemann.jpg" // Route of the image file
@@ -95,9 +100,10 @@ export default function FrontPage() {
       <div className={frontpageStyles.fpcontact}>
      	
      	<div className={frontpageStyles.fpcontactbox}>
-     	<h4>Zögere Sie nicht, mich zu kontaktieren</h4><br />
+     	<h4>Zögern Sie nicht, mich zu kontaktieren</h4><br />
      	<br />
-      	<p>Bei Fragen im Bezug auf meine Angebote oder meine Person, stehe ich dir gerne zur Verfügung. Ich freue mich von dir zu hören.</p>
+      	<p>Bei Fragen in Bezug auf die Kurse oder meine Person stehe ich Ihnen gerne vorab zur Verfügung. 
+      	Ich freue mich von Ihnen zu hören.</p>
       	
 
       	<Link href="/kontakt" passHref>

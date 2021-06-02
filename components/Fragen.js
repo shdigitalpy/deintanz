@@ -14,8 +14,11 @@ export default function Fragen (props) {
 
 			<div className={fragenStyles.probe1}>
 
-        	<h4>Bei Fragen stehe ich gerne zur Verfügung</h4>
-        	<p>Der Einstieg in die Kurse für Kinder in Winterthur ist jederzeit möglich. Melden Sie Ihr Kind doch zu einer Schnupperlektion an.<br /><br /> Für weitere Informationen können Sie mich gerne <Link href="/kontakt">
+        	<h4>Mit ein paar Klicks ist Ihr Kind schon nächsten Montag dabei!</h4>
+        	<p>Der Einstieg in die Kurse für Kinder in Winterthur ist jederzeit möglich. 
+        	Melden Sie Ihr Kind jetzt zu einer kostenlosen Schnupperlektion an. <Link href="/anmeldung" passHref>
+		   <a>Zur Anmeldung</a></Link><br />
+		    <br /> Für weitere Informationen können Sie mich gerne <Link href="/kontakt">
 
         		<a> kontaktieren</a>
 

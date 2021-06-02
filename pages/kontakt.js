@@ -27,10 +27,8 @@ export default function Kontakt() {
 	<TextCenter 
 
       p=""
-      title="Habe ich dein Interesse geweckt?"
-      p1="Wenn du Fragen zu meinen Angeboten hast oder eine Beratung wünschst, kannst du mich gerne per E-Mail oder telefonisch kontaktieren. Ich freue mich von dir zu hören."
-      p2=""
-      />
+      title="Habe ich Ihr Interesse geweckt?"
+      p1="Wenn Sie Fragen zu meinen Angeboten haben oder eine Beratung wünschen, können Sie mich gerne per E-Mail oder per Telefon kontaktieren. Ich freue mich mit Ihren Kindern eine schöne Zeit verbringen zu dürfen."/>
 
       
        {/*end 1st element*/}
@@ -73,7 +71,7 @@ export default function Kontakt() {
        		<h2>Kursort – Haus zum Widder</h2>
        		<br />
 
-       		<p>Meine Kurse finden im Haus zum Widder, einem Raum in Winterthur, statt. Die Lage ist sehr zentral und vom Hauptbahnhof Winterthur in 10 Gehminuten zu erreichen. Parkplätze gibt es im Parkhaus Technikum.</p>
+       		<p>Die Kurse von «Dein Tanz» finden im Haus zum Widder, einem Raum in der Winterthurer Altstadt beim Neumarkt, statt. Die Lage ist sehr zentral und vom Hauptbahnhof Winterthur in 10 Gehminuten zu erreichen. Parkplätze gibt es im Parkhaus Technikum oder in umliegenden Parkhäusern.</p>
        		<br /><br />
        		<Link href="https://www.google.com/maps/search/?api=1&query=Haus%20zum%20Widder%2C%20Spitalgasse%2011%20%2C%208400%20%20Winterthur%2C%20Switzerland">
           <a target="_blank"><p>Haus zum Widder, Spitalgasse 11 , 8400  Winterthur</p></a>
