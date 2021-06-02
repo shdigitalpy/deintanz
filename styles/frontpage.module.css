@@ -1,13 +1,21 @@
 .geist {
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/hintergrund.png);
+  background: -o-linear-gradient(left, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
   background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
   background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     min-height: 100vh;
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -30,13 +38,21 @@
 .fp {
     min-height: 600px;
     width:100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.28335084033613445)), color-stop(70%, rgba(234,90,86,0.16010154061624648))),url(../public/images/hintergrund3.png);
+    background: -o-linear-gradient(left, rgba(253,220,128,0.28335084033613445) 34%, rgba(234,90,86,0.16010154061624648) 70%),url(../public/images/hintergrund3.png);
     background: linear-gradient(90deg, rgba(253,220,128,0.28335084033613445) 34%, rgba(234,90,86,0.16010154061624648) 70%),url(../public/images/hintergrund3.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -53,10 +69,19 @@
 .fpboxeswrapper {
     min-height: 600px;
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.28335084033613445)), color-stop(70%, rgba(234,90,86,0.16010154061624648))),url(../public/images/kursraum.jpg);
+    background: -o-linear-gradient(left, rgba(253,220,128,0.28335084033613445) 34%, rgba(234,90,86,0.16010154061624648) 70%),url(../public/images/kursraum.jpg);
     background: linear-gradient(90deg, rgba(253,220,128,0.28335084033613445) 34%, rgba(234,90,86,0.16010154061624648) 70%),url(../public/images/kursraum.jpg);
     background-position: 100% 0%;
     background-size: cover;
@@ -68,10 +93,20 @@
   margin: 5rem 2rem;
   padding: 5rem;
   width: 600px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.60)), color-stop(80%, rgba(234,90,86,0.40)));
+  background: -o-linear-gradient(left, rgba(253,220,128,0.60) 34%, rgba(234,90,86,0.40) 80%);
   background: linear-gradient(90deg, rgba(253,220,128,0.60) 34%, rgba(234,90,86,0.40) 80%);
   border-radius: 25px;
 
 }
+
+@media screen and (max-width: 768px) {
+   .fpbox {
+  width:90%;
+  padding: 3rem;
+}
+  }
+
 
 
 
@@ -79,9 +114,15 @@
   background-color: var(--lila);
   color: var(--white);
   min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   
 }
@@ -104,6 +145,7 @@
   font-weight: 600;
   color: var(--black);
   text-decoration: none;
+  background: -o-linear-gradient(19deg, rgba(255,232,130,1) 2%, rgba(230,100,100,1) 100%);
   background: linear-gradient(71deg, rgba(255,232,130,1) 2%, rgba(230,100,100,1) 100%);
   padding: 1.2rem;
   border-radius: 20px;

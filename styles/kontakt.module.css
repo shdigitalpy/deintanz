@@ -1,9 +1,17 @@
+
 .kontakt {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding: 1rem 0;
 }
 
@@ -24,10 +32,17 @@
 
 
 .maps {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding: 1rem 0;
 	margin: 2rem 0;
 
@@ -44,6 +59,8 @@
 
 .mapsbox {
 	width: 35%;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,232,130,0.86)), to(rgba(230,100,100,0.86)));
+	background: -o-linear-gradient(bottom, rgba(255,232,130,0.86) 0%, rgba(230,100,100,0.86) 100%);
 	background: linear-gradient(0deg, rgba(255,232,130,0.86) 0%, rgba(230,100,100,0.86) 100%);
 	padding: 6rem;
 	border-radius: 25px;
@@ -53,6 +70,7 @@
    .mapsbox {
   width:100%;
   border-radius: 0;
+  padding: 3rem;
 }
   }
 

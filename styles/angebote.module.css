@@ -1,17 +1,25 @@
 .angebote {
-	background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
-	background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/hintergrund.png);
+  background: -o-linear-gradient(left, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
+  background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
+  background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     min-height: 282px;
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .angebotebox {
-	width:1000px;
+  width:1000px;
 }
 
 @media screen and (max-width: 768px) {
