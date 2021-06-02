@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import frontpageStyles from '../styles/frontpage.module.css'
 import TextCenter from './../components/TextCenter'
+import ProbeLektion from './../components/ProbeLektion'
 
-
-export default function AngeboteHeader() {
+export default function FrontPage() {
 
   return (
 
@@ -20,7 +20,7 @@ export default function AngeboteHeader() {
 		        <Link href="/angebote" passHref>
 				   <a className={frontpageStyles.btn}>Mehr erfahren</a>
 				    </Link>
-				<Link href="/" passHref>
+				<Link href="/anmeldung" passHref>
 				    <a className={frontpageStyles.btn}>Zur Anmeldung</a>
 				  </Link>
       </div>
@@ -86,14 +86,9 @@ export default function AngeboteHeader() {
 
      </div>{/*end 2nd element*/}
 
-     <TextCenter 
+     <ProbeLektion />
 
-      p="Corona: Hygiene- und Verhaltensregeln"
-      title="So schützen wir uns"
-      p1="Gemäss Beschluss der Behörden dürfen Kinder unter 12 Jahren ohne Masken zusammen tanzen und bewegen. Während den Lektionen werde ich eine Maske tragen."
-      p2="Beim Bringen und Abholen der Kinder, bitte ich die Eltern eine Maske zu tragen."
-
-       />{/*end 3rd element*/}
+     
 
 
 
@@ -113,6 +108,10 @@ export default function AngeboteHeader() {
         
 
       </div>{/*end 4rd element*/}
+
+    
+
+   
 
 
      </>

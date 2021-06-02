@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Tanzschule Winterthur für Kinder</title>
+         <meta name="description" content="Meta description content goes here." />
       </Head>
 
      	 <div className={frontpageStyles.geist}>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Nav from './Nav'
 import Footer from './Footer'
 import Sidebar from './../components/Sidebar'
+import { useRouter } from "next/router";
 
 
 const name = 'DeinTanz'
@@ -14,6 +15,8 @@ export const siteTitle = 'DeinTanz aktuell'
 
 export default function Layout({ children, home }) {
 
+const site = "https://www.deintanz.ch";
+const canonicalURL = site + useRouter().pathname;
 
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -50,6 +53,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={canonicalURL} />
       </Head>
 
       <main>{children}</main>

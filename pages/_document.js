@@ -1,12 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
+    
     return { ...initialProps }
   }
 
+
+
   render() {
+
+    
+
     return (
       <Html>
         <Head>
@@ -30,7 +37,7 @@ class MyDocument extends Document {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-
+        
 
         </Head>
         <body>

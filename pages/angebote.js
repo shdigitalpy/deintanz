@@ -5,28 +5,53 @@ import Layout from './../components/layout'
 import AngeboteHeader from './../components/AngeboteHeader'
 import TanzStunde from './../components/TanzStunde'
 import KurseSlider from './../components/KurseSlider'
+import Fragen from './../components/Fragen'
+
+  
 
 
 export default function Angebote() {
 
+
+  
+
   return (
+
+
 
   	<Layout>
 
   		<Head>
-      <title>test</title>
+      <title>Kurse für Kinder Winterthur | Deintanz</title>
+      <meta name="description" content="Kurse für Kinder Winterthur: Soziale Fähigkeiten durch Bewegung steigern" />
+      
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Kurse" description="Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein." />
+      <AngeboteHeader title="Kurse für Kinder Winterthur" description="Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein." />
+      <br />
+
+      <KurseSlider />
 
       <TanzStunde />
 
-      <KurseSlider />
+      
       
       <div>
 
-      	<h3>Weitere Angebote folgen ...</h3>
+
+       
+
+      	<h3>Weitere Angebote unserer <Link href="/">
+
+            <a>Tanzschule in Winterthur für Kinder</a>
+
+            </Link>  folgen ...</h3>
+
+
+              
+
+      
 
       	<style jsx>{`
         
@@ -36,6 +61,9 @@ export default function Angebote() {
           display: flex;
           justify-content: center;
           align-items: center;
+          padding: 2rem;
+
+
           
         }
         
@@ -43,6 +71,11 @@ export default function Angebote() {
 
 
       </div>
+
+      <Fragen />
+
+
+      
       
 	</Layout>
 )

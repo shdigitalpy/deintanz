@@ -1,0 +1,25 @@
+
+.probe {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+
+}
+
+.probe1 {
+    width: 500px;
+    padding: 2rem;
+
+}
+
+.probe2 {
+    width: 500px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

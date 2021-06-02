@@ -1,0 +1,71 @@
+import Link from 'next/link'
+import Head from 'next/head'
+import Image from 'next/image'
+import frontpageStyles from '../styles/frontpage.module.css'
+
+
+export default function ProbeLektion (props) {
+
+
+	return (
+
+		<>
+			<div className={frontpageStyles.probe}>
+
+			<div className={frontpageStyles.probe1}>
+
+        	<h2>KOSTENLOSE PROBE</h2>
+        	<p>Um einen Einblick in unsere Tanz- und Bewegungsstunde zu erhalten, biete ich Kindern ab 5 Jahren einen pädagogisch wertvollen Spielnachmittag. Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. Der Kursraum befindet sich mitten in der Altstadt von Winterthur.
+			</p>
+
+
+			</div>
+        	
+        	<div className={frontpageStyles.probe2}>
+
+        	<Link href="/anmeldung">
+			      <a><Image
+			      src="/images/probelektion.png" // Route of the image file
+			      height={400} // Desired size with correct aspect ratio
+			      width={400} // Desired size with correct aspect ratio
+			      alt="deintanz-logo"
+			      /></a>
+			      </Link>
+
+
+			</div>
+
+      </div>{/*end element*/}
+
+
+      <div className={frontpageStyles.tanzschulewrapper}>
+
+
+
+      <div className={frontpageStyles.tanzschule}>
+      <h2>Wichtige Fragen</h2>
+      <br />
+      <h3>Eine klassiche Tanzschule in Winterthur für Kinder?</h3>
+      <p>Bei deintanz.ch kann dein Kind auf spielerische Weise die Vorzüge von Tanzen, Bewegen und Rhythmik lernen. Das Angebot ist keine klassische Tanzschule, vielmehr eine Möglichkeit für die Kinder, die Energie in die richtigen Bahnen zu lenken und spielerisch wichtige Fähigkeiten zu erlangen. Die Kinder lernen durch unsere Übungen auch den sozialen Umgang mit anderen Kindern.</p>
+      <br />
+      
+      	<h3>Wann startet dieser Kinderkurs und wie alt muss mein Kind sein?</h3>
+      <p>Ein Einstieg in den laufenden Kurs jeweils am Montagnachmittag ist jederzeit möglich. In einer Probelektion begleiten wir dein Kind für eine herzliche Aufnahme in die Gruppe. Weitere Informationen zu unseren <Link href="/angebote">
+      <a>Kursen für Kinder in Winterthur. </a>
+      </Link>
+      	</p>
+      	<br />
+      	<h3>Hygiene- und Verhaltensregeln: Wie schützen wir uns vor Corona?</h3>
+      <p>Gemäss Beschluss der Behörden dürfen Kinder unter 12 Jahren ohne Masken zusammen tanzen und bewegen. Während den Lektionen werde ich eine Maske tragen. Beim Bringen und Abholen der Kinder, bitte ich die Eltern eine Maske zu tragen.
+      	</p>
+      	<br />
+      </div>
+
+       </div>{/*end element*/}
+
+		</>
+
+		)
+
+
+}

@@ -64,21 +64,19 @@ export default function TanzStunde() {
         <div className={tanzstundeStyles.tanzflex}>
 
           <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-          <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber"><a>Regula Leemann</a></Link></p></div>
+          <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
           
         </div>
 
 
-        <Link href="/" passHref>
+        <Link href="/anmeldung" passHref>
 		   <a className={tanzstundeStyles.btn}>Zur Anmeldung</a>
 		    </Link>
-		<Link href="/" passHref>
+		<Link href="/kontakt" passHref>
 		    <a className={tanzstundeStyles.btn}>Zum Kontakt</a>
 		  </Link>
-        <br /><br />
+        
 
-        <h4>Weitere Informationen</h4>
-       	<p>Der Einstieg ist jederzeit möglich. Schicken Sie Ihr Kind doch zu einer Schnupperlektion. Für weitere Informationen können Sie mich gerne kontaktieren. Auf Anfrage gibt es auch weitere Kurse.</p>
         
        	
 

@@ -198,3 +198,43 @@
   background-color: var(--white);
   opacity: 1;
 }
+
+.probe {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-color: var(--red);
+
+}
+
+.probe1 {
+    width: 500px;
+    padding: 2rem;
+
+}
+
+.probe2 {
+    width: 500px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tanzschulewrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+
+}
+
+.tanzschule {
+    width: 950px;
+}

@@ -28,7 +28,7 @@ export default function KurseSlider() {
 
       <>
 
-      	<Swiper slidesPerView={1} spaceBetween={10} pagination={{
+      	<Swiper slidesPerView={1} spaceBetween={5} pagination={{
   "clickable": true
 }} breakpoints={{
   "@0.00": {
