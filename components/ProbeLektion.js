@@ -8,45 +8,12 @@ import { useEffect } from 'react';
 
 export default function ProbeLektion (props) {
 
-	const {ref, inView} = useInView({
-      threshold: 0.1
-  });
-
-  const controls = useAnimation();
-
-  useEffect(() => {
-
-      console.log("use effect hook, inView = ", inView);
-
-      if(inView){
-        controls.start({
-          
-          opacity: 1,
-          transition: {
-            type: 'string', duration: 2, bounce: 0.3
-
-          },
-          
-
-        });
-
-      }
-
-      if(!inView){
-        controls.start({opacity: 0});
-
-      }
-      
-
-  }, [inView]);
-
-
 	return (
 
 		<>
-			<div ref={ref} className={frontpageStyles.probe}>
+			<div className={frontpageStyles.probe}>
 
-			<motion.div animate={controls} className={frontpageStyles.probe1}>
+			<div className={frontpageStyles.probe1}>
 
         	<h2>KOSTENLOSE PROBE</h2>
         	<p>Um einen Einblick in unsere Tanz- und Bewegungsstunde zu erhalten, 
@@ -54,9 +21,9 @@ export default function ProbeLektion (props) {
         	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. 
         	Der Kursraum befindet sich mitten in der Altstadt von Winterthur.
 			</p>
+      </div>
 
-
-			</motion.div>
+			
         	
         	<motion.div whileHover={{
 
