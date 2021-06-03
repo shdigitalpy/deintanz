@@ -51,11 +51,11 @@ export default function KurseSlider() {
   <SwiperSlide>
 
   	<Image
-          src="/images/kursraum.jpg" // Route of the image file
+          src="/images/kursraum.webp" // Route of the image file
           alt="Regula Leemann"
           layout="responsive"
 		      width={1000}
-		      height={667}
+		      height={800}
 
           />
 
@@ -64,11 +64,25 @@ export default function KurseSlider() {
   <SwiperSlide>
 
   	<Image
-          src="/images/kissen2.jpg" // Route of the image file
+          src="/images/kissen2.webp" // Route of the image file
           alt="Regula Leemann"
           layout="responsive"
 		      width={1000}
-		      height={667}
+		      height={800}
+
+          />
+
+
+  </SwiperSlide>
+
+  <SwiperSlide>
+
+    <Image
+          src="/images/kinder.webp" // Route of the image file
+          alt="Regula Leemann"
+          layout="responsive"
+          width={1000}
+          height={800}
 
           />
 
@@ -79,11 +93,11 @@ export default function KurseSlider() {
 
 
   	<Image
-          src="/images/kurs.jpg" // Route of the image file
+          src="/images/kurs.webp" // Route of the image file
           alt="Regula Leemann"
           layout="responsive"
 		      width={1000}
-		      height={667}
+		      height={800}
 
           />
 
@@ -98,11 +112,11 @@ export default function KurseSlider() {
 
 
   	<Image
-          src="/images/kursraum2.jpg" // Route of the image file
+          src="/images/kursraum2.webp" // Route of the image file
           alt="Regula Leemann"
           layout="responsive"
 		      width={1000}
-		      height={667}
+		      height={800}
 
           />
 

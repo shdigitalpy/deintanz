@@ -1,7 +1,7 @@
 .angebote {
-  background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/hintergrund.png);
-  background: -o-linear-gradient(left, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
-  background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.png);
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/hintergrund.webp);
+  background: -o-linear-gradient(left, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.webp);
+  background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/hintergrund.webp);
   background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
