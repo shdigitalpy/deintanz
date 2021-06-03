@@ -11,7 +11,7 @@ export default function Home() {
 
 
   return (
-    
+
     <Layout>
       <Head>
         <title>Tanzschule Winterthur für Kinder</title>
@@ -23,22 +23,9 @@ export default function Home() {
 
           <div className={frontpageStyles.geistbox}>
 
-      <motion.div initial="hidden" animate="visible" variants={{
-            hidden: {
-              scale: .8,
-              opacity: 0
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: .3,
-                duration: 0.7,
-              }
-            },
-          }}>
-       <h1>Wo sich Körper und Geist berühren</h1>
-       </motion.div>
+          
+              <h1>Wo sich Körper und Geist berühren</h1>
+         
 
       </div>{/*end box*/}
 
