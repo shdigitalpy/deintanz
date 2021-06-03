@@ -10,37 +10,7 @@ import { useEffect } from 'react';
 
 export default function FrontPage() {
 
-	const {ref, inView} = useInView({
-      threshold: 0.1
-  });
-
-  const controls = useAnimation();
-
-  useEffect(() => {
-
-      console.log("use effect hook, inView = ", inView);
-
-      if(inView){
-        controls.start({
-          
-          opacity: 1,
-          transition: {
-            type: 'string', duration: 2
-
-          },
-          
-
-        });
-
-      }
-
-      if(!inView){
-        controls.start({opacity: 0});
-
-      }
-      
-
-  }, [inView]);
+	
 
 
 
@@ -50,10 +20,10 @@ export default function FrontPage() {
 
   		<>
 
-      <div ref={ref} className={frontpageStyles.fp}>       
+      <div className={frontpageStyles.fp}>       
           
 
-          <motion.div animate={controls} className={frontpageStyles.fp1}>
+          <div className={frontpageStyles.fp1}>
 		       <h2>Tanz- & Bewegungsstunden für Kinder</h2>
 		        <p>Bei «Dein Tanz» können sich Kinder, jedes für sich einzigartig, in kleinen Gruppen frei entfalten. Es gibt kein Richtig oder Falsch.</p>
 		        <br /><p>Tanzen fördert die körperliche und geistige Entwicklung. Beim gemeinsamen Spielen, 
@@ -78,7 +48,7 @@ export default function FrontPage() {
 
 				   </motion.div>
 
-      </motion.div>
+      </div>
 
      </div>{/*end 1st element*/}
 
