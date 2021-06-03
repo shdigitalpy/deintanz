@@ -166,7 +166,7 @@
   transition: all 0.5s ease 0s;
   color: var(--white);
   background: none;
-  background-color: var(--black);
+  background-color: var(--orange);
   opacity: 1;
 }
 

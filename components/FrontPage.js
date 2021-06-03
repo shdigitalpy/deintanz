@@ -4,29 +4,81 @@ import Image from 'next/image'
 import frontpageStyles from '../styles/frontpage.module.css'
 import TextCenter from './../components/TextCenter'
 import ProbeLektion from './../components/ProbeLektion'
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 export default function FrontPage() {
+
+	const {ref, inView} = useInView({
+      threshold: 0.1
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+
+      console.log("use effect hook, inView = ", inView);
+
+      if(inView){
+        controls.start({
+          
+          opacity: 1,
+          transition: {
+            type: 'string', duration: 2
+
+          },
+          
+
+        });
+
+      }
+
+      if(!inView){
+        controls.start({opacity: 0});
+
+      }
+      
+
+  }, [inView]);
+
+
+
+  
 
   return (
 
   		<>
 
-      <div className={frontpageStyles.fp}>       
-          <div className={frontpageStyles.fp1}>
+      <div ref={ref} className={frontpageStyles.fp}>       
+          
+
+          <motion.div animate={controls} className={frontpageStyles.fp1}>
 		       <h2>Tanz- & Bewegungsstunden für Kinder</h2>
 		        <p>Bei «Dein Tanz» können sich Kinder, jedes für sich einzigartig, in kleinen Gruppen frei entfalten. Es gibt kein Richtig oder Falsch.</p>
 		        <br /><p>Tanzen fördert die körperliche und geistige Entwicklung. Beim gemeinsamen Spielen, 
 		        Tanzen, Musizieren oder Malen können die Kinder überschüssige Energien loswerden und dabei die eigene Kreativität entdecken. 
 		        Die Tanz- und Bewegungsstunde möchte den Kindern die Gelegenheit bieten, Emotionen auszuleben und den Umgang mit anderen Kindern zu erlernen. 
 		        Zum Abschluss helfen liebevolle Geschichten zum Träumen dabei, die Kinder nach den lebhaften Aktivitäten wieder zur Ruhe kommen zu lassen.</p>
-		      
+		      	
+
+
+		      	 <motion.div whileHover={{
+
+					        scale: 1.1,
+					        transition: {
+					          duration: .2
+					        }
+
+
+					      }}>
 		        <Link href="/angebote" passHref>
 				   <a className={frontpageStyles.btn}>Mehr erfahren</a>
 				    </Link>
-				<Link href="/anmeldung" passHref>
-				    <a className={frontpageStyles.btn}>Zur Anmeldung</a>
-				  </Link>
-      </div>
+
+				   </motion.div>
+
+      </motion.div>
 
      </div>{/*end 1st element*/}
 
@@ -91,7 +143,9 @@ export default function FrontPage() {
 
      </div>{/*end 2nd element*/}
 
+     
      <ProbeLektion />
+     
 
      
 
@@ -106,9 +160,19 @@ export default function FrontPage() {
       	Ich freue mich von Ihnen zu hören.</p>
       	
 
+      	<motion.div whileHover={{
+
+					        scale: 1.2,
+					        transition: {
+					          duration: .2
+					        }
+
+
+					      }}>
       	<Link href="/kontakt" passHref>
 		    <a className={frontpageStyles.btn2}>Zum Kontakt</a>
 		  </Link>
+		  </motion.div>
 
 		  </div>
         

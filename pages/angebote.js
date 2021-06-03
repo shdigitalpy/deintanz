@@ -6,7 +6,7 @@ import AngeboteHeader from './../components/AngeboteHeader'
 import TanzStunde from './../components/TanzStunde'
 import KurseSlider from './../components/KurseSlider'
 import Fragen from './../components/Fragen'
-
+import { motion } from "framer-motion"
   
 
 
@@ -31,7 +31,22 @@ export default function Angebote() {
       <AngeboteHeader title="Kurse für Kinder Winterthur" description="Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein." />
       <br />
 
+      <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .3,
+                duration: 0.4,
+              }
+            },
+          }}>  
       <KurseSlider />
+      </motion.div>
 
       <TanzStunde />
 

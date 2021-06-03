@@ -2,13 +2,49 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import aboutmeStyles from '../styles/about.module.css'
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useAnimation } from "framer-motion"
+
 
 export default function AboutMe() {
+
+  const {ref, inView} = useInView({
+      threshold: 0.2
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+
+      console.log("use effect hook, inView = ", inView);
+
+      if(inView){
+        controls.start({
+          
+          x: 0,
+          transition: {
+            type: 'spring', duration: 2
+
+          }
+
+        });
+
+      }
+
+      if(!inView){
+        controls.start({x: '-100vw'});
+
+      }
+      
+
+  }, [inView]);
+  
 
   return (
 
   	<>
-
   		<div className={aboutmeStyles.memain}>   
 
       <div className={aboutmeStyles.mewrapper}>       
@@ -50,10 +86,9 @@ export default function AboutMe() {
      <br />
       <br />
 
-     <div className={aboutmeStyles.mewrapper2}>  
+     <div ref={ref} className={aboutmeStyles.mewrapper2}>  
 
-
-     	<div className={aboutmeStyles.mebox2}>
+     <motion.div animate={controls} className={aboutmeStyles.mebox2}>
      	<Image
           src="/images/1.svg" // Route of the image file
           height={150} // Desired size with correct aspect ratio
@@ -65,11 +100,10 @@ export default function AboutMe() {
      	<h2>Meine Philosophie</h2>
      	<p>Ich möchte den Kindern einen Raum bieten, in dem sie sich entfalten und ganz sich selbst sein können in ihrer Einzigartigkeit. Ich eröffne ihnen neue Erfahrungsräume, ihrem Körper und ihrem Gefühl zu vertrauen und Neues zu entdecken. 
 		</p>
-
-		</div>
+    </motion.div>
 
 		 
-		<div className={aboutmeStyles.mebox2}>
+		<motion.div animate={controls} className={aboutmeStyles.mebox2}>
       	<Image
           src="/images/2.svg" // Route of the image file
           height={150} // Desired size with correct aspect ratio
@@ -80,10 +114,10 @@ export default function AboutMe() {
           />
 		<h2>Meine Zukunftspläne</h2>
      	<p>Mein Ziel ist es, nach meiner Ausbildung eine eigene Praxis als Tanz- und Bewegungstherapeutin zu gründen, in welcher ich Menschen - von Kindern bis in hohe Alter - in ihren persönlichen Prozessen begleiten darf. Wo sie sich ganz idividuell durch Tanz und Bewegung ausdrücken dürfen um so einen besseren Zugang zu sich und ihren Gefühlen zu finden, zur Ruhe kommen und neue Kraft schöpfen.</p>
-     	</div>
+     	</motion.div>
 
 
-      </div> 
+      </div>
 
        </div> 
 

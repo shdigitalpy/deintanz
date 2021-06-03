@@ -6,6 +6,7 @@ import TextCenter from './../components/TextCenter'
 import kontaktStyles from '../styles/kontakt.module.css'
 import { faUser, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from "framer-motion"
 
 export default function Kontakt() {
 
@@ -24,12 +25,27 @@ export default function Kontakt() {
 
 		<AngeboteHeader title="Kontakt" description="" />
 
-	<TextCenter 
+	<motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .3,
+                duration: 0.4,
+              }
+            },
+          }}> 
+          <TextCenter 
 
       p=""
       title="Habe ich Ihr Interesse geweckt?"
       p1="Wenn Sie Fragen zu meinen Angeboten haben oder eine Beratung wünschen, können Sie mich gerne per E-Mail oder per Telefon kontaktieren. Ich freue mich mit Ihren Kindern eine schöne Zeit verbringen zu dürfen."/>
 
+      </motion.div>
       
        {/*end 1st element*/}
 
