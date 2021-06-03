@@ -11,6 +11,7 @@ export default function Home() {
 
 
   return (
+    
     <Layout>
       <Head>
         <title>Tanzschule Winterthur für Kinder</title>
