@@ -53,21 +53,20 @@ export default function ProbeLektion (props) {
         	biete ich Kindern ab 5 Jahren einen pädagogisch wertvollen Spielnachmittag. 
         	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. 
         	Der Kursraum befindet sich mitten in der Altstadt von Winterthur.
-			</p>
+			   </p>
 
 
 			</motion.div>
         	
         	<motion.div whileHover={{
 
-			        scale: 1.1,
-			        transition: {
-			          duration: .2
-			        }
+              scale: 1.1,
+              transition: {
+                duration: .2
+              }
 
 
-			      }}>
-        	<div className={frontpageStyles.probe2}>
+            }} className={frontpageStyles.probe2}>
 
         	<Link href="/anmeldung">
 			      <a><Image
@@ -77,9 +76,6 @@ export default function ProbeLektion (props) {
 			      alt="deintanz-logo"
 			      /></a>
 			      </Link>
-
-
-			</div>
 
 			</motion.div>
 
