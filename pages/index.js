@@ -18,17 +18,35 @@ export default function Home() {
          <meta name="description" content="Meta description content goes here." />
       </Head>
 
-       <div className={frontpageStyles.geist}>
+     	 <div className={frontpageStyles.geist}>
+          
+
           <div className={frontpageStyles.geistbox}>
-       <h1>Wo sich Körper und Geist berühren</h1>
-        
+
+          <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .3,
+                duration: 0.7,
+              }
+            },
+          }}>
+              <h1>Wo sich Körper und Geist berühren</h1>
+          </motion.div>
+
       </div>{/*end box*/}
 
      </div>{/*end bgimage*/}
 
 
         <FrontPage/>
-      
+    	
     </Layout>
   )
 }

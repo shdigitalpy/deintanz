@@ -50,9 +50,9 @@ export default function FrontPage() {
 
   		<>
 
-      <div className={frontpageStyles.fp}>       
+      <div ref={ref} className={frontpageStyles.fp}>       
           
-          <div ref={ref}>
+          
 
           <motion.div animate={controls} className={frontpageStyles.fp1}>
 		       <h2>Tanz- & Bewegungsstunden für Kinder</h2>
@@ -81,7 +81,6 @@ export default function FrontPage() {
 
       </motion.div>
 
-      </div>
 
      </div>{/*end 1st element*/}
 
