@@ -60,7 +60,7 @@ export default function ProbeLektion (props) {
         	
         	<motion.div whileHover={{
 
-			        scale: 1.3,
+			        scale: 1.1,
 			        transition: {
 			          duration: .2
 			        }
