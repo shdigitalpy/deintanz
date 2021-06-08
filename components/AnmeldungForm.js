@@ -13,7 +13,7 @@ export default function AnmeldungForm() {
   function sendEmail(e) {
     e.preventDefault();
 
-  emailjs.sendForm("sandro_shd", "deintanz1", e.target, "user_qFh9QUNe6m8dcaGNVdD0x")
+  emailjs.sendForm("{sandro_shd}", "deintanz1", e.target, "user_qFh9QUNe6m8dcaGNVdD0x")
       .then((result) => {
           console.log(result.text);
       }, (error) => {

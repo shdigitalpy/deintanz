@@ -40,7 +40,7 @@ export default function App({ Component, pageProps, router }) {
       }}>
       
         <Component {...pageProps} />
-        <ScrollToTop smooth component={<p style={{ color: "var(--white)", backgroundColor: "var(--orange)", borderRadius:"5px" }}><FiArrowUp /></p>} />
+        <ScrollToTop smooth component={<p style={{ color: "var(--white)", backgroundColor: "var(--red)" }}><FiArrowUp /></p>} />
       </motion.div>
 
 
