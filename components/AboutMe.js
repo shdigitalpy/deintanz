@@ -115,7 +115,7 @@ export default function AboutMe() {
 
      <div className={aboutmeStyles.mefullboxitem1}>
      <Image
-          src="/images/iac-logo.jpg" // Route of the image file
+          src="/images/iac-logo.png" // Route of the image file
           height={110} // Desired size with correct aspect ratio
           width={260} // Desired size with correct aspect ratio
           alt="Icon"

@@ -97,6 +97,7 @@
   }
 
 .mefull {
+	padding: 5rem 0;
 	width: 100%;
 	min-height: 400px;
 	background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/mensch.jpg);
@@ -125,11 +126,10 @@
   }
 
 .mefull2 {
+	padding: 5rem 0;
 	width: 100%;
 	min-height: 400px;
-	background: -webkit-gradient(linear, left top, right top, color-stop(34%, rgba(253,220,128,0.70)), color-stop(70%, rgba(234,90,86,0.50))), url(../public/images/iac.jpg);
-  background: -o-linear-gradient(left, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/iac.jpg);
-  background: linear-gradient(90deg, rgba(253,220,128,0.70) 34%, rgba(234,90,86,0.50) 70%), url(../public/images/iac.jpg);
+  background: linear-gradient(90deg, rgba(253,220,128,0.85) 34%, rgba(234,90,86,0.85) 60%), url(../public/images/iac.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
