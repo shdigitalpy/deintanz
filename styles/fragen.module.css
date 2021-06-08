@@ -1,13 +1,19 @@
 
 .probe {
-
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: 3rem 0;
 
 }
+
+@media screen and (max-width: 1024px) {
+   .probe {
+     width: 80%;
+}
+  }
 
 .probe1 {
     width: 500px;

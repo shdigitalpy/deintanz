@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 1024px) {
    .meitem1 {
-  width:70%;
+  width:80%;
 }
   }
 
@@ -43,7 +43,7 @@
 @media screen and (max-width: 1024px) {
    .meitem2 {
    	padding: 1rem 0;
-  width:70%;
+  width:80%;
 }
   }
 
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1024px) {
    .mebox2 {
-  width:70%;
+  width:80%;
 }
   }
 
@@ -121,7 +121,7 @@
 
 @media screen and (max-width: 1024px) {
    .mefullbox {
-  width:70%;
+  width:80%;
 }
   }
 
@@ -151,3 +151,9 @@
 	padding: 3rem 0;
 
 }
+
+@media screen and (max-width: 1024px) {
+   .mefullbox2 {
+  width:80%;
+}
+  }

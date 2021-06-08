@@ -25,13 +25,13 @@
 
 @media screen and (max-width: 1024px) {
    .angebotebox {
-     width: 70%;
+     width: 80%;
 }
   }
 
 
 @media screen and (max-width: 768px) {
    .angebotebox {
-     width:70%;
+     width:80%;
 }
   }

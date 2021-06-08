@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
    .geistbox {
-  width: 90%;
+  width: 80%;
 }
   }
 
@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 768px) {
    .fpbox {
-  width:100%;
+  width: 100%;
   padding: 3rem;
 }
   }
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 768px) {
    .fpcontactbox {
-  width:70%;
+  width:80%;
 }
   }
 
@@ -225,7 +225,6 @@
 }
 
 .tanzschulewrapper {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,3 +236,9 @@
 .tanzschule {
     width: 950px;
 }
+
+@media screen and (max-width: 768px) {
+   .tanzschule {
+  width:80%;
+}
+  }

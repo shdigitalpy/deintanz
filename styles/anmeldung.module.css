@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 1024px) {
   .anmeldeformular {
-    width: 70%;
+    width: 80%;
     
 
   }
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1024px) {
   .anmeldeinfos {
-    width: 70%;
+    width: 80%;
 
   }
 }
