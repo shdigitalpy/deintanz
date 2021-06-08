@@ -28,7 +28,7 @@ export default function Angebote() {
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Kurse für Kinder Winterthur" description="Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein." />
+      <AngeboteHeader title="Kurse für Kinder Winterthur" description="Hier finden Sie eine Übersicht über unsere Kurse für Kinder in Winterthur." />
       <br />
 
       <motion.div initial="hidden" animate="visible" variants={{

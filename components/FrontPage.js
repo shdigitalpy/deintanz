@@ -95,7 +95,10 @@ export default function FrontPage() {
      			<br />
      			<p>Meine Name ist <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin am <Link href="https://iac.ch/">
 				   <a><b>integrativen Ausbildungszentrum iac</b></a>
-				    </Link> und selbst Mami von zwei Kindern. Ich freue mich, Ihrem Kind meine wertvollen Erfahrungen spielerisch näher zu bringen.</p>
+				    </Link> und selbst Mami von zwei Kindern. Ich freue mich, 
+				    Ihrem Kind meine wertvollen Erfahrungen spielerisch näher zu bringen. <Link href="/ueber-mich">
+				   <a><b>Mehr über mich</b></a>
+				    </Link> </p>
      			<br />
      			<Image
           src="/images/regula-leemann.jpg" // Route of the image file
@@ -122,7 +125,11 @@ export default function FrontPage() {
      			<br />
      			<p>Wer möchte nicht einmal wie ein Wirbelwind durch den Raum fegen, einen Regentanz aufführen oder sich wie ein Blatt im Wind drehen?</p>
      			<br />
-     			<p>Bei «Dein Tanz» haben wir Spass und fördern dabei spielerisch soziale Fähigkeiten, Kreativität, Fantasie, Musik- und Rhythmusgefühl.</p>
+     			<p>Bei «Dein Tanz» haben wir Spass und fördern dabei spielerisch soziale 
+     			Fähigkeiten, Kreativität, Fantasie, Musik- und Rhythmusgefühl.</p>
+     			<p>Mehr zu den <Link href="/angebote">
+				   <a><b>Kursen für Kinder</b></a>
+				    </Link></p>
      			<br />
      			<Image
           src="/images/kurs.jpg" // Route of the image file

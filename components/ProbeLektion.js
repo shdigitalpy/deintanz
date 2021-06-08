@@ -48,7 +48,7 @@ export default function ProbeLektion (props) {
 
 			<motion.div animate={controls} className={frontpageStyles.probe1}>
 
-        	<h2>KOSTENLOSE PROBE</h2>
+        	<h2>SCHNUPPERNACHMITTAG</h2>
         	<p>Um einen Einblick in unsere Tanz- und Bewegungsstunde zu erhalten, 
         	biete ich Kindern ab 5 Jahren einen pädagogisch wertvollen Spielnachmittag. 
         	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. 

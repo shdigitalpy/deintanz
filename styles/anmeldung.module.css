@@ -20,6 +20,12 @@
 	
 }
 
+.anmeldeformular:hover {
+	background: var(--orange2);
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
 @media screen and (max-width: 1024px) {
   .anmeldeformular {
     width: 70%;
@@ -94,4 +100,8 @@
 
 .anmeldeinfos p {
 	padding: 5px 0;
+}
+
+.anmbtn {
+	background-color: var(--black);
 }

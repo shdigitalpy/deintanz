@@ -7,6 +7,14 @@ import kontaktStyles from '../styles/kontakt.module.css'
 import { faUser, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from "framer-motion"
+import styled from 'styled-components';
+import { BsBoxArrowInUp } from "react-icons/bs";
+
+
+const InfoIcon = styled(BsBoxArrowInUp)`
+  font-size: 2rem;
+`;
+
 
 export default function Kontakt() {
 
@@ -78,6 +86,16 @@ export default function Kontakt() {
        		</div>
 
        </div>{/*end 2nd element*/}
+
+
+       <div className={kontaktStyles.kontakt}>
+
+      <Link href="/anmeldung">
+          <a className={kontaktStyles.link}>Direkt zur Anmeldung
+       <InfoIcon /></a>
+          </Link>
+       
+      </div>{/*end direkt zur anmeldung*/}
 
 
        <div className={kontaktStyles.maps}>

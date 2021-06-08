@@ -1,4 +1,4 @@
-.tanzstunde {
+.tanzstundewrapper {
     min-height: 600px;
     width:100%;
     display: -webkit-box;
@@ -10,17 +10,56 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    flex-direction: column;
+}
+
+
+
+.tanzstundetext {
+    margin-top: 5rem;
+    width:800px;
+    padding: 1rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+   .tanzstundetext {
+   width:90%;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  margin-top: 2rem;
+}
+
+
+}
+
+.tanzstunde {
+    min-height: 600px;
+    width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     margin: 5rem 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
 
+
+
 .tanzstundebox {
     background: rgba(31,8,49,0.03);
-    width:800px;
+    width:500px;
     padding: 3rem;
     border: 1px solid rgba(31,8,49,0.2);
     border-radius: 25px;
+    margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -30,7 +69,9 @@
   border: none;
   background: transparent;
 }
-  }
+
+
+}
 
 .tanzstundebox p {
     line-height:1.7rem;

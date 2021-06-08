@@ -136,12 +136,17 @@ export default function AnmeldungForm() {
                 <span class="checkmark"></span>
                 </label>
                 <br/>
+                <label class="container">Montag 16:00 bis 17:00 Uhr (Mädchen)
+                <input type="checkbox" name="kursanmeldung" value="Montag 14:30 bis 15:30" />
+                <span class="checkmark"></span>
+                </label>
+                <br/>
                 <label class="container">Ich habe Interesse an weiteren Terminen
                 <input type="checkbox" name="interesse" value="Ich habe Interesse an weiteren Terminen" />
                 <span class="checkmark"></span>
                 </label>
                 <br/>
-                <label class="container">Schnuppernachmittag
+                <label class="container">Schnuppernachmittag (kostenlos)
                 <input type="checkbox" name="schnupper" value="Schnuppernachmittag" />
                 <span class="checkmark"></span>
                 </label>
