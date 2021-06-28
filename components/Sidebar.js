@@ -23,6 +23,7 @@ export default function Sidebar({isOpen, toggle}) {
       </Icon>
       <SidebarMenu>
         <Link href='/kursuebersicht'><a className={sidebarStyles.sidebarlink}>Kurse</a></Link>
+        <Link href='/kursekinder'><a className={sidebarStyles.sidebarlink}>Für Kinder</a></Link>
         <Link href='/ueber-mich'><a className={sidebarStyles.sidebarlink}>Über mich</a></Link>
       </SidebarMenu>
       <SideBtnWrap>

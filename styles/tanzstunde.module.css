@@ -18,15 +18,14 @@
 .tanzstundetext {
     margin-top: 5rem;
     width:800px;
-    padding: 1rem;
+    padding: 1rem 0;
     
 }
 
 @media screen and (max-width: 768px) {
    .tanzstundetext {
    width:90%;
-  padding: 1rem;
-  border: none;
+   border: none;
   background: transparent;
   margin-top: 2rem;
 }
@@ -58,7 +57,7 @@
 .tanzstundebox {
     background: rgba(31,8,49,0.03);
     width:500px;
-    padding: 3rem;
+    padding: 3rem 0;
     border: 1px solid rgba(31,8,49,0.2);
     border-radius: 25px;
     margin: 1rem;
@@ -67,7 +66,7 @@
 @media screen and (max-width: 768px) {
    .tanzstundebox {
   width:90%;
-  padding: 1rem;
+  padding: 1rem 0;
   border: none;
   background: transparent;
 }
@@ -154,6 +153,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
     
 }
@@ -161,6 +161,15 @@
 .twocolumn {
     width:400px;
     
+}
+
+@media screen and (max-width: 768px) {
+   .twocolumn {
+  width:90%;
+  
+}
+
+
 }
 
 .tanzstundeboxdetail {
