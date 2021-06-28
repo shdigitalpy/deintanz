@@ -270,3 +270,16 @@ input[type=submit] {
   border-radius: 50%;
   background: white;
 }
+
+.resize {
+    transform:scale(1, 1);
+    transition: 1s;
+    
+}
+
+.resize:hover {
+    transform:scale(1.2, 1.2);
+    opacity: 0.5;
+
+    
+}

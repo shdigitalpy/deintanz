@@ -22,8 +22,7 @@ export default function Sidebar({isOpen, toggle}) {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <Link href='/angebote'><a className={sidebarStyles.sidebarlink}>Kurse</a></Link>
-        <Link href='/anmeldung'><a className={sidebarStyles.sidebarlink} >Anmeldung</a></Link>
+        <Link href='/kursuebersicht'><a className={sidebarStyles.sidebarlink}>Kurse</a></Link>
         <Link href='/ueber-mich'><a className={sidebarStyles.sidebarlink}>Über mich</a></Link>
       </SidebarMenu>
       <SideBtnWrap>

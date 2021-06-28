@@ -90,8 +90,8 @@ export default function Kontakt() {
 
        <div className={kontaktStyles.kontakt}>
 
-      <Link href="/anmeldung">
-          <a className={kontaktStyles.link}>Direkt zur Anmeldung
+      <Link href="/kursuebersicht">
+          <a className={kontaktStyles.link}>Direkt zu den Kursen
        <InfoIcon /></a>
           </Link>
        

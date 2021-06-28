@@ -87,3 +87,7 @@
 	font-size: clamp(1.3rem, 1.7vw, 2.2rem);
   font-weight: 800;
 }
+
+.icon {
+	color: var(--orange);
+}

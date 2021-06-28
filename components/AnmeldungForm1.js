@@ -133,8 +133,8 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                <label class="container">Montag 14:30 bis 15:30 Uhr
-                <input type="checkbox" name="kursanmeldung" value="Montag 14:30 bis 15:30 Uhr" />
+                <label class="container">Montag 16:00 bis 17:00 Uhr
+                <input type="checkbox" name="kursanmeldung" value="Montag 16:00 bis 17:00 Uhr" />
                 <span class="checkmark"></span>
                 </label>            
                 <br/>

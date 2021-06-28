@@ -1,7 +1,10 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import {FacebookIcon} from 'next-share'
+import {SocialIcon} from 'react-social-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import kontaktStyles from '../styles/kontakt.module.css'
 
 
 export default function Footer () {
@@ -28,10 +31,17 @@ return (
 
           <div>
           <p>Kontakt</p>
-         <Link href="tel:+41 78 763 30 65">
-          <a><p>+41 78 763 30 65</p></a>
+          <Link href="mailto:regula@deintanz.ch">
+          <a><p><FontAwesomeIcon className={styles.icon2} icon={faEnvelope} size="1x" />regula@deintanz.ch</p></a>
           </Link>
+          
+         
+         <Link href="tel:+41 78 763 30 65">
+          <a><p><FontAwesomeIcon className={styles.icon2} icon={faPhone} size="1x" />+41 78 763 30 65</p></a>
+          </Link>
+
           </div>
+          
       
         </div>{/*end footerbox*/}
 
@@ -39,11 +49,11 @@ return (
 
           <div>
           <p>Auf Social Media</p>
-          <Link href="https://www.facebook.com/regula.deintanz">
-            <a target="_blank">
-              <FacebookIcon size={32} round />
-            </a>
-            </Link>
+          
+              <SocialIcon className={styles.socialicon} url="https://www.facebook.com/regula.deintanz" style={{ height: 30, width: 30}}/>
+                      
+              <SocialIcon className={styles.socialicon} url="https://www.instagram.com/dein_tanz/?hl=de" bgColor="#E1306C" style={{ height: 30, width: 30}} />
+          
             </div>
         </div>{/*end footerbox*/}
 

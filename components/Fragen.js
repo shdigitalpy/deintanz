@@ -14,13 +14,12 @@ export default function Fragen (props) {
 
 			<div className={fragenStyles.probe1}>
 
-        	<h4>Mit ein paar Klicks ist Ihr Kind schon nächsten Montag dabei!</h4>
-        	<p>Der Einstieg in die Kurse für Kinder in Winterthur ist jederzeit möglich. 
-        	Melden Sie Ihr Kind jetzt zu einer kostenlosen Schnupperlektion an. <Link href="/anmeldung" passHref>
-		   <a>Zur Anmeldung</a></Link><br />
-		    <br /> Für weitere Informationen können Sie mich gerne <Link href="/kontakt">
+        	<h4>Kurse für Kinder in Winterthur gesucht?</h4>
+        	<p>Suchen Sie speziell nach Kursen für Kinder. Wir bieten Tanz, Bewegung & Entspannung für verschiedene Altersklassen.
+        	Es ist möglich, dass jedes Kind zur kostenlosen Probelektion kommt.<br />
+		    <br /> Weitere Informationen zu den <Link href="/kursekinder">
 
-        		<a> kontaktieren</a>
+        		<a> Kursen für Kinder in Winterthur</a>
 
         		</Link>.</p>
         

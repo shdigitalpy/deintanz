@@ -1,0 +1,57 @@
+
+.ang {
+    min-height: 600px;
+    width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.ang1 {
+    margin: 5rem 0;
+    width: 1000px;
+}
+
+@media screen and (max-width: 1024px) {
+   .ang1 {
+     width: 80%;
+}
+  }
+
+
+
+.angboxwrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.angbox {
+    width: 400px;
+    margin: 5rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+   .angbox {
+     width: 80%;
+}
+  }
+
+
+.link {
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}

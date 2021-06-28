@@ -53,3 +53,23 @@
 .footerwrapper a:hover {
 	color: var(--white) !important;
 }
+
+
+
+
+.icon2 {
+	color: var(--lila);
+	margin-right: 0.5rem;
+}
+
+.socialicon {
+	margin-right: 0.3rem;
+	transform:scale(1, 1);
+  transition: 1s;
+	
+}
+
+.socialicon:hover {
+	transform:scale(1.2, 1.2);
+  opacity: 0.5;
+}

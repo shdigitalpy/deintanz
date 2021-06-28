@@ -10,8 +10,9 @@ export default function TanzStunde() {
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h2>Ermöglichen Sie Ihrem Kind einen Raum zur Entfaltung mit unseren Kursen</h2>
-      <p>Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein. Mit Papier, Malstiften, Trommeln, Schlaghölzern sowie Geschichten zum Entspannen und Träumen werden verschiedene Sinne geweckt. Ihr Kind lernt auf  spielerische Weise seinen Körper besser kennen und gewinnt somit mehr Selbstvertrauen und einen  besseren Zugang zu seinen Gefühlen. Soziale Fähigkeiten, Kreativität, Fantasie, Musik- und Rhythmusgefühl werden ebenso gefördert.
-      </p>
+      <p>Bei "Dein Tanz" lernt Dein Kind keinen speziellen Tanzstil, aber es lernt seinen Körper besser kennen und wahrzunehmen.
+Nach einem Begrüssungsritual, tauchen wir ein, in verschiedene Figuren/Welten/Themen/ Gefühle und drücken diese beim Tanz, Bewegen und Musizieren individuell aus. Am Schluss gibt es immer eine kleine Entspannungsreise Geschichte zum jeweiligen Thema, welche die Kinder beim malen visualisieren können.
+In kleinen Gruppen, gebe ich den Kindern einen Raum sich frei zu entfalten und ganz sich selbst zu sein. Durch das gewinnen Die Kinder mehr Selbstvertrauen und mehr Sozial Kompetenzen. Durch die kleine Gruppe von max. 6 Kindern kann ich auf die Bedürfnisse der Kinder besser ein gehen. Es gibt auch Platz zum erzählen und eigene Ideen. </p>
       </div>
     
 
@@ -20,7 +21,7 @@ export default function TanzStunde() {
 
 
           <div className={tanzstundeStyles.tanzstundebox}>
-               <h2>Kurs 1: Tanz- & Bewegungsstunde für Kinder</h2>
+               <h2>Kurs 1: Tanz, Bewegung und Entspannung für Kinder von 4 bis 8 Jahren </h2>
                 <br />
 
                 
@@ -29,7 +30,7 @@ export default function TanzStunde() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Tanz- & Bewegungsstunde für Kinder</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Tanz, Bewegung & Entspannung</p></div>
                 	
                 </div>
 
@@ -78,17 +79,14 @@ export default function TanzStunde() {
                 </div>
 
 
-                <Link href="/anmeldung" passHref>
-        		   <a className={tanzstundeStyles.btn}>Zur Anmeldung</a>
-        		    </Link>
-        		<Link href="/kontakt" passHref>
-        		    <a className={tanzstundeStyles.btn}>Zum Kontakt</a>
-        		  </Link>
+                <Link href="/kurs1" passHref>
+               <a className={tanzstundeStyles.btn}>Zu den Details</a>
+                </Link>
               
           </div>{/*end 1st tanzstunde*/}
 
           <div className={tanzstundeStyles.tanzstundebox}>
-               <h2>Kurs 2: Tanz, Bewegung und Entspannung für Mädchen</h2>
+               <h2>Kurs 2: Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren</h2>
                 <br />
 
                 
@@ -97,7 +95,7 @@ export default function TanzStunde() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p>Tanz, Bewegung und Entspannung
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>Tanz, Bewegung & Entspannung
                   </p></div>
                   
                 </div>
@@ -105,7 +103,7 @@ export default function TanzStunde() {
                <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Wer</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p>Für Mädchen von 8 bis 11 Jahren</p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 7 bis 11 Jahren</p></div>
                   
                 </div>
 
@@ -147,14 +145,12 @@ export default function TanzStunde() {
                 </div>
 
 
-                <Link href="/anmeldung" passHref>
-               <a className={tanzstundeStyles.btn}>Zur Anmeldung</a>
+                <Link href="/kurs2" passHref>
+               <a className={tanzstundeStyles.btn}>Zu den Details</a>
                 </Link>
-            <Link href="/kontakt" passHref>
-                <a className={tanzstundeStyles.btn}>Zum Kontakt</a>
-              </Link>
+            
               
-          </div>{/*end 1st tanzstunde*/}
+          </div>{/*end 2nd tanzstunde*/}
 
      </div>
 

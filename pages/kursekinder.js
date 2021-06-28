@@ -5,19 +5,18 @@ import Layout from './../components/layout'
 import AngeboteHeader from './../components/AngeboteHeader'
 import TanzStunde from './../components/TanzStunde'
 import KurseSlider from './../components/KurseSlider'
-import Fragen from './../components/Fragen'
+
+import ProbeLektion from './../components/ProbeLektion'
 import { motion } from "framer-motion"
   
 
 
 export default function Angebote() {
-
-
   
 
   return (
 
-
+    <>
 
   	<Layout>
 
@@ -50,49 +49,19 @@ export default function Angebote() {
 
       <TanzStunde />
 
+
+        <ProbeLektion />
       
       
-      <div>
 
-
-       
-
-      	<h3>Weitere Angebote unserer <Link href="/">
-
-            <a>Tanzschule in Winterthur für Kinder</a>
-
-            </Link>  folgen ...</h3>
-
-
-              
-
-      
-
-      	<style jsx>{`
-        
-        div {
-          height: 500px;
-          background-color: rgba(31,8,49,0.03);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 2rem;
-
-
-          
-        }
-        
-      `}</style>
-
-
-      </div>
-
-      <Fragen />
+     
 
 
       
       
 	</Layout>
+
+  </>
 )
 
 }

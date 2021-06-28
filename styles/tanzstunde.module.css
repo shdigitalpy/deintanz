@@ -53,6 +53,8 @@
 
 
 
+
+
 .tanzstundebox {
     background: rgba(31,8,49,0.03);
     width:500px;
@@ -141,4 +143,40 @@
   background: none;
   background-color: var(--black);
   opacity: 1;
+}
+
+
+.twocolumnwrapper {
+    min-height: 600px;
+    width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.twocolumn {
+    width:400px;
+    
+}
+
+.tanzstundeboxdetail {
+    background: rgba(31,8,49,0.03);
+    width:800px;
+    padding: 5rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+   .tanzstundeboxdetail {
+  width:90%;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+}
+
+
 }

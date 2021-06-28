@@ -1,11 +1,13 @@
 
 .probe {
+    min-height: 600px;
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 3rem 0;
+    background-color: rgba(31,8,49,0.03);
 
 }
 

@@ -50,9 +50,8 @@ export default function ProbeLektion (props) {
 
         	<h2>SCHNUPPERNACHMITTAG</h2>
         	<p>Um einen Einblick in unsere Tanz- und Bewegungsstunde zu erhalten, 
-        	biete ich Kindern ab 5 Jahren einen pädagogisch wertvollen Spielnachmittag. 
-        	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. 
-        	Der Kursraum befindet sich mitten in der Altstadt von Winterthur.
+        	biete ich Kindern ab 5 Jahren einen für die Entwicklung des Kindes wertvollen Spielnachmittag. 
+        	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. Die gratis Anmeldung ist jeweils in den Details zum Kurs möglich.
 			   </p>
 
 
@@ -68,14 +67,13 @@ export default function ProbeLektion (props) {
 
             }} className={frontpageStyles.probe2}>
 
-        	<Link href="/anmeldung">
-			      <a><Image
+        	
+			      <Image
 			      src="/images/probelektion.png" // Route of the image file
 			      height={400} // Desired size with correct aspect ratio
 			      width={400} // Desired size with correct aspect ratio
 			      alt="deintanz-logo"
-			      /></a>
-			      </Link>
+			      />
 
 			</motion.div>
 
@@ -97,7 +95,7 @@ export default function ProbeLektion (props) {
       	<h3>Wann startet dieser Kinderkurs und wie alt muss mein Kind sein?</h3>
       <p>Ein Einstieg in den laufenden Kurs jeweils am Montagnachmittag ist jederzeit möglich. 
       In einer Probelektion begleite ich Ihr Kind für eine herzliche Aufnahme in die Gruppe. 
-      Weitere Informationen zu unseren <Link href="/angebote">
+      Weitere Informationen zu unseren <Link href="/kursuebersicht">
       <a>Kursen für Kinder in Winterthur</a>
       </Link>.
       	</p>

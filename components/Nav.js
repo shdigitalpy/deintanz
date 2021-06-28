@@ -11,28 +11,29 @@ export default function Nav ({toggle}) {
 return (
 
   <>
-    
-  
+   
     <nav className={styles.nav}>
 
       <div className={styles.logo}>
       <Link href="/">
-      <a><Image
+      <a>
+      <Image
       src="/images/deintanz-logo.png" // Route of the image file
       height={68} // Desired size with correct aspect ratio
       width={331} // Desired size with correct aspect ratio
       alt="deintanz-logo"
-      /></a>
+      />
+      </a>
       </Link>
       </div>
 
       <div className={styles.menu}>
-      <div className={styles.mainitem}><Link href="/angebote">
+
+      <div className={styles.mainitem}><Link href="/kursuebersicht">
         <a>Kurse</a>
+        
         </Link></div>
-      <div className={styles.mainitem}><Link href="/anmeldung">
-        <a>Anmeldung</a>
-        </Link></div>
+      
       <div className={styles.mainitem}><Link href="/ueber-mich">
         <a>Über mich</a>
         </Link></div>
@@ -40,18 +41,13 @@ return (
         <a>Kontakt</a>
         </Link></div>
 
-        
-        
-
       </div>
 
       <div className={styles.navicon}><GiHamburgerMenu onClick={toggle} /></div>
 
        </nav>
 
-       
-
-    </>
+  </>
 
 
 )

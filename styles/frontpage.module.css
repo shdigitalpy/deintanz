@@ -35,6 +35,9 @@
 }
   }
 
+
+
+
 .fp {
     min-height: 600px;
     width:100%;
@@ -57,9 +60,21 @@
 
 
 .fp1 {
-    margin: 5rem 0;
-    width:700px;
+    margin: 3rem 0;
+    width:800px;
     padding: 3rem;  
+}
+
+.angboxwrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.angbox {
+    width: 300px;
+    margin: 2rem 0;
 }
 
 .fp p {
@@ -242,3 +257,14 @@
   width:80%;
 }
   }
+
+
+.link {
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.link:hover {
+    opacity: 0.5;
+}
