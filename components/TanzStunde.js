@@ -10,9 +10,9 @@ export default function TanzStunde() {
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h2>Ermöglichen Sie Ihrem Kind einen Raum zur Entfaltung mit unseren Kursen</h2>
-      <p>Bei "Dein Tanz" lernt Dein Kind keinen speziellen Tanzstil, aber es lernt seinen Körper besser kennen und wahrzunehmen.
-Nach einem Begrüssungsritual, tauchen wir ein, in verschiedene Figuren/Welten/Themen/ Gefühle und drücken diese beim Tanz, Bewegen und Musizieren individuell aus. Am Schluss gibt es immer eine kleine Entspannungsreise Geschichte zum jeweiligen Thema, welche die Kinder beim malen visualisieren können.
-In kleinen Gruppen, gebe ich den Kindern einen Raum sich frei zu entfalten und ganz sich selbst zu sein. Durch das gewinnen Die Kinder mehr Selbstvertrauen und mehr Sozial Kompetenzen. Durch die kleine Gruppe von max. 6 Kindern kann ich auf die Bedürfnisse der Kinder besser ein gehen. Es gibt auch Platz zum erzählen und eigene Ideen. </p>
+      <p>Bei "Dein Tanz" lernt Ihr Kind keinen speziellen Tanzstil, aber es lernt auch seinen Körper besser kennen und wahrzunehmen.
+Nach einem Begrüssungsritual, tauchen wir ein in verschiedene Figuren/Welten/Themen/ Gefühle und drücken diese beim Tanz, Bewegen und Musizieren individuell aus. Am Schluss gibt es immer eine kleine Entspannungsreise in Form einer Geschichte zum jeweiligen Thema, welche die Kinder beim malen visualisieren können.
+In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ganz sich selbst zu sein. Dadurch gewinnen die Kinder mehr Selbstvertrauen und mehr Sozialkompetenzen. Durch die kleine Gruppe von max. 6 Kindern kann ich auf die Bedürfnisse der Kinder besser ein gehen. Die Tanzstunde bietet auch Raum fürs Erzählen und eigene Ideen. </p>
       </div>
     
 
