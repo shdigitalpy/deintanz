@@ -37,7 +37,7 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
                <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wer</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 5 bis 8 Jahren</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 4 bis 8 Jahren</p></div>
                 	
                 </div>
 

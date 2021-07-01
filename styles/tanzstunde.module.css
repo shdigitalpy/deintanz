@@ -11,6 +11,10 @@
         -ms-flex-align: center;
             align-items: center;
     flex-direction: column;
+    background: url(../public/images/hintergrund3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
 
 
@@ -57,7 +61,7 @@
 .tanzstundebox {
     background: rgba(31,8,49,0.03);
     width:500px;
-    padding: 3rem 0;
+    padding: 3rem;
     border: 1px solid rgba(31,8,49,0.2);
     border-radius: 25px;
     margin: 1rem;

@@ -50,8 +50,8 @@ export default function FrontPage() {
       <div className={kursoverviewStyles.ang1}>
 		              	
  						<h3>Für Kinder</h3>
- 						<p>Nachfolgend finden Sie unsere Kurse für Kinder aller Alterklassen. Suchen Sie nur nach Kursen für Kinder, hier finden Sie weitere Informationen zu den <Link href="/kursekinder">
-				   <a><b>Kursen für Kinder</b></a>
+ 						<p>Nachfolgend finden Sie unsere Kreativkurse für Kinder aller Alterklassen. Suchen Sie nur nach Kursen für Kinder, hier finden Sie weitere Informationen zu den <Link href="/kursekinder">
+				   <a><b>Kursen für Kinder in Winterthur</b></a>
 				    </Link>.</p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
@@ -115,7 +115,7 @@ export default function FrontPage() {
 		      			<br />
 
 		      			<h3>Für Erwachsene</h3>
-		      			<p>Nachfolgend finden Sie unsere Kurse für Erwachsene mit oder ohne Kinder. </p>
+		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene in Winterthur mit oder ohne Kinder. </p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
 

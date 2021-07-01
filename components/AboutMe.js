@@ -189,10 +189,11 @@ export default function AboutMe() {
 
           />
     <h2>Tanz-und Bewegungstherapie ist für mich</h2>
-      <p>Neue Ausdrucks- und Bewegungsformen über den Körper und die Imagination finden und diese ins Bewusstsein kommen zulassen. Dadurch kann man alte Muster loslassen und neue Wege gehen, neues persönliches Potenzial erkennen.
-Man kommt immer mehr in Einklang mit sich selbst und seinen Mitmenschen.</p>
+      <p>"Neue Ausdrucks- und Bewegungsformen über den Körper und die Imagination finden und diese ins Bewusstsein kommen zulassen. Dadurch kann man alte Muster loslassen und neue Wege gehen, neues persönliches Potenzial erkennen.
+Man kommt immer mehr in Einklang mit sich selbst und seinen Mitmenschen."</p>
     
-     <p>Tanztherapie ist künstlerische und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und Wechselwirkung körperlicher, emotionaler, psychischer, kognitiver und sozialer Prozesse. Aus dem Buch, Grundlagen der Tanztherapie von Susanne Bender </p>
+     <p>"Tanztherapie ist künstlerische und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und Wechselwirkung körperlicher, emotionaler, psychischer, kognitiver und sozialer Prozesse."
+     <br /> Aus dem Buch, Grundlagen der Tanztherapie von Susanne Bender </p>
 
       </motion.div>
 

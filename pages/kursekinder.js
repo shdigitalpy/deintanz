@@ -27,8 +27,8 @@ export default function Angebote() {
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Kurse für Kinder Winterthur" description="Hier finden Sie eine Übersicht über unsere Kurse für Kinder in Winterthur." />
-      <br />
+      <AngeboteHeader title="Kreativer Kindertanz" description="Auf dieser Seite finden Sie eine Übersicht über unsere Kurse 'Kreativer Kindertanz' für Kinder in Winterthur." />
+      
 
       <motion.div initial="hidden" animate="visible" variants={{
             hidden: {

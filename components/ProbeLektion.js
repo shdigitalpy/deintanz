@@ -50,7 +50,7 @@ export default function ProbeLektion (props) {
 
         	<h2>SCHNUPPERNACHMITTAG</h2>
         	<p>Um einen Einblick in unsere Tanz- und Bewegungsstunde zu erhalten, 
-        	biete ich Kindern ab 5 Jahren einen für die Entwicklung des Kindes wertvollen Spielnachmittag. 
+        	biete ich Kindern ab 4 Jahren einen für die Entwicklung des Kindes wertvollen Spielnachmittag. 
         	Jedes Kind darf zuerst kostenlos zum Schnuppernachmittag kommen. Die gratis Anmeldung ist jeweils in den Details zum Kurs möglich.
 			   </p>
 
@@ -87,7 +87,9 @@ export default function ProbeLektion (props) {
       <div className={frontpageStyles.tanzschule}>
       <h2>Wichtige Fragen</h2>
       <br />
-      <h3>Eine klassiche Tanzschule in Winterthur für Kinder?</h3>
+      <h3>Eine klassiche <Link href="/">
+           <a><b>Tanzschule in Winterthur</b></a>
+            </Link> für Kinder?</h3>
       <p>Bei «Dein Tanz» kann Ihr Kind auf spielerische Weise die Vorzüge von Tanzen,
        Bewegen und Rhythmik lernen. Das Angebot ist keine klassische Tanzschule, vielmehr eine Möglichkeit für die Kinder, die Energie in die richtigen Bahnen zu lenken und spielerisch wichtige Fähigkeiten zu erlangen. Die Kinder lernen durch unsere Übungen auch den sozialen Umgang mit anderen Kindern.</p>
       <br />
@@ -95,9 +97,7 @@ export default function ProbeLektion (props) {
       	<h3>Wann startet dieser Kinderkurs und wie alt muss mein Kind sein?</h3>
       <p>Ein Einstieg in den laufenden Kurs jeweils am Montagnachmittag ist jederzeit möglich. 
       In einer Probelektion begleite ich Ihr Kind für eine herzliche Aufnahme in die Gruppe. 
-      Weitere Informationen zu unseren <Link href="/kursuebersicht">
-      <a>Kursen für Kinder in Winterthur</a>
-      </Link>.
+      Bereits ab 4 Jahren kann Ihr Kind dabei sein.
       	</p>
       	<br />
       	<h3>Hygiene- und Verhaltensregeln: Wie schützen wir uns vor Corona?</h3>

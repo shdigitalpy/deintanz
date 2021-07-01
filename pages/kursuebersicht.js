@@ -18,13 +18,13 @@ export default function Kursübersicht() {
   	<Layout>
 
   		<Head>
-      <title>Kursübersicht | Deintanz</title>
-      <meta name="description" content="Kurse für Kinder Winterthur: Soziale Fähigkeiten durch Bewegung steigern" />
+      <title>Kreativkurse Winterthur Kursübersicht | Deintanz</title>
+      <meta name="description" content="Kreativkurse Winterthur: Eine Übersicht von deintanz Kursen für ✓ Kinder und ✓ Erwachsene" />
       
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Alle Kurse" description="" />
+      <AngeboteHeader title="Alle Kurse" description="Eine Übersicht von allen deintanz Kursen für Kinder und Erwachsene" />
       <br />
 
       <motion.div initial="hidden" animate="visible" variants={{

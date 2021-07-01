@@ -211,7 +211,7 @@ export default function FrontPage() {
      			<br />
      			<p>Tanzen fördert die körperliche und geistige Entwicklung. Beim gemeinsamen Spielen, Tanzen, Musizieren oder Malen können die Kinder überschüssige Energien loswerden und dabei die eigene Kreativität entdecken. Die Tanz- und Bewegungsstunde möchte den Kindern die Gelegenheit bieten, Emotionen auszuleben und den Umgang mit anderen Kindern zu erlernen. Zum Abschluss helfen liebevolle Geschichten zum Träumen dabei, die Kinder nach den lebhaften Aktivitäten wieder zur Ruhe kommen zu lassen.</p>
      			<p>Mehr zu den <Link href="/kursekinder">
-				   <a><b>Kursen für Kinder</b></a>
+				   <a><b>Kursen für Kinder in Winterthur</b></a>
 				    </Link></p>
      			<br />
      			<Image
@@ -248,11 +248,11 @@ export default function FrontPage() {
 
        
 
-      	<h3>Alle unsere Kurse finden Sie in der <Link href="/kursuebersicht">
+      	<h3>In der Übersicht <Link href="/kursuebersicht">
 
-            <a>Kursübersicht</a>
+            <a>Kreativkurse Winterthur</a>
 
-            </Link> </h3>
+            </Link> finden Sie alle Kurse von deintanz.</h3>
 
 
               
