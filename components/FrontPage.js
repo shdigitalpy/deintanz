@@ -252,7 +252,7 @@ export default function FrontPage() {
 
             <a>Kreativkurse Winterthur</a>
 
-            </Link> finden Sie alle Kurse von deintanz.</h3>
+            </Link> finden Sie alle Kurse von Dein Tanz.</h3>
 
 
               

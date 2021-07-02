@@ -25,7 +25,8 @@ export default function Kontakt() {
 		<Layout>
 			
 		<Head>
-	     <title>Kontakt</title>
+	     <title>Kontakt | Dein Tanz</title>
+       <meta name="description" content="Nehmen Sie Kontakt auf mit Dein Tanz bei Fragen oder zur Anmeldung eines Kurses." />
 	      </Head>
 
 

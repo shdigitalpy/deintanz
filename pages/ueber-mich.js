@@ -14,7 +14,8 @@ export default function UeberMich() {
 		<Layout>
 			
 		<Head>
-	     <title>test</title>
+	     <title>Über mich Regula Leemann | Dein Tanz</title>
+       <meta name="description" content="Regula Leemann ist die Kursleiterin bei Dein Tanz aus Winterthur" />
 	      </Head>
 
 

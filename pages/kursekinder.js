@@ -21,7 +21,7 @@ export default function Angebote() {
   	<Layout>
 
   		<Head>
-      <title>Kurse für Kinder Winterthur | Deintanz</title>
+      <title>Kurse für Kinder Winterthur | Dein Tanz</title>
       <meta name="description" content="Kurse für Kinder Winterthur: Soziale Fähigkeiten durch Bewegung steigern" />
       
       <link rel="icon" href="/favicon.ico" />

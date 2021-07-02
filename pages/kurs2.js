@@ -21,7 +21,7 @@ export default function Kurs2() {
   	<Layout>
 
   		<Head>
-      <title>Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren | Deintanz</title>
+      <title>Tanzen & Bewegen von 7 bis 11 Jahren | Dein Tanz</title>
       <meta name="description" content="Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren" />
       
       <link rel="icon" href="/favicon.ico" />

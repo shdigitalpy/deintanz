@@ -14,8 +14,8 @@ export default function Home() {
 
     <Layout>
       <Head>
-        <title>Kreative Tanzschule Winterthur | deintanz</title>
-         <meta name="description" content="Tanzschule Winterthur: Bei deintanz lernen Kinder und Erwachsene soziale Fähigkeiten durch Tanzen" />
+        <title>Kreative Tanzschule Winterthur | Dein Tanz</title>
+         <meta name="description" content="Tanzschule Winterthur: Bei Dein Tanz lernen Kinder und Erwachsene soziale Fähigkeiten durch Tanzen" />
       </Head>
 
      	 <div className={frontpageStyles.geist}>

@@ -21,7 +21,7 @@ export default function Kurs1() {
   	<Layout>
 
   		<Head>
-      <title>Tanz, Bewegung & Entspannung für Kinder von 4 bis 8 Jahren | Deintanz</title>
+      <title>Tanzkurs für Kinder von 4 bis 8 Jahren | Dein Tanz</title>
       <meta name="description" content="Tanz, Bewegung & Entspannung für Kinder von 4 bis 8 Jahren" />
       
       <link rel="icon" href="/favicon.ico" />
