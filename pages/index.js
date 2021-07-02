@@ -4,7 +4,7 @@ import Image from 'next/image'
 import FrontPage from './../components/FrontPage'
 import frontpageStyles from '../styles/frontpage.module.css'
 import { motion } from "framer-motion"
-
+import Pixel from '../components/Pixel'
 
 
 export default function Home() {
@@ -17,6 +17,8 @@ export default function Home() {
         <title>Kreative Tanzschule Winterthur | Dein Tanz</title>
          <meta name="description" content="Tanzschule Winterthur: Bei Dein Tanz lernen Kinder und Erwachsene soziale Fähigkeiten durch Tanzen" />
       </Head>
+
+      <Pixel name='FACEBOOK_PIXEL_1' />
 
      	 <div className={frontpageStyles.geist}>
           
