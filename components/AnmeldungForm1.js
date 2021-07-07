@@ -8,12 +8,13 @@ import anmeldungStyles from '../styles/anmeldung.module.css'
 
 export default function AnmeldungForm() {
 
+
   const [submitted, setSubmitted] = React.useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
 
-  emailjs.sendForm("sandro_shd", "deintanz", e.target, "user_qFh9QUNe6m8dcaGNVdD0x")
+  emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
