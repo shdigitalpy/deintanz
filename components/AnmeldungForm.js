@@ -30,11 +30,12 @@ export default function AnmeldungForm() {
 
 
   }
-  
+
 
   return (
 
   	<>
+
 
 
       <div className={anmeldungStyles.wrapper}>
@@ -252,5 +253,4 @@ export default function AnmeldungForm() {
 )
 
 }
-
 
