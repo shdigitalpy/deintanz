@@ -15,7 +15,8 @@ export default function Home() {
     <Layout>
       <Head>
         <title>Kreative Tanzschule Winterthur | Dein Tanz</title>
-         <meta name="description" content="Tanzschule Winterthur: Bei Dein Tanz lernen Kinder und Erwachsene soziale Fähigkeiten durch Tanzen" />
+         <meta name="description" content="Dein Tanz - Bewegt mehr als Du denkst. Kreativer Kindertanz in Winterthur. 
+Tanz, Bewegung und Entspannung. " />
       </Head>
 
       <Pixel name='FACEBOOK_PIXEL_1' />
