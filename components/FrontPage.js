@@ -221,10 +221,10 @@ export default function FrontPage() {
 				    </Link></p>
      			<br />
      			<Image
-          src="/images/kurs3.jpg" // Route of the image file
+          src="/images/kurskinder.webp" // Route of the image file
           height={300} // Desired size with correct aspect ratio
           width={300} // Desired size with correct aspect ratio
-          alt="Regula Leemann"
+          alt="Kurskinder"
           className="roundedfull"
 
           />

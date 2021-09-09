@@ -50,6 +50,9 @@ export default function KurseSlider() {
 }} className="mySwiper">
   <SwiperSlide>
 
+
+ 
+
   	<Image
           src="/images/kursraum.webp" // Route of the image file
           alt="Regula Leemann"
@@ -92,12 +95,12 @@ export default function KurseSlider() {
 
 
 
-  	<Image
-          src="/images/kurs.webp" // Route of the image file
-          alt="Regula Leemann"
+  	 <Image
+          src="/images/kurshilfsmittel.jpg" // Route of the image file
+          alt="Kurshilfsmittel"
           layout="responsive"
-		      width={1000}
-		      height={800}
+          width={1000}
+          height={800}
 
           />
 

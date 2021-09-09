@@ -125,10 +125,25 @@ export default function TanzStundeDetails3() {
               
           </div>{/*end 1st tanzstunde*/}
 
+           
+
+            
+
 
 
 
      </div>
+
+     <Image
+              src="/images/kursmittel2.jpg" // Route of the image file
+              height={500} // Desired size with correct aspect ratio
+              width={500} // Desired size with correct aspect ratio
+              alt="Kursmittel 2"
+              className="roundedfull"
+           
+
+            />
+
 
      <FragenDetails />
 
