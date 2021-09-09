@@ -84,27 +84,7 @@ export default function FrontPage() {
 		      			
 		      			</div>{/*end angbox*/}
 
-		      			<div className={frontpageStyles.angbox}>
-		       	<Link href="/kurs3" passHref>
-		      			<a>
-		      			<Image
-		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt="Regula Leemann"
-		          className="resize"
-	         
-
-	          /></a></Link>
-
-	          	<Link href="/kurs3" passHref>
-		      			<a className={frontpageStyles.link}>
-		        <p>Mutter- / Vater-Kinderstunde
-		       		<br />für Kinder von <b>4 bis 8 Jahren </b></p>
-		        		</a></Link>
 		      			
-
-		      			</div>{/*end angbox*/}
 
 
 		       	<div className={frontpageStyles.angbox}>
@@ -138,20 +118,24 @@ export default function FrontPage() {
 		      			<h3>Für Erwachsene</h3>
 		      			<div className={frontpageStyles.angboxwrapper}>
 
-
-
 		      			<div className={frontpageStyles.angbox}>
-		       			<Image
-		          src="/images/eltern-kind.jpg" // Route of the image file
+		       	<Link href="/kurs3" passHref>
+		      			<a>
+		      			<Image
+		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
 		          height={300} // Desired size with correct aspect ratio
 		          width={300} // Desired size with correct aspect ratio
 		          alt="Regula Leemann"
-		    
+		          className="resize"
+	         
 
-		          />
-		        <p>Tanzen für Eltern und Kinder
-		       		<br />Informationen folgen</p>
-		        		
+	          /></a></Link>
+
+	          	<Link href="/kurs3" passHref>
+		      			<a className={frontpageStyles.link}>
+		        <p>Mutter- / Vater-Kinderstunde
+		       		<br />für Kinder von <b>4 bis 8 Jahren </b></p>
+		        		</a></Link>
 		      			
 
 		      			</div>{/*end angbox*/}

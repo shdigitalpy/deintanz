@@ -51,7 +51,7 @@ export default function FrontPage() {
 		              	
  						<h3>Für Kinder</h3>
  						<p>Nachfolgend finden Sie unsere Kreativkurse für Kinder aller Alterklassen. Suchen Sie nur nach Kursen für Kinder, hier finden Sie weitere Informationen zu den <Link href="/kursekinder">
-				   <a><b>Kursen für Kinder in Winterthur</b></a>
+				   <a><b>Kursen für Kinder</b></a>
 				    </Link>.</p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
@@ -81,34 +81,7 @@ export default function FrontPage() {
 		      			</div>{/*end angbox*/}
 
 
-		      			<div className={kursoverviewStyles.angbox}>
-		       	
-
-		       	<Link href="/kurs3" passHref>
-		      			<a>
-
-
-		      			<Image
-		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt="Regula Leemann"
-		          className="resize"
-		          
-	         
-
-	          /></a></Link>
-		        
-
-		        	<Link href="/kurs3" passHref>
-		      			<a className={kursoverviewStyles.link}>
-		        <p>Mutter- / Vater-Kinderstunde
-		        <br />für Kinder von <b>4 bis 8 Jahren </b></p>
-		        		</a></Link>
-		        		
 		      			
-
-		      			</div>{/*end angbox*/}
 
 
 		      			
@@ -147,22 +120,35 @@ export default function FrontPage() {
 		      			<br />
 
 		      			<h3>Für Erwachsene</h3>
-		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene in Winterthur mit oder ohne Kinder. </p>
+		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
 
 
 		      			<div className={kursoverviewStyles.angbox}>
-		       			<Image
-		          src="/images/eltern-kind.jpg" // Route of the image file
+		       	
+
+		       	<Link href="/kurs3" passHref>
+		      			<a>
+
+
+		      			<Image
+		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
 		          height={300} // Desired size with correct aspect ratio
 		          width={300} // Desired size with correct aspect ratio
 		          alt="Regula Leemann"
-		    
+		          className="resize"
+		          
+	         
 
-		          />
-		        <p>Tanzen für Eltern und Kinder
-		       		<br />Informationen folgen</p>
+	          /></a></Link>
+		        
+
+		        	<Link href="/kurs3" passHref>
+		      			<a className={kursoverviewStyles.link}>
+		        <p>Mutter- / Vater-Kinderstunde
+		        <br />für Kinder von <b>4 bis 8 Jahren </b></p>
+		        		</a></Link>
 		        		
 		      			
 
