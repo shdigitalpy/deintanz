@@ -15,7 +15,7 @@ export default function FragenDetails (props) {
 			<div className={fragenStyles.probe1}>
 
         	<h4>Kontakt aufnehmen bei Fragen</h4>
-        	<p>Der Einstieg in die Kurse für Kinder in Winterthur ist jederzeit möglich. 
+        	<p>Der Einstieg in die Kurse für Kinder ist jederzeit möglich. 
         	Melden Sie Ihr Kind auch zu einer kostenlosen Schnupperlektion an. Das entsprechende Formular finden Sie unten.<br />
 		    <br /> Bei Fragen können Sie gerne mich, Regula Leemann, gerne <Link href="/kontakt">
 

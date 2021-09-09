@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from './../components/layout'
 import AngeboteHeader from './../components/AngeboteHeader'
-import TanzStundeDetails2 from './../components/TanzStundeDetails2'
+import TanzStundeDetails3 from './../components/TanzStundeDetails3'
 import KurseSlider from './../components/KurseSlider'
 import Fragen from './../components/Fragen'
 import AnmeldungForm1 from './../components/AnmeldungForm1'
@@ -21,7 +21,7 @@ export default function Kurs2() {
   	<Layout>
 
   		<Head>
-      <title>Tanzen & Bewegen von 7 bis 11 Jahren | Dein Tanz</title>
+      <title>Mutter / Vater - Kinderstunde | Dein Tanz</title>
       <meta name="description" content="Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren" />
       
       <link rel="icon" href="/favicon.ico" />
@@ -44,9 +44,11 @@ export default function Kurs2() {
       
       </motion.div>
 
-      <TanzStundeDetails2 />
+      <TanzStundeDetails3 />
 
       
+      
+      <AnmeldungForm1 />
       
       
 	</Layout>

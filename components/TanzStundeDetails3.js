@@ -3,14 +3,14 @@ import FragenDetails from './../components/FragenDetails'
 import tanzstundeStyles from '../styles/tanzstunde.module.css'
 import Image from 'next/image'
 
-export default function TanzStundeDetails2() {
+export default function TanzStundeDetails3() {
 
   return (
 
 
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
-      <h1>Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren</h1>
+      <h1>Mutter- / Vater-Kinderstunde <br />von 4 bis 8 Jahren</h1>
 
       </div>
 
@@ -21,14 +21,19 @@ export default function TanzStundeDetails2() {
         
 
       
-      <p>Die Tanz- und Bewegungsstunden von «Dein Tanz» bieten Raum für Entfaltung. Hier darf man ganz sich selbst sein. Mit Papier, Malstiften, Trommeln, Schlaghölzern sowie Geschichten zum Entspannen und Träumen werden verschiedene Sinne geweckt. Ihr Kind lernt auf  spielerische Weise seinen Körper besser kennen und gewinnt somit mehr Selbstvertrauen und einen  besseren Zugang zu seinen Gefühlen. Soziale Fähigkeiten, Kreativität, Fantasie, Musik- und Rhythmusgefühl werden ebenso gefördert.
+      <p>Möchtest Du abschalten vom Alltag, Dich mit deinem Kind/Kindern zusammen bewegen und
+    entspannen? Eure Beziehung stärken oder einfach eine schöne Stunde zusammen verbringen.<br />
+    Zusammen tauchen wir ein in verschiedene Themen, Welten, Figuren und Gefühle.<br />
+    Am Anfang gibt es eine Begrüssungsrund, dann gehen wir zusammen in den Körper, durch Massagen,
+    Körperwahrnehmungsübungen. Danach wird getanzt - bewegt und gespielt und manchmal musiziert.
+    Am Schluss ist Kuscheln und Entspannungszeit so wie ein gemeinsames Bild darf gemalt werden.
       </p>
 
       </div>
 
       <div className={tanzstundeStyles.twocolumn}>
       <Image
-              src="/images/kurs.jpg" // Route of the image file
+              src="/images/kinder-4-8jahre.jpg" // Route of the image file
               height={300} // Desired size with correct aspect ratio
               width={300} // Desired size with correct aspect ratio
               alt="Regula Leemann"
@@ -66,14 +71,14 @@ export default function TanzStundeDetails2() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Tanz, Bewegung & Entspannung</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Mutter- / Vater-Kinderstunde</p></div>
                 	
                 </div>
 
                <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wer</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 7 bis 11 Jahren</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 4 bis 8 Jahren</p></div>
                 	
                 </div>
 
@@ -82,7 +87,7 @@ export default function TanzStundeDetails2() {
                         <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wann</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>Findet im Moment nur auf Anfrage statt</strong></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>20.09.2021, 4.10.2021, 25.10.2021,<br /> 8.11.2021, 22.11.2021, 6.12.2021<br />Zeit von 16:00 Uhr bis 17:15 Uhr </p></div>
                 	
                 </div>
 
@@ -96,7 +101,7 @@ export default function TanzStundeDetails2() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Preis</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>145.00 CHF pro Quartal</strong></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>6 x 120.00 CHF oder Einzelbuchung<br /></strong></p></div>
                 	
                 </div>
         		

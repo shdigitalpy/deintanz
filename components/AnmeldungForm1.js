@@ -134,18 +134,18 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                <label class="container">Montag 16:00 bis 17:00 Uhr
-                <input type="checkbox" name="kursanmeldung" value="Montag 16:00 bis 17:00 Uhr" />
+                 <label class="container">20.9, 4.10, 25.10, 8.11, 22.11, 6.12.
+                <input type="checkbox" name="kursanmeldung" value="Mutter- / Vater-Kinderstunde 20.9, 4.10, 25.10, 8.11, 22.11, 6.12." />
                 <span class="checkmark"></span>
                 </label>            
                 <br/>
-                <label class="container">Ich habe Interesse an weiteren Terminen
-                <input type="checkbox" name="interesse" value="Ich habe Interesse an weiteren Terminen" />
+                <label class="container">Einzelbuchung (Datum bitte unter Bemerkung angeben)
+                <input type="checkbox" name="interesse" value="Mutter- / Vater-Kinderstunde Einzelbuchung (Datum bitte unter Bemerkung angeben)" />
                 <span class="checkmark"></span>
                 </label>
                 <br/>
                 <label class="container">Schnuppernachmittag (kostenlos)
-                <input type="checkbox" name="schnupper" value="Schnuppernachmittag" />
+                <input type="checkbox" name="schnupper" value="Mutter- / Vater-Kinderstunde Schnuppernachmittag (kostenlos)" />
                 <span class="checkmark"></span>
                 </label>
                 </div>
@@ -193,15 +193,11 @@ export default function AnmeldungForm() {
               <div>
               <h3>Abrechnung</h3>
               <br />
-              <p>Preis pro Quartal, CHF 145.00.</p>
-              <p>Die Rechnung wird vor Quartalsbeginn per E-Mail versendet. Die Quartale werden wie folgt aufgeteilt:</p>
-              <p>1. Quartal: Weihnachtsferien bis Frühlingsferien</p>
-              <p>2. Quartal: Frühlingsferien bis Sommerferien
-              </p>
-              <p>3. Quartal: Sommerferien bis Herbstferien
+              <p>Preis:</p>
+              <p>6 x 120.00 CHF oder Einzelbuchung
             </p>
-              <p>4. Quartal: Herbstferien bis Weihnachtsferien
-            </p>
+            <p>Dieser Kurs kann nach einer gratis Schnupperlektion auch einzeln gebucht werden. Der Preis ist dann Fr. 20.00 pro Kind / Datum. Dies kann auch Bar oder mit Twint vor Kursbeginn bezahlt werden.
+</p>
             </div>
 
             <br />
@@ -215,8 +211,8 @@ export default function AnmeldungForm() {
 
             <br />
             <div>
-            <h3>Ferien</h3>
-            <p>Während den Winterthurer Schulferien finden keine Kurse statt.</p>
+            <h3>Zeitpunkt</h3>
+            <p>20.9.2021, 4.10.2021, 25.10.2021, 8.11.2021, 22.11.2021, 6.12.2021</p>
             </div>
             <br />
             <div>
