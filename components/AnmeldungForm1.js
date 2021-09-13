@@ -134,7 +134,7 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                 <label class="container">20.9, 4.10, 25.10, 8.11, 22.11, 6.12.
+                 <label class="container">27.9, 4.10, 25.10, 8.11, 22.11, 6.12.
                 <input type="checkbox" name="kursanmeldung" value="Mutter- / Vater-Kinderstunde 20.9, 4.10, 25.10, 8.11, 22.11, 6.12." />
                 <span class="checkmark"></span>
                 </label>            
@@ -194,10 +194,10 @@ export default function AnmeldungForm() {
               <h3>Abrechnung</h3>
               <br />
               <p>Preis:</p>
-              <p>6 x 120.00 CHF oder Einzelbuchung
+              <p>6er Abo: Fr. 120.00
+              Einzelbuchungen: Fr. 25.00 (kann vor der Stunde, Bar oder mit Twint bezahlt werden.)
             </p>
-            <p>Dieser Kurs kann nach einer gratis Schnupperlektion auch einzeln gebucht werden. Der Preis ist dann Fr. 20.00 pro Kind / Datum. Dies kann auch Bar oder mit Twint vor Kursbeginn bezahlt werden.
-</p>
+            
             </div>
 
             <br />
@@ -212,7 +212,7 @@ export default function AnmeldungForm() {
             <br />
             <div>
             <h3>Zeitpunkt</h3>
-            <p>20.9.2021, 4.10.2021, 25.10.2021, 8.11.2021, 22.11.2021, 6.12.2021</p>
+            <p>27.9.2021, 4.10.2021, 25.10.2021, 8.11.2021, 22.11.2021, 6.12.2021</p>
             </div>
             <br />
             <div>

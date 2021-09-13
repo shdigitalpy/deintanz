@@ -79,7 +79,7 @@ export default function FrontPage() {
 		       		<Link href="/kurs1" passHref>
 		      			<a className={frontpageStyles.link}>
 		        <p>Tanz, Bewegung & Entspannung
-		       		<br />für Kinder von <b>4 bis 8 Jahren</b></p>
+		       		<br />für Kinder von <b>ab 4 bis 8 Jahren</b></p>
 		        		</a></Link>
 		      			
 		      			</div>{/*end angbox*/}
@@ -87,27 +87,7 @@ export default function FrontPage() {
 		      			
 
 
-		       	<div className={frontpageStyles.angbox}>
-		       	<Link href="/kurs2" passHref>
-		      			<a>
-		      			<Image
-		          src="/images/kurs.jpg" // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt="Regula Leemann"
-		          className="resize"
-	         
-
-	          /></a></Link>
-
-	          	<Link href="/kurs2" passHref>
-		      			<a className={frontpageStyles.link}>
-		        <p>Tanz, Bewegung & Entspannung
-		       		<br />für Kinder von <b>7 bis 11 Jahren</b><br />(Nur auf Anfrage)</p>
-		        		</a></Link>
-		      			
-
-		      			</div>{/*end angbox*/}
+		       	
 
 		      			</div>{/*end angwrapper*/}
 
@@ -115,14 +95,14 @@ export default function FrontPage() {
 		      			<br />
 
 
-		      			<h3>Für Erwachsene</h3>
+		      			<h3>Für Erwachsene & Kinder</h3>
 		      			<div className={frontpageStyles.angboxwrapper}>
 
 		      			<div className={frontpageStyles.angbox}>
 		       	<Link href="/kurs3" passHref>
 		      			<a>
 		      			<Image
-		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
+		          src="/images/kind-erwachsene1.jpg" // Route of the image file
 		          height={300} // Desired size with correct aspect ratio
 		          width={300} // Desired size with correct aspect ratio
 		          alt="Regula Leemann"
@@ -134,7 +114,7 @@ export default function FrontPage() {
 	          	<Link href="/kurs3" passHref>
 		      			<a className={frontpageStyles.link}>
 		        <p>Mutter- / Vater-Kinderstunde
-		       		<br />für Kinder von <b>4 bis 8 Jahren </b></p>
+		       		<br />für Kinder ab <b>4 Jahren </b></p>
 		        		</a></Link>
 		      			
 

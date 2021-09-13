@@ -96,7 +96,7 @@ export default function KurseSlider() {
 
 
   	 <Image
-          src="/images/kurshilfsmittel.jpg" // Route of the image file
+          src="/images/trommel.jpg" // Route of the image file
           alt="Kurshilfsmittel"
           layout="responsive"
           width={1000}
@@ -115,7 +115,7 @@ export default function KurseSlider() {
 
 
   	<Image
-          src="/images/kursraum2.webp" // Route of the image file
+          src="/images/kursmittel2-slider.jpg" // Route of the image file
           alt="Regula Leemann"
           layout="responsive"
 		      width={1000}

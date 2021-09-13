@@ -119,7 +119,7 @@ export default function FrontPage() {
 		      			<br />
 		      			<br />
 
-		      			<h3>Für Erwachsene</h3>
+		      			<h3>Für Erwachsene & Kinder</h3>
 		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
@@ -133,7 +133,7 @@ export default function FrontPage() {
 
 
 		      			<Image
-		          src="/images/kinder-4-8jahre.jpg" // Route of the image file
+		          src="/images/kind-erwachsene1.jpg" // Route of the image file
 		          height={300} // Desired size with correct aspect ratio
 		          width={300} // Desired size with correct aspect ratio
 		          alt="Regula Leemann"
