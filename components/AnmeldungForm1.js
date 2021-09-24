@@ -144,10 +144,7 @@ export default function AnmeldungForm() {
                 <span class="checkmark"></span>
                 </label>
                 <br/>
-                <label class="container">Schnuppernachmittag (kostenlos)
-                <input type="checkbox" name="schnupper" value="Mutter- / Vater-Kinderstunde Schnuppernachmittag (kostenlos)" />
-                <span class="checkmark"></span>
-                </label>
+                
                 </div>
                 </div>
                 
