@@ -50,9 +50,7 @@ export default function FrontPage() {
       <div className={kursoverviewStyles.ang1}>
 		              	
  						<h3>Für Kinder</h3>
- 						<p>Nachfolgend finden Sie unsere Kreativkurse für Kinder aller Alterklassen. Suchen Sie nur nach Kursen für Kinder, hier finden Sie weitere Informationen zu den <Link href="/kursekinder">
-				   <a><b>Kursen für Kinder</b></a>
-				    </Link>.</p>
+ 						<p>Hier finden Sie unser Angebot für den Kreativen Tanzkurs für Kinder.</p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
 		      			<div className={kursoverviewStyles.angbox}>
@@ -72,7 +70,7 @@ export default function FrontPage() {
 		       		<Link href="/kurs1" passHref>
 		      			<a className={kursoverviewStyles.link}>
 		        <p>Tanz, Bewegung & Entspannung
-		       		<br />für Kinder von <b>4 bis 8 Jahren</b></p>
+		       		<br />für Kinder von <b>5 bis 10 Jahren</b></p>
 		        		</a></Link>
 		      			
 		       			
@@ -86,32 +84,7 @@ export default function FrontPage() {
 
 		      			
 
-		       	<div className={kursoverviewStyles.angbox}>
-		       	<Link href="/kurs2" passHref>
-		      			<a>
-
-
-		      			<Image
-		          src="/images/kurs.jpg" // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt="Regula Leemann"
-		          className="resize"
-		          
-	         
-
-	          /></a></Link>
-		        
-
-		        	<Link href="/kurs2" passHref>
-		      			<a className={kursoverviewStyles.link}>
-		        <p>Tanz, Bewegung & Entspannung
-		       		<br />für Kinder von <b>7 bis 11 Jahren </b><br />(Nur auf Anfrage)</p>
-		        		</a></Link>
-		        		
-		      			
-
-		      			</div>{/*end angbox*/}
+		       	
 
 		      			</div>{/*end angwrapper*/}
 
@@ -119,7 +92,7 @@ export default function FrontPage() {
 		      			<br />
 		      			<br />
 
-		      			<h3>Für Erwachsene & Kinder</h3>
+		      			<h3>Mutter/Vater - Kind - Zeit</h3>
 		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
 		      			<div className={kursoverviewStyles.angboxwrapper}>
 
@@ -147,7 +120,63 @@ export default function FrontPage() {
 		        	<Link href="/kurs3" passHref>
 		      			<a className={kursoverviewStyles.link}>
 		        <p>Mutter- / Vater-Kinderstunde
-		        <br />für Kinder von <b>4 bis 8 Jahren </b></p>
+		        <br />für Kinder von <b>4 bis 12 Jahren </b></p>
+		        		</a></Link>
+		        		
+		      			
+
+		      			</div>{/*end angbox*/}
+
+		      			
+
+		        	</div>{/*end angwrapper*/}
+
+
+		      	 <motion.div whileHover={{
+
+					        scale: 1.1,
+					        transition: {
+					          duration: .2
+					        }
+
+
+					      }}>
+		        
+
+				   </motion.div>
+
+				   <br />
+		      			<br />
+
+		      			<h3>Neu für Erwachsene ab Mai 2022</h3>
+		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
+		      			<div className={kursoverviewStyles.angboxwrapper}>
+
+
+
+		      			<div className={kursoverviewStyles.angbox}>
+		       	
+
+		       	<Link href="" passHref>
+		      			<a>
+
+
+		      			<Image
+		          src="/images/kind-erwachsene1.jpg" // Route of the image file
+		          height={300} // Desired size with correct aspect ratio
+		          width={300} // Desired size with correct aspect ratio
+		          alt="Regula Leemann"
+		          className="resize"
+		          
+	         
+
+	          /></a></Link>
+		        
+
+		        	<Link href="" passHref>
+		      			<a className={kursoverviewStyles.link}>
+		        <p>Tanz, Bewegung und Entspannung für Erwachsene
+		        ab <b>Mai 2022 </b></p>
 		        		</a></Link>
 		        		
 		      			
@@ -171,19 +200,6 @@ export default function FrontPage() {
 		      			</div>{/*end angbox*/}
 
 		        	</div>{/*end angwrapper*/}
-
-		      	 <motion.div whileHover={{
-
-					        scale: 1.1,
-					        transition: {
-					          duration: .2
-					        }
-
-
-					      }}>
-		        
-
-				   </motion.div>
 
    	</div>{/*end ang1*/}
 

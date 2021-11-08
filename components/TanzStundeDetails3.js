@@ -10,7 +10,8 @@ export default function TanzStundeDetails3() {
 
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
-      <h1>Mutter- / Vater-Kinderstunde <br />ab 4 Jahren</h1>
+      <h1>Mutter/Vater - Kind- Zeit <br />von 4 bis 12 Jahren</h1>
+      <h2>Gönne Dir eine schöne Zeit mit Deinem Kind</h2>
 
       </div>
 
@@ -21,7 +22,7 @@ export default function TanzStundeDetails3() {
         
 
       
-      <p>Möchtest Du abschalten vom Alltag, Dich mit deinem Kind/Kindern zusammen bewegen und
+      <p>Möchtest Du abschalten vom Alltag, Dich mit deinem Kind zusammen bewegen und
 entspannen? Eure Beziehung stärken oder einfach eine schöne Stunde zusammen verbringen.
 Gemeinsam tauchen wir ein in verschiedene Themen, Welten, Figuren und Gefühle.
 Wir starten mit einer Begrüssungsrunde, dann gehen wir zusammen in den Körper durch Massagen
@@ -72,14 +73,14 @@ gemalt werden.
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Mutter- / Vater-Kinderstunde</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Mutter/Vater - Kind- Zeit</p></div>
                 	
                 </div>
 
                <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wer</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder ab 4 Jahren</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 4 bis 12 Jahren</p></div>
                 	
                 </div>
 
@@ -88,21 +89,21 @@ gemalt werden.
                         <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wann</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>27.09.2021, 4.10.2021, 25.10.2021,<br /> 8.11.2021, 22.11.2021, 6.12.2021<br />Zeit von 16:00 Uhr bis 17:15 Uhr </p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>Dienstags an folgenden Daten:  <br />25.1, 22.2, 22.3, 12.4.2022  <br />Zeit von 17:30 Uhr bis 19:00 Uhr</p></div>
                 	
                 </div>
 
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.haus-zum-widder.ch/willkommen.html"><a target="_blank">Im Haus zum Widder</a></Link>, in 8400 Winterthur</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.babafe.ch/tanzraum.html"><a target="_blank">Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</a></Link></p></div>
                 	
                 </div>
 
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Preis</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>6er Abo CHF 120.00 oder Einzelbuchung CHF 25.00<br /></strong></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>CHF 35.00 für beide<br /></strong></p></div>
                 	
                 </div>
         		
@@ -146,7 +147,7 @@ gemalt werden.
             />
 
 
-     <FragenDetails />
+
 
      </div>
 

@@ -21,8 +21,8 @@ export default function Kurs1() {
   	<Layout>
 
   		<Head>
-      <title>Tanzkurs für Kinder von 4 bis 8 Jahren | Dein Tanz</title>
-      <meta name="description" content="Tanz, Bewegung & Entspannung für Kinder von 4 bis 8 Jahren" />
+      <title>Tanzkurs für Kinder von 5 bis 10 Jahren | Dein Tanz</title>
+      <meta name="description" content="Tanz, Bewegung & Entspannung für Kinder von 5 bis 10 Jahren" />
       
       <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -44,8 +44,9 @@ export default function Kurs1() {
       
       </motion.div>
 
-      <TanzStundeDetails />
+    <TanzStundeDetails />
 
+     <KurseSlider />
       
       
       <AnmeldungForm />

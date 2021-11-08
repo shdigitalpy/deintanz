@@ -133,13 +133,13 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                <label class="container">Montag 14:30 bis 15:30 Uhr
+                <label class="container">Kurs in Frauenfeld von 14:30 Uhr bis 15:30 Uhr
                 <input type="checkbox" name="kursanmeldung" value="Montag 14:30 bis 15:30 Uhr" />
                 <span class="checkmark"></span>
                 </label>            
                 <br/>
-                <label class="container">Ich habe Interesse an weiteren Terminen
-                <input type="checkbox" name="interesse" value="Ich habe Interesse an weiteren Terminen" />
+                <label class="container">Kurs in Winterthur von 16:00 Uhr bis 17:00 Uhr
+                <input type="checkbox" name="interesse" value="Kurs in Winterthur von 16:00 Uhr bis 17:00 Uhr" />
                 <span class="checkmark"></span>
                 </label>
                 <br/>
@@ -192,7 +192,7 @@ export default function AnmeldungForm() {
               <div>
               <h3>Abrechnung</h3>
               <br />
-              <p>Preis pro Quartal, CHF 145.00.</p>
+              <p>Preis pro Quartal, 6 x CHF 110.00.</p>
               <p>Die Rechnung wird vor Quartalsbeginn per E-Mail versendet. Die Quartale werden wie folgt aufgeteilt:</p>
               <p>1. Quartal: Weihnachtsferien bis Frühlingsferien</p>
               <p>2. Quartal: Frühlingsferien bis Sommerferien

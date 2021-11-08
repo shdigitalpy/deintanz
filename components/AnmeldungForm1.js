@@ -46,12 +46,11 @@ export default function AnmeldungForm() {
           <div className={anmeldungStyles.anmeldeformular}>
 
             <div className={anmeldungStyles.anmeldeheader}>
-              <h3>Anmeldeformular
-          Tanz und Bewegungsstunde</h3> 
+              <h3>Anmeldeformular</h3> 
 
           <br />
 
-          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>.</p>
+          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>, dann wäre es für jeden Kurs und alle geeignet.</p>
           
 
             </div>  
@@ -134,7 +133,7 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                 <label class="container">27.9, 4.10, 25.10, 8.11, 22.11, 6.12.
+                 <label class="container">25.1, 22.2, 22.3, 12.4.2022
                 <input type="checkbox" name="kursanmeldung" value="Mutter- / Vater-Kinderstunde 20.9, 4.10, 25.10, 8.11, 22.11, 6.12." />
                 <span class="checkmark"></span>
                 </label>            
@@ -191,8 +190,8 @@ export default function AnmeldungForm() {
               <h3>Abrechnung</h3>
               <br />
               <p>Preis:</p>
-              <p>6er Abo: Fr. 120.00
-              Einzelbuchungen: Fr. 25.00 (kann vor der Stunde, Bar oder mit Twint bezahlt werden.)
+              <p>CHF 35.00 für beide
+              (kann vor der Stunde, Bar oder mit Twint bezahlt werden.)
             </p>
             
             </div>
@@ -209,7 +208,7 @@ export default function AnmeldungForm() {
             <br />
             <div>
             <h3>Zeitpunkt</h3>
-            <p>27.9.2021, 4.10.2021, 25.10.2021, 8.11.2021, 22.11.2021, 6.12.2021</p>
+            <p>25.1, 22.2, 22.3, 12.4.2022</p>
             </div>
             <br />
             <div>

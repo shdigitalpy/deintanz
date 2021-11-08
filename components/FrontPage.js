@@ -79,7 +79,7 @@ export default function FrontPage() {
 		       		<Link href="/kurs1" passHref>
 		      			<a className={frontpageStyles.link}>
 		        <p>Tanz, Bewegung & Entspannung
-		       		<br />für Kinder von <b>ab 4 bis 8 Jahren</b></p>
+		       		<br />für Kinder von <b>ab 5 bis 10 Jahren</b></p>
 		        		</a></Link>
 		      			
 		      			</div>{/*end angbox*/}
@@ -95,7 +95,7 @@ export default function FrontPage() {
 		      			<br />
 
 
-		      			<h3>Für Erwachsene & Kinder</h3>
+		      			<h3>Mutter/Vater - Kind- Zeit</h3>
 		      			<div className={frontpageStyles.angboxwrapper}>
 
 		      			<div className={frontpageStyles.angbox}>
@@ -114,7 +114,39 @@ export default function FrontPage() {
 	          	<Link href="/kurs3" passHref>
 		      			<a className={frontpageStyles.link}>
 		        <p>Mutter- / Vater-Kinderstunde
-		       		<br />für Kinder ab <b>4 Jahren </b></p>
+		       		<br />für Kinder ab <b>4 bis 12 Jahren </b></p>
+		        		</a></Link>
+		      			
+
+		      			</div>{/*end angbox*/}
+
+		      			
+
+		        	</div>{/*end angwrapper*/}
+
+		        	<br />
+		      			<br />
+
+		        	<h3>Neu für Erwachsene ab Mai 2022</h3>
+		      			<div className={frontpageStyles.angboxwrapper}>
+
+		      			<div className={frontpageStyles.angbox}>
+		       	<Link href="" passHref>
+		      			<a>
+		      			<Image
+		          src="/images/tanzen-erwachsene.jpg" // Route of the image file
+		          height={300} // Desired size with correct aspect ratio
+		          width={300} // Desired size with correct aspect ratio
+		          alt="Regula Leemann"
+		          className="resize"
+	         
+
+	          /></a></Link>
+
+	          	<Link href="" passHref>
+		      			<a className={frontpageStyles.link}>
+		        <p>Tanz, Bewegung und Entspannung für Erwachsene
+		       		</p>
 		        		</a></Link>
 		      			
 
@@ -137,6 +169,8 @@ export default function FrontPage() {
 		      			</div>{/*end angbox*/}
 
 		        	</div>{/*end angwrapper*/}
+
+
 
 		      	 <motion.div whileHover={{
 
@@ -191,31 +225,26 @@ export default function FrontPage() {
      		</div>  
 
      		<div className={frontpageStyles.fpbox}>
-     			<h2>Aktuelles Angebot</h2>
+     			<h2>Meine Angebote</h2>
      			<br />
      			<h3>Tanz, Bewegung & Entspannung</h3>
      			<br />
-     			<p>Tanzen fördert die körperliche und geistige Entwicklung. Beim gemeinsamen Spielen, Tanzen, Musizieren oder Malen können die Kinder überschüssige Energien loswerden und dabei die eigene Kreativität entdecken. Die Tanz- und Bewegungsstunde möchte den Kindern die Gelegenheit bieten, Emotionen auszuleben und den Umgang mit anderen Kindern zu erlernen. Zum Abschluss helfen liebevolle Geschichten zum Träumen dabei, die Kinder nach den lebhaften Aktivitäten wieder zur Ruhe kommen zu lassen.</p>
-     			<p>Mehr zu den <Link href="/kursekinder">
-				   <a><b>Kursen für Kinder in Winterthur</b></a>
-				    </Link></p>
-     			<br />
-     			<Image
-          src="/images/kurskinder.webp" // Route of the image file
-          height={300} // Desired size with correct aspect ratio
-          width={300} // Desired size with correct aspect ratio
-          alt="Kurskinder"
-          className="roundedfull"
-
-          />
-
-          <style jsx global>{`
-		    .roundedfull {
-		      border-radius: 50%;
-
-
-		    }
-		  `}</style>
+     			<p>Bei Dein Tanz, Brauchst Du oder Dein Kind keine Tanzkenntnisse, sondern Spass am freien
+Improvisieren Deines Tanzes und Deiner Bewegung.
+Die Kurse von Dein Tanz beginnen immer mit Entspannung – oder Köperwahrnehmungsübungen, um
+ins Zentrum unseres Körpers und ins „hier und jetzt» zu kommen.
+Aus dieser Köperwahrnehmung gehen wir in die Bewegung, die immer verschieden gestaltet sein
+kann. Durch kleine Anleitungen von mir probieren wir verschiedene Bewegungen und
+Tanzmöglichkeiten in verschiedenen Raumebenen aus und folgen dabei unserem Körperimpuls. Auch
+kommen mal Musikinstrumente und unsere Stimme zum Einsatz wie auch Papier und Malstifte um
+Erlebtes aufzuschreiben oder zu malen.
+Gemeinsam in der ganzen Gruppe, zu zweit oder alleine gibt es verschiedene Möglichkeiten unser
+Bewegungsrepertoire zu erweitern (mal kraftvoll, mal fein, mal hoch, mal tief, mal langsam, mal
+schnell, mal eckig, mal rund). Unserer Kreativität und Fantasie sind keine Grenzen gesetzt.
+Ich freue mich auf die vielfältigen Stunden mit Dir oder Deinem Kind. Wo nur der Spass, die
+Kreativität und das Wahrnehmen Deines Tanzes im Vordergrund steht.
+				  </p>
+     			
      		</div> 
 
 
@@ -226,7 +255,7 @@ export default function FrontPage() {
      
      
 
-       <Fragen />
+
      
 
        <div>

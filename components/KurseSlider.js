@@ -48,22 +48,10 @@ export default function KurseSlider() {
     "spaceBetween": 50
   }
 }} className="mySwiper">
-  <SwiperSlide>
+  
 
 
- 
-
-  	<Image
-          src="/images/kursraum.webp" // Route of the image file
-          alt="Regula Leemann"
-          layout="responsive"
-		      width={1000}
-		      height={800}
-
-          />
-
-
-      </SwiperSlide>
+  
   <SwiperSlide>
 
   	<Image
