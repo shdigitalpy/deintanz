@@ -8,11 +8,55 @@ import KurseSlider from './../components/KurseSlider'
 import Fragen from './../components/Fragen'
 import AnmeldungForm1 from './../components/AnmeldungForm1'
 import { motion } from "framer-motion"
-  
+import {gql, GraphQLClient} from 'graphql-request'
 
 
-export default function Kurs2() {
+export const getStaticProps = async () => {
+
+  const url = process.env.GRAPH_CMS_URL
+
+  const graphQLClient = new GraphQLClient(url, {
+      headers: {
+        "Authorization" : `Bearer ${process.env.GRAPH_CMS_TOKEN}`
+      }
+
+  })
+
+
+  const query = gql`
+    query {
   
+    kurse(where: {slug: "test"}) {
+    id
+    title
+    description
+    slug
+    price
+    persona
+    location
+    urlLocation
+    wear
+  }
+  
+  
+}  `
+
+
+  const data = await graphQLClient.request(query)
+  const kurse = data.kurse
+
+  return {
+
+    props: {
+
+      kurse,
+    }
+  }
+
+  }
+
+export default function Kurs3({kurse}) {
+    console.log(kurse)
 
   return (
 

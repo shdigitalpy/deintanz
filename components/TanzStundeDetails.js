@@ -4,6 +4,8 @@ import tanzstundeStyles from '../styles/tanzstunde.module.css'
 import Image from 'next/image'
 import KurseSlider from './KurseSlider'
 
+
+
 export default function TanzStundeDetails() {
 
   return (
@@ -231,3 +233,4 @@ export default function TanzStundeDetails() {
 )
 
 }
+
