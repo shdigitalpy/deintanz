@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import fragenStyles from '../styles/fragen.module.css'
+import { RichText } from '@graphcms/rich-text-react-renderer';
 
-
-export default function FragenDetails (props) {
+export default function FragenDetails ({contact_text, props}) {
 
 
 	return (
@@ -15,13 +15,14 @@ export default function FragenDetails (props) {
 			<div className={fragenStyles.probe1}>
 
         	<h4>Kontakt aufnehmen bei Fragen</h4>
-        	<p>Der Einstieg in die Kurse für Kinder ist jederzeit möglich. 
-        	Melden Sie Ihr Kind auch zu einer kostenlosen Schnupperlektion an. Das entsprechende Formular finden Sie unten.<br />
-		    <br /> Bei Fragen können Sie gerne mich, Regula Leemann, gerne <Link href="/kontakt">
+        	<p>
 
-        		<a> kontaktieren</a>
+        	<RichText content={contact_text.raw} />
+				</p>
+        	<Link href="/kontakt">
+<a className={fragenStyles.btnfragen}>Kontakt</a>
 
-        		</Link>.</p>
+        		</Link>
         
 
 

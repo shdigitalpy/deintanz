@@ -93,7 +93,7 @@ export default function KurseOverview({ kurses }) {
 
 		       		<Link href={'/kurse/' + kurs.slug} passHref>
 		      			<a className={kursoverviewStyles.link}>
-	          	}
+	          	
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 
@@ -152,7 +152,7 @@ export default function KurseOverview({ kurses }) {
 
 		       		<Link href={'/kurse/' + kurs.slug} passHref>
 		      			<a className={kursoverviewStyles.link}>
-	          	}
+	          	
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 
@@ -225,7 +225,7 @@ export default function KurseOverview({ kurses }) {
 
 		       		<Link href={'/kurse/' + kurs.slug} passHref>
 		      			<a className={kursoverviewStyles.link}>
-	          	}
+	          	
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 

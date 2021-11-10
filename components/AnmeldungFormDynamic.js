@@ -32,9 +32,6 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
   }
 
 
-
-  
-
   return (
 
     <>
@@ -136,7 +133,7 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
 
                 <div style={{ display: text_anmeldung[0] ? "block" : "none"}}>
                  <label class="container">{ text_anmeldung ? text_anmeldung[0] : null }
-                <input type="checkbox" name="kursanmeldung" value={title + ' <br>' + text_anmeldung[0]} />
+                <input type="checkbox" name="kursanmeldung" value={title + ' <br>' + '<li>' + text_anmeldung[0] + '</li>' } />
                 <span class="checkmark"></span>
                 </label>    
                 </div>        
@@ -144,7 +141,7 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
 
                 <div style={{ display: text_anmeldung[1] ? "block" : "none"}}>
                 <label class="container">{ text_anmeldung ? text_anmeldung[1] : null }
-                <input type="checkbox" name="interesse" value={title + ' <br>' + text_anmeldung[1]} />
+                <input type="checkbox" name="interesse" value={' <br>' + '<li>' + text_anmeldung[1] + '</li>'} />
                 <span class="checkmark"></span>
                 </label>
 
@@ -154,10 +151,29 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
 
                 <br/>
 
-                  <label class="container">Schnuppernachmittag (kostenlos)
-                <input type="checkbox" name="schnupper" value="Schnuppernachmittag" />
+                   <div style={{ display: text_anmeldung[2] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[2] : null }
+                <input type="checkbox" name="kurs" value={' <br>' + '<li>' + text_anmeldung[2] + '</li>'} />
                 <span class="checkmark"></span>
                 </label>
+
+                </div>
+
+                <div style={{ display: text_anmeldung[3] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[3] : null }
+                <input type="checkbox" name="schnupper" value={' <br>' + '<li>' + text_anmeldung[3] + '</li>'} />
+                <span class="checkmark"></span>
+                </label>
+
+                </div>
+
+                <div style={{ display: text_anmeldung[4] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[4] : null }
+                <input type="checkbox" name="letztes" value={' <br>' + '<li>' + text_anmeldung[4] + '</li>'} />
+                <span class="checkmark"></span>
+                </label>
+
+                </div>
                 
                 </div>
                 </div>

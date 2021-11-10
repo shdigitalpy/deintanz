@@ -222,7 +222,7 @@ export default function FrontPage({ kurses }) {
 
 		       		<Link href={'/kurse/' + kurs.slug} passHref>
 		      			<a className={frontpageStyles.link}>
-	          	}
+	          	
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 

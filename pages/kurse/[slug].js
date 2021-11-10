@@ -75,6 +75,10 @@ export const getServerSideProps = async (pageContext) => {
       url
       fileName
     }
+
+    contact_text {
+      raw
+    }
     
 	  }
 	  
@@ -157,6 +161,7 @@ const Kurse = ({ kurse }) => {
 			datefrau={kurse.boxFrauenfeldDaten ? kurse.boxFrauenfeldDaten.raw : null}	
 			standortes={kurse.standortes}
       rundesEinzelbild={kurse.rundesEinzelbild}
+      contact_text={kurse.contact_text}
       />
 
       <KurseSliderDynamic images={kurse.sliderBilder} />

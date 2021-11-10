@@ -27,7 +27,8 @@ export default function TanzStundeDetailsDynamic({
   datefrau_wo, 
   datefrau_wolink,
   standortes,
-  rundesEinzelbild
+  rundesEinzelbild,
+  contact_text
 
 
    }) {
@@ -199,7 +200,13 @@ export default function TanzStundeDetailsDynamic({
 
         : '' }
 
-     <FragenDetails />
+      { contact_text ?
+
+
+
+     <FragenDetails contact_text={contact_text} />
+
+     : null}
 
      </div>
 
