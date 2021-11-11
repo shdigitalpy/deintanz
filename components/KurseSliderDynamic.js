@@ -20,7 +20,7 @@ SwiperCore.use([Pagination]);
 
 
 
-export default function KurseSlider() {
+export default function KurseSliderDynamic({ images }) {
 
   return (
 
@@ -50,42 +50,18 @@ export default function KurseSlider() {
 }} className="mySwiper">
   
 
+{images.map(image =>
+
+    (
+  
+  <SwiperSlide key={image.id}>
 
   
-  <SwiperSlide>
 
-  	<Image
-          src="/images/kissen2.webp" // Route of the image file
-          alt="Regula Leemann"
-          layout="responsive"
-		      width={1000}
-		      height={800}
-
-          />
-
-
-  </SwiperSlide>
-
-  <SwiperSlide>
 
     <Image
-          src="/images/kinder.webp" // Route of the image file
-          alt="Regula Leemann"
-          layout="responsive"
-          width={1000}
-          height={800}
-
-          />
-
-
-  </SwiperSlide>
-  <SwiperSlide>
-
-
-
-  	 <Image
-          src="/images/trommel.jpg" // Route of the image file
-          alt="Kurshilfsmittel"
+          src={image.url} // Route of the image file
+          alt={image.fileName}
           layout="responsive"
           width={1000}
           height={800}
@@ -95,26 +71,15 @@ export default function KurseSlider() {
 
 
 
-  </SwiperSlide>
 
-
-  <SwiperSlide>
-
-
-
-  	<Image
-          src="/images/kursmittel2-slider.jpg" // Route of the image file
-          alt="Regula Leemann"
-          layout="responsive"
-		      width={1000}
-		      height={800}
-
-          />
-
-
+  	
 
 
   </SwiperSlide>
+
+    ))}
+
+ 
   
   </Swiper>
 

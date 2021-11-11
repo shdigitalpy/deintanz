@@ -34,10 +34,6 @@ return (
         
         </Link></div>
 
-        <div className={styles.mainitem}><Link href="/kursekinder">
-        <a>Für Kinder</a>
-        
-        </Link></div>
       
       <div className={styles.mainitem}><Link href="/ueber-mich">
         <a>Über mich</a>

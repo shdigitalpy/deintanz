@@ -4,9 +4,11 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import anmeldungStyles from '../styles/anmeldung.module.css'
+import { RichText } from '@graphcms/rich-text-react-renderer';
 
 
-export default function AnmeldungForm() {
+
+export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, title }) {
 
 
   const [submitted, setSubmitted] = React.useState(false);
@@ -27,32 +29,28 @@ export default function AnmeldungForm() {
       );
       e.target.reset()
    
-
-
   }
 
 
   return (
 
-  	<>
-
+    <>
 
 
       <div className={anmeldungStyles.wrapper}>
         
-         
+          
       
           <div className={anmeldungStyles.anmeldeformular}>
 
             <div className={anmeldungStyles.anmeldeheader}>
-              <h3>Anmeldeformular
-          Tanz und Bewegungsstunde</h3> 
+              <h3>Anmeldeformular</h3> 
 
           <br />
 
-          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>.</p>
+          <p>{text_oben  ? text_oben : null}</p>
           
-            
+
             </div>  
 
                                 
@@ -133,20 +131,50 @@ export default function AnmeldungForm() {
 
               <div class="col-75">
 
-                <label class="container">Kurs in Frauenfeld von 14:30 Uhr bis 15:30 Uhr
-                <input type="checkbox" name="kursanmeldung" value="Montag 14:30 bis 15:30 Uhr" />
+                <div style={{ display: text_anmeldung[0] ? "block" : "none"}}>
+                 <label class="container">{ text_anmeldung ? text_anmeldung[0] : null }
+                <input type="checkbox" name="kursanmeldung" value={title + ' <br>' + '<li>' + text_anmeldung[0] + '</li>' } />
                 <span class="checkmark"></span>
-                </label>            
+                </label>    
+                </div>        
                 <br/>
-                <label class="container">Kurs in Winterthur von 16:00 Uhr bis 17:00 Uhr
-                <input type="checkbox" name="interesse" value="Kurs in Winterthur von 16:00 Uhr bis 17:00 Uhr" />
+
+                <div style={{ display: text_anmeldung[1] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[1] : null }
+                <input type="checkbox" name="interesse" value={' <br>' + '<li>' + text_anmeldung[1] + '</li>'} />
                 <span class="checkmark"></span>
                 </label>
+
+                </div>
+
+
+
                 <br/>
-                <label class="container">Schnuppernachmittag (kostenlos)
-                <input type="checkbox" name="schnupper" value="Schnuppernachmittag" />
+
+                   <div style={{ display: text_anmeldung[2] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[2] : null }
+                <input type="checkbox" name="kurs" value={' <br>' + '<li>' + text_anmeldung[2] + '</li>'} />
                 <span class="checkmark"></span>
                 </label>
+
+                </div>
+
+                <div style={{ display: text_anmeldung[3] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[3] : null }
+                <input type="checkbox" name="schnupper" value={' <br>' + '<li>' + text_anmeldung[3] + '</li>'} />
+                <span class="checkmark"></span>
+                </label>
+
+                </div>
+
+                <div style={{ display: text_anmeldung[4] ? "block" : "none"}}>
+                <label class="container">{ text_anmeldung ? text_anmeldung[4] : null }
+                <input type="checkbox" name="letztes" value={' <br>' + '<li>' + text_anmeldung[4] + '</li>'} />
+                <span class="checkmark"></span>
+                </label>
+
+                </div>
+                
                 </div>
                 </div>
                 
@@ -189,63 +217,16 @@ export default function AnmeldungForm() {
               <h2>Allgemeine Informationen zur Anmeldung</h2>
               <br/>
 
-              <div>
-              <h3>Abrechnung</h3>
-              <br />
-              <p>Preis pro Quartal, 6 x CHF 110.00.</p>
-              <p>Die Rechnung wird vor Quartalsbeginn per E-Mail versendet. Die Quartale werden wie folgt aufgeteilt:</p>
-              <p>1. Quartal: Weihnachtsferien bis Frühlingsferien</p>
-              <p>2. Quartal: Frühlingsferien bis Sommerferien
-              </p>
-              <p>3. Quartal: Sommerferien bis Herbstferien
-            </p>
-              <p>4. Quartal: Herbstferien bis Weihnachtsferien
-            </p>
-            </div>
 
-            <br />
-
-            <div>
-            <h3>Kurseinstieg       
-            </h3>
-            <p>Ein Einstieg ist jederzeit möglich, die Rechung kann auch an kürzere Zeiträume als ein ganzes Quartal angepasst werden. Sie zahlen dann nur die effektive Zeit, in der Ihr Kind dabei war.
-            </p>
-            </div>
-
-            <br />
-            <div>
-            <h3>Ferien</h3>
-            <p>Während den Winterthurer Schulferien finden keine Kurse statt.</p>
-            </div>
-            <br />
-            <div>
-            <h3>Versicherung</h3>
-            <p>Die Versicherung ist die Sache der Kursteilnehmenden. Bitte klären Sie alles Notwendige direkt mit Ihrer Versicherung ab.
-            </p>
-            </div>
-            <br />
-            <div>
-            <h3>Absenzen</h3>
-            <p>Allfällige Absenzen müssen der Kursleitung vorgängig mitgeteilt werden. 
-            Für krankheitsbedingte Abwesenheit ab 3 Wochen kann gegen Vorlage eines ärztlichen Attests eine Gutschrift gewährt werden.</p>
-            </div>
-            <br />
-            <div>
-            <h3>Kursabmeldung</h3>
-            <p>Eine Abmeldung vom Kurs ist bis 2 Wochen vor Quartalsende möglich, die Abmeldung muss schriftlich bei der Kursleitung eingehen.</p>
-            </div>
-            <br />
-            <div>
-            <h3>Datenschutz</h3>
-            <p>Alle Ihre Daten werden absolut vertraulich behandelt und nicht an Dritte weitergegeben.</p>
-            </div>
+              <RichText content={text_unten ? text_unten.raw : null } />
+              
 
 
           </div>
        
 
 
-  		</div>
+      </div>
 
       </div>
 
@@ -253,4 +234,5 @@ export default function AnmeldungForm() {
 )
 
 }
+
 

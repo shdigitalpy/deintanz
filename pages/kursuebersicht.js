@@ -7,10 +7,56 @@ import KurseOverview from './../components/KurseOverview'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import {gql, GraphQLClient} from 'graphql-request'
+
+
+
+export const getServerSideProps = async (pageContext) => {
+
+  const url = process.env.GRAPH_CMS_URL
+
+  const graphQLClient = new GraphQLClient(url, {
+      headers: {
+        "Authorization" : `Bearer ${process.env.GRAPH_CMS_TOKEN}`
+      }
+
+  })
+
+  const pageSlug = pageContext.query.slug
+
+  const kursesQuery = gql`
+    query {
+    kurses {
+      categoryValues
+      title
+      description
+      slug
+      tanzstundeImage {
+      url
+          }
+      }
+    }
+     `
+
+
   
 
+  const data = await graphQLClient.request(kursesQuery)
+  const kurses = data.kurses
 
-export default function Kursübersicht() {
+  return {
+
+    props: {
+      kurses
+
+    }
+  }
+
+}
+
+
+
+export default function Kursübersicht({ kurses }) {
 
 
   return (
@@ -42,7 +88,7 @@ export default function Kursübersicht() {
             },
           }}>  
 
-          <KurseOverview />
+          <KurseOverview kurses={kurses} />
     
       </motion.div>
 

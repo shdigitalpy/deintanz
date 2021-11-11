@@ -5,10 +5,54 @@ import FrontPage from './../components/FrontPage'
 import frontpageStyles from '../styles/frontpage.module.css'
 import { motion } from "framer-motion"
 import Pixel from '../components/Pixel'
+import {gql, GraphQLClient} from 'graphql-request'
 
 
-export default function Home() {
+export const getServerSideProps = async (pageContext) => {
 
+  const url = process.env.GRAPH_CMS_URL
+
+  const graphQLClient = new GraphQLClient(url, {
+      headers: {
+        "Authorization" : `Bearer ${process.env.GRAPH_CMS_TOKEN}`
+      }
+
+  })
+
+  const pageSlug = pageContext.query.slug
+
+  const kursesQuery = gql`
+    query {
+    kurses {
+      categoryValues
+      title
+      slug
+      description
+      tanzstundeImage {
+      url
+          }
+      }
+    }
+     `
+
+
+  
+
+  const data = await graphQLClient.request(kursesQuery)
+  const kurses = data.kurses
+
+  return {
+
+    props: {
+      kurses
+
+    }
+  }
+
+}
+
+
+export default function Home({kurses}) {
 
   return (
 
@@ -48,7 +92,7 @@ Tanz, Bewegung und Entspannung. " />
      </div>{/*end bgimage*/}
 
 
-        <FrontPage/>
+        <FrontPage kurses={kurses} />
     	
     </Layout>
   )

@@ -2,16 +2,49 @@ import Link from 'next/link'
 import FragenDetails from './../components/FragenDetails'
 import tanzstundeStyles from '../styles/tanzstunde.module.css'
 import Image from 'next/image'
+import KurseSlider from './KurseSlider'
+import { RichText } from '@graphcms/rich-text-react-renderer';
+import Frauenfeld from './Frauenfeld'
 
-export default function TanzStundeDetails3() {
+export default function TanzStundeDetailsDynamic({ 
+  title, 
+  subtitle, 
+  description, 
+  image, 
+  loc_short, 
+  was, 
+  zielgruppe, 
+  date, 
+  kursraum_url, 
+  kursraum,
+  box_preis,
+  box_preis_anzahl,
+  box_preis_zeit,
+  kleidung,
+  kursleitung,
+  kursleitung_url,
+  datefrau,
+  datefrau_wo, 
+  datefrau_wolink,
+  standortes,
+  rundesEinzelbild,
+  contact_text
 
+
+   }) {
+
+  const box_preis1 = box_preis ? box_preis + ' CHF' : ' '
+  const box_zeit = box_preis_zeit ? 'pro ' + box_preis_zeit : ''
+  const box_anzahl = box_preis_anzahl ? 'für ' + box_preis_anzahl : ''
+
+ 
   return (
 
 
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
-      <h1>Mutter/Vater - Kind- Zeit <br />von 4 bis 12 Jahren</h1>
-      <h2>Gönne Dir eine schöne Zeit mit Deinem Kind</h2>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
 
       </div>
 
@@ -22,23 +55,16 @@ export default function TanzStundeDetails3() {
         
 
       
-      <p>Möchtest Du abschalten vom Alltag, Dich mit deinem Kind zusammen bewegen und
-entspannen? Eure Beziehung stärken oder einfach eine schöne Stunde zusammen verbringen.
-Gemeinsam tauchen wir ein in verschiedene Themen, Welten, Figuren und Gefühle.
-Wir starten mit einer Begrüssungsrunde, dann gehen wir zusammen in den Körper durch Massagen
-und Körperwahrnehmungsübungen. Danach wird getanzt, bewegt und gespielt und manchmal auch
-musiziert. Am Schluss ist Kuscheln und Entspannung angesagt und auch ein gemeinsames Bild darf
-gemalt werden.
-      </p>
+      <p>{description}</p>
 
       </div>
 
       <div className={tanzstundeStyles.twocolumn}>
       <Image
-              src="/images/kind-erwachsene1.jpg" // Route of the image file
+              src={image} // Route of the image file
               height={300} // Desired size with correct aspect ratio
               width={300} // Desired size with correct aspect ratio
-              alt="Regula Leemann"
+              alt="{title}"
               className="roundedfull"
            
 
@@ -54,17 +80,16 @@ gemalt werden.
 
             </div>
 
-              </div>
 
-      
-    
+
+              </div>
 
       <div className={tanzstundeStyles.tanzstunde}>   
 
 
-
+    {/*start winterthur */}
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
-               <h2>Details zum Kurs</h2>
+               <h2>Details zum Kurs {standortes[0] ? 'in ' + standortes[0].name : null}</h2>
                 <br />
 
                 
@@ -73,14 +98,14 @@ gemalt werden.
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Mutter/Vater - Kind- Zeit</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>{was}</p></div>
                 	
                 </div>
 
                <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wer</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Für Kinder von 4 bis 12 Jahren</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>{zielgruppe}</p></div>
                 	
                 </div>
 
@@ -88,29 +113,41 @@ gemalt werden.
 
                         <div className={tanzstundeStyles.tanzflex}>
 
-                	<div className={tanzstundeStyles.tanzflexitem1}><p>Wann</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Dienstags an folgenden Daten:  <br />25.1, 22.2, 22.3, 12.4.2022  <br />Zeit von 17:30 Uhr bis 19:00 Uhr</p></div>
-                	
+                  <div className={tanzstundeStyles.tanzflexitem1}><p>Daten</p> </div>
+                  <div className={tanzstundeStyles.tanzflexitem2}>
+
+                  <RichText content={date} />
+
+                  </div>
+                  
+                  
                 </div>
 
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.babafe.ch/tanzraum.html"><a target="_blank">Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</a></Link></p></div>
-                	
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href={standortes[0] ? standortes[0].adresseLink : '/'}><a target="_blank">
+
+                  {standortes[0] ? standortes[0].adresse : null}
+
+                  </a></Link></p>
+
+                  </div>
                 </div>
 
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Preis</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>CHF 35.00 für beide<br /></strong></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>{box_preis1} {box_zeit} {box_anzahl}</strong></p></div>
                 	
                 </div>
         		
         		<div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Kleidung</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p>Bequeme Kleidung anziehen</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>{kleidung}</p></div>
                 	
                 </div>
 
@@ -127,27 +164,49 @@ gemalt werden.
               
           </div>{/*end 1st tanzstunde*/}
 
-           
+          { standortes[1] ? 
+      <Frauenfeld 
 
-            
+        
+          datefrau={datefrau}
 
+          frauenfeld={standortes}
+
+          box_preis1={box_preis1}
+          box_zeit={box_zeit}
+          box_anzahl={box_anzahl}
+
+          kleidung={kleidung}
+
+          /> 
+
+          : ' ' }
 
 
 
      </div>
 
-     <Image
-              src="/images/kursmittel2.jpg" // Route of the image file
+     { rundesEinzelbild ?
+
+      <Image
+              src={rundesEinzelbild.url} // Route of the image file
               height={500} // Desired size with correct aspect ratio
               width={500} // Desired size with correct aspect ratio
-              alt="Kursmittel 2"
+              alt={rundesEinzelbild.fileName}
               className="roundedfull"
            
 
             />
 
+        : '' }
+
+      { contact_text ?
 
 
+
+     <FragenDetails contact_text={contact_text} />
+
+     : null}
 
      </div>
 
@@ -155,3 +214,4 @@ gemalt werden.
 )
 
 }
+
