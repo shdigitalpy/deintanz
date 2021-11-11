@@ -46,8 +46,6 @@ export default function FrontPage({ kurses }) {
 
 
 
-  
-
   return (
 
   		<>
@@ -272,8 +270,7 @@ export default function FrontPage({ kurses }) {
      			<br />
      			<p>Meine Name ist <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin am <Link href="https://iac.ch/">
 				   <a><b>integrativen Ausbildungszentrum iac</b></a>
-				    </Link> und selbst Mami von zwei Kindern. Ich freue mich, 
-				    Ihrem Kind meine wertvollen Erfahrungen spielerisch näher zu bringen. <Link href="/ueber-mich">
+				    </Link> und Mami von zwei Kindern. Ich freue mich Ihnen und Ihrem Kind, diese wertvollen Erfahrungen spielerisch näher zu bringen. <Link href="/ueber-mich">
 				   <a><b>Mehr über mich</b></a>
 				    </Link> </p>
      			<br />

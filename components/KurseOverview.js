@@ -110,7 +110,7 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 
 		      			<h3>Mutter/Vater - Kind - Zeit</h3>
-		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
+		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit Kind.</p>
 		      			
 
 		      			<div className={kursoverviewStyles.angboxwrapper}>
@@ -182,7 +182,7 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 
 		      			<h3>Neu für Erwachsene ab Mai 2022</h3>
-		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit oder ohne Kinder. </p>
+		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene.</p>
 		      			
 
 
