@@ -55,6 +55,7 @@ export default function KurseOverview({ kurses }) {
  						<p>Hier finden Sie unser Angebot für den Kreativen Tanzkurs für Kinder.</p>
 		      			
 				<div className={kursoverviewStyles.angboxwrapper}>
+
       			{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
       				<div className={kursoverviewStyles.angbox}>
 		      				
@@ -62,7 +63,7 @@ export default function KurseOverview({ kurses }) {
       					{ kurs.description ? 
 
 		      			<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a>
+		      			<a >
 		      			<Image 
 		      			key={kurs.categoryValues} 
 		          src={kurs.tanzstundeImage.url} // Route of the image file
@@ -91,13 +92,17 @@ export default function KurseOverview({ kurses }) {
 	          
 	          	{ kurs.description ? 
 
+
+	          	
 		       		<Link href={'/kurse/' + kurs.slug} passHref>
 		      			<a className={kursoverviewStyles.link}>
 	          	
-		       			 <p>{kurs.title}</p>
+		       			<p>{kurs.title}</p>
 		        		</a></Link>
 
-		        		: <p>{kurs.title}</p> }
+		        	
+
+		        		: <p>{kurs.title} (Details folgen)</p> }
 		      			
 		      			</div>
 
@@ -156,7 +161,7 @@ export default function KurseOverview({ kurses }) {
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 
-		        		: <p>{kurs.title}</p> }
+		        		: <p>{kurs.title} (Details folgen)</p> }
 		      			
 		      			</div>
 
@@ -229,7 +234,7 @@ export default function KurseOverview({ kurses }) {
 		       			 <p>{kurs.title}</p>
 		        		</a></Link>
 
-		        		: <p>{kurs.title}</p> }
+		        		: <p>{kurs.title} (Details folgen)</p> }
 		      			
 		      			</div>
 

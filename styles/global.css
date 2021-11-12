@@ -19,6 +19,7 @@
   --orange: #ef7f63;
   --orange2: #f08866;
   --green: #3B945E;
+  --lava: #808588;
 }
 
 html, body {
@@ -274,12 +275,12 @@ input[type=submit] {
 .resize {
     transform:scale(1, 1);
     transition: 1s;
-    
+    opacity: 1;
 }
 
 .resize:hover {
     transform:scale(1.2, 1.2);
-    opacity: 0.5;
+    opacity: 0.8;
 
     
 }

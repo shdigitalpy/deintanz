@@ -65,17 +65,78 @@
     padding: 3rem;  
 }
 
+
 .angboxwrapper {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
+   
 }
+
+@media screen and (max-width: 1024px) {
+   .angboxwrapper {
+     width: 100%;
+}
+  }
 
 .angbox {
     width: 300px;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
+    background-color: rgba(32, 0, 32, 0.2);
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  
 }
+
+.angbox:hover {
+    background-color: var(--orange);
+    border: 1px solid transparent;
+    
+}
+
+
+
+@media screen and (max-width: 1024px) {
+   .angbox {
+     width: 80%;
+}
+  }
+
+  .angbox p {
+    font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+    padding: 1rem;
+    width: 100%;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+  }
+
+  .angbox p:hover{
+    color: var(--white);
+  }
+
+.link:hover {
+    opacity: 1;
+    color: var(--white);
+}
+
+.link {
+    text-decoration:none;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+
+
+
 
 .fp p {
   line-height:2rem;
@@ -257,12 +318,3 @@
   }
 
 
-.link {
-    text-decoration: none;
-    transition: 1s;
-
-}
-
-.link:hover {
-    opacity: 0.5;
-}
