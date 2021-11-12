@@ -17,9 +17,7 @@ export default function TanzStundeDetailsDynamic({
   date, 
   kursraum_url, 
   kursraum,
-  box_preis,
-  box_preis_anzahl,
-  box_preis_zeit,
+  boxprice_all,
   kleidung,
   kursleitung,
   kursleitung_url,
@@ -33,10 +31,7 @@ export default function TanzStundeDetailsDynamic({
 
    }) {
 
-  const box_preis1 = box_preis ? box_preis + ' CHF' : ' '
-  const box_zeit = box_preis_zeit ? 'pro ' + box_preis_zeit : ''
-  const box_anzahl = box_preis_anzahl ? 'für ' + box_preis_anzahl : ''
-
+  const boxprice_all1 = boxprice_all ? boxprice_all : ' '
  
   return (
 
@@ -140,7 +135,11 @@ export default function TanzStundeDetailsDynamic({
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Preis</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>{box_preis1} {box_zeit} {box_anzahl}</strong></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p><strong>
+
+                  <RichText content={boxprice_all1.raw} />
+
+                  </strong></p></div>
                 	
                 </div>
         		
@@ -172,9 +171,7 @@ export default function TanzStundeDetailsDynamic({
 
           frauenfeld={standortes}
 
-          box_preis1={box_preis1}
-          box_zeit={box_zeit}
-          box_anzahl={box_anzahl}
+          boxprice_all1={boxprice_all1}
 
           kleidung={kleidung}
 

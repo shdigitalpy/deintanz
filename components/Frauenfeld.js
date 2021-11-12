@@ -3,7 +3,7 @@ import tanzstundeStyles from '../styles/tanzstunde.module.css'
 import { RichText } from '@graphcms/rich-text-react-renderer';
 
 
-export default function Frauenfeld({ datefrau, frauenfeld, box_anzahl, box_zeit, box_preis1, kleidung }) {
+export default function Frauenfeld({ datefrau, frauenfeld, boxprice_all1, kleidung }) {
 
     return (
 
@@ -75,7 +75,11 @@ export default function Frauenfeld({ datefrau, frauenfeld, box_anzahl, box_zeit,
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Preis</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><strong>{box_preis1} {box_zeit} {box_anzahl}</strong></p></div>                  
+                  <div className={tanzstundeStyles.tanzflexitem2}><p><strong>
+
+                 <RichText content={boxprice_all1 ? boxprice_all1.raw : null} />
+
+                  </strong></p></div>                  
                 </div>
             
             <div className={tanzstundeStyles.tanzflex}>

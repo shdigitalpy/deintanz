@@ -33,7 +33,10 @@ export const getServerSideProps = async (pageContext) => {
 	    
 	    description
 	    slug
-	    price
+      boxprice_all {
+      raw
+    }
+
 	    persona
 	   
 	    wear
@@ -48,8 +51,6 @@ export const getServerSideProps = async (pageContext) => {
     dateDescription {
       raw
     }
-    boxPreisZeitraum
-    boxPreisAnzahl
     standortes {
       adresse
       adresseLink
@@ -107,7 +108,6 @@ export const getServerSideProps = async (pageContext) => {
 
 
 const Kurse = ({ kurse }) => {
-	console.log(kurse)
 
 
 	return (
@@ -154,9 +154,7 @@ const Kurse = ({ kurse }) => {
       date={kurse.dateDescription ? kurse.dateDescription.raw : null}
       kursraum={kurse.location}
       kursraum_url={kurse.urlLocation}
-      box_preis={kurse.price}
-      box_preis_zeit={kurse.boxPreisZeitraum}
-			box_preis_anzahl={kurse.boxPreisAnzahl}
+      boxprice_all={kurse.boxprice_all ? kurse.boxprice_all : null}
 			kleidung={kurse.wear}
 			datefrau={kurse.boxFrauenfeldDaten ? kurse.boxFrauenfeldDaten.raw : null}	
 			standortes={kurse.standortes}
