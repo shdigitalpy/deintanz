@@ -118,7 +118,7 @@ a:hover {
 }
 
 .btn:hover {
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
