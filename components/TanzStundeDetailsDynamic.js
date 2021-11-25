@@ -38,7 +38,7 @@ export default function TanzStundeDetailsDynamic({
 
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
-      <h1>{title}</h1>
+      <h1>Kurs - {title}</h1>
       <h2>{subtitle}</h2>
 
       </div>
