@@ -9,7 +9,6 @@ import TanzStundeDetailsDynamic from './../../components/TanzStundeDetailsDynami
 import Image from 'next/image'
 
 
-
 export const getServerSideProps = async (pageContext) => {
 
 	const url = process.env.GRAPH_CMS_URL
@@ -106,9 +105,9 @@ export const getServerSideProps = async (pageContext) => {
 
 
 
-
 const Kurse = ({ kurse }) => {
 
+  const site = "https://www.deintanz.ch";
 
 	return (
 
@@ -121,8 +120,8 @@ const Kurse = ({ kurse }) => {
 		<Head>
       <title>{kurse.title}</title>
       <meta name="description" content={kurse.title} />
-      
       <link rel="icon" href="/favicon.ico" />
+      <link rel="canonical" href={site + '/kurse/' + kurse.slug} />
       </Head>
 
       <motion.div initial="hidden" animate="visible" variants={{

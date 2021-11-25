@@ -16,8 +16,8 @@ export const siteTitle = 'DeinTanz aktuell'
 export default function Layout({ children, home }) {
 
 const site = "https://www.deintanz.ch";
-const canonicalURL = site + useRouter().pathname;
-
+const canonicalURL1 = site + useRouter().pathname;
+const canonicalURL = canonicalURL1 === 'https://www.deintanz.ch/kurse/[slug]' ? ' ' : canonicalURL1
 
   const [isOpen, setIsOpen] = React.useState(false);
 
