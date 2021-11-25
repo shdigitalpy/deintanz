@@ -54,6 +54,7 @@ const canonicalURL = canonicalURL1 === 'https://www.deintanz.ch/kurse/[slug]' ? 
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={canonicalURL} />
+        <link rel="alternate" href={canonicalURL} hreflang="de-ch" />
       </Head>
 
       <main>{children}</main>
