@@ -84,7 +84,7 @@ export default function TanzStundeDetailsDynamic({
 
     {/*start winterthur */}
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
-               <h2>Details zum Kurs am {standortes[0] ? standortes[0].name : null}</h2>
+               <h2>Details zum Kurs {standortes[0] ? standortes[0].name : null}</h2>
                 <br />
 
                 
@@ -164,6 +164,7 @@ export default function TanzStundeDetailsDynamic({
           </div>{/*end 1st tanzstunde*/}
 
           { standortes[1] ? 
+      
       <Frauenfeld 
 
         
