@@ -9,9 +9,9 @@ export default function Frauenfeld({ datefrau, frauenfeld, boxprice_all1, kleidu
 
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
                
-                <h2>Details zum Kurs {
+                <h2>Details zum Kurs am {
 
-                  frauenfeld[1] ? 'in ' + frauenfeld[1].name : ''
+                  frauenfeld[1] ? frauenfeld[1].name : ''
 
 
                 }</h2>
