@@ -116,63 +116,7 @@ export default function FrontPage({ kurses }) {
 
 						
 		       
-		              	
- 						<br />
-						<br />
-						<h3>Mutter/Vater - Kind- Zeit</h3>
-
-
-						
-						<div className={frontpageStyles.angboxwrapper}>
-      			{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
-      				<div className={frontpageStyles.angbox}>
-		      				
-
-      					{ kurs.description ? 
-
-		      			<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a>
-		      			<Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
-
-	          /></a></Link>
-
-
-
-	          : <Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
-
-	          /> }
-
-
-	          
-	          	{ kurs.description ? 
-
-		       		<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a className={frontpageStyles.link}>
-	          	
-		       			 <p>{kurs.title}</p>
-		        		</a></Link>
-
-		        		: <p>{kurs.title}</p> }
-		      			
-		      			</div>
-
-								))}
-
-		      			</div>
+		 
 
 
 		      			<br />
@@ -232,7 +176,62 @@ export default function FrontPage({ kurses }) {
 
 		      			</div>
 
-							
+							<br />
+						<br />
+						<h3>Mutter/Vater - Kind- Zeit</h3>
+
+
+						
+						<div className={frontpageStyles.angboxwrapper}>
+      			{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+      				<div className={frontpageStyles.angbox}>
+		      				
+
+      					{ kurs.description ? 
+
+		      			<Link href={'/kurse/' + kurs.slug} passHref>
+		      			<a>
+		      			<Image 
+		      			key={kurs.categoryValues} 
+		          src={kurs.tanzstundeImage.url} // Route of the image file
+		          height={300} // Desired size with correct aspect ratio
+		          width={300} // Desired size with correct aspect ratio
+		          alt={kurs.title}
+		          className="resize"
+	         
+
+	          /></a></Link>
+
+
+
+	          : <Image 
+		      			key={kurs.categoryValues} 
+		          src={kurs.tanzstundeImage.url} // Route of the image file
+		          height={300} // Desired size with correct aspect ratio
+		          width={300} // Desired size with correct aspect ratio
+		          alt={kurs.title}
+		          className="resize"
+	         
+
+	          /> }
+
+
+	          
+	          	{ kurs.description ? 
+
+		       		<Link href={'/kurse/' + kurs.slug} passHref>
+		      			<a className={frontpageStyles.link}>
+	          	
+		       			 <p>{kurs.title}</p>
+		        		</a></Link>
+
+		        		: <p>{kurs.title}</p> }
+		      			
+		      			</div>
+
+								))}
+
+		      			</div>
  					
 
 		      	 <motion.div whileHover={{

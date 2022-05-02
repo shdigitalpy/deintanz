@@ -130,7 +130,7 @@ export default function Kontakt() {
 
        </div>{/*end 3rd element*/}
 
-
+       {/*
         <div className={kontaktStyles.maps}>
 
         <div className={kontaktStyles.mapsbox}>
@@ -155,12 +155,14 @@ export default function Kontakt() {
 
             />
           
-        </div>{/*end mapsbox*/}
+        </div>
+
+        
 
 
         
 
-       </div>{/*end 4th element*/}
+       </div>*/}
 
 
 		
