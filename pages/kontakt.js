@@ -92,7 +92,7 @@ export default function Kontakt() {
        <div className={kontaktStyles.kontakt}>
 
       <Link href="/kursuebersicht">
-          <a className={kontaktStyles.link}>Direkt zu den Kreativkursen Winterthur und Frauenfeld
+          <a className={kontaktStyles.link}>Direkt zu den Kreativkursen in Winterthur
        <InfoIcon /></a>
           </Link>
        
