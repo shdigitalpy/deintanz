@@ -32,7 +32,8 @@ export default function TanzStundeDetailsDynamic({
    }) {
 
   const boxprice_all1 = boxprice_all ? boxprice_all : ' '
- 
+
+
   return (
 
 

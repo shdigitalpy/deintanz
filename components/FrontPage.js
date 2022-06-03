@@ -59,8 +59,15 @@ export default function FrontPage({ kurses }) {
 		              	
  						<br />
 						<br />
+
+						{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
+						
+						 kurs ? 
 						<h3>Für Kinder</h3>
 
+						: " "
+						 
+						))}
 
 						
 						<div className={frontpageStyles.angboxwrapper}>
@@ -121,7 +128,16 @@ export default function FrontPage({ kurses }) {
 
 		      			<br />
 						<br />
+
+						{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
+						
+						 kurs ? 
 						<h3>Neu für Erwachsene ab Mai 2022</h3>
+
+						: " "
+						 
+						))}
+		
 
 
 						
@@ -178,7 +194,16 @@ export default function FrontPage({ kurses }) {
 
 							<br />
 						<br />
+
+						{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+						
+						 kurs ? 
 						<h3>Mutter/Vater - Kind- Zeit</h3>
+
+						: " "
+						 
+						))}
+						
 
 
 						

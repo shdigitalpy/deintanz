@@ -50,9 +50,23 @@ export default function KurseOverview({ kurses }) {
       <div className={kursoverviewStyles.ang}>
 
       <div className={kursoverviewStyles.ang1}>
-		              	
- 						<h3>Für Kinder</h3>
+
+
+      {kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
+						
+						 kurs ? 
+
+						 <>
+						<h3>Für Kinder</h3>
  						<p>Hier finden Sie unser Angebot für den Kreativen Tanzkurs für Kinder.</p>
+
+ 							</>
+
+						: " "
+						 
+						))}
+		              	
+ 						
 		      			
 				<div className={kursoverviewStyles.angboxwrapper}>
 
@@ -114,8 +128,20 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 		      			<br />
 
-		      			<h3>Neu für Erwachsene ab Mai 2022</h3>
+		      			{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
+						
+						 kurs ? 
+
+						 <>
+						<h3>Neu für Erwachsene ab Mai 2022</h3>
 		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene.</p>
+		      				</>
+
+						: " "
+						 
+						))}
+
+		      			
 		      			
 
 
@@ -173,8 +199,21 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 		      			<br />
 
-		      			<h3>Mutter/Vater - Kind - Zeit</h3>
+		      			{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+						
+						 kurs ? 
+
+						 <>
+						<h3>Mutter/Vater - Kind - Zeit</h3>
 		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit Kind.</p>
+
+		      			</>
+
+						: " "
+						 
+						))}
+
+		      			
 		      			
 
 		      			<div className={kursoverviewStyles.angboxwrapper}>
