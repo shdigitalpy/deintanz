@@ -33,6 +33,7 @@ export default function TanzStundeDetailsDynamic({
 
   const boxprice_all1 = boxprice_all ? boxprice_all : ' '
 
+  const datefrau1 = datefrau ? datefrau : ' '
 
   return (
 
@@ -169,7 +170,7 @@ export default function TanzStundeDetailsDynamic({
       <Frauenfeld 
 
         
-          datefrau={datefrau}
+          datefrau={datefrau1}
 
           frauenfeld={standortes}
 
