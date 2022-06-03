@@ -52,7 +52,7 @@ export default function KurseOverview({ kurses }) {
       <div className={kursoverviewStyles.ang1}>
 
 
-      {kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
+      		{/*{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
 						
 						 kurs ? 
 
@@ -64,7 +64,7 @@ export default function KurseOverview({ kurses }) {
 
 						: " "
 						 
-						))}
+						))}*/}
 		              	
  						
 		      			
@@ -128,7 +128,7 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 		      			<br />
 
-		      			{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
+		      			{/*{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
 						
 						 kurs ? 
 
@@ -139,7 +139,7 @@ export default function KurseOverview({ kurses }) {
 
 						: " "
 						 
-						))}
+						))}*/}
 
 		      			
 		      			
@@ -199,7 +199,7 @@ export default function KurseOverview({ kurses }) {
 		      			<br />
 		      			<br />
 
-		      			{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+		      			{/*{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
 						
 						 kurs ? 
 
@@ -211,7 +211,7 @@ export default function KurseOverview({ kurses }) {
 
 						: " "
 						 
-						))}
+						))}*/}
 
 		      			
 		      			
