@@ -13,9 +13,10 @@ return <>
   <nav className={styles.nav}>
 
     <div className={styles.logo}>
-    <Link href="/" legacyBehavior>
+    <Link href="/"  >
     
     <Image
+    className={styles.link}
     src="/images/deintanz-logo.png" // Route of the image file
     height={68} // Desired size with correct aspect ratio
     width={331} // Desired size with correct aspect ratio
