@@ -99,8 +99,9 @@ export default function AboutMe() {
       <h2>Seinem Körper vertrauen</h2>
         <p>Bei meinen eigenen Herausforderungen haben immer Bewegung, Tanz, die Musik, die Natur wie auch die 
         Menschen an meiner Seite eine wichtige Rolle gespielt. Im Laufe meines eigenen Entwicklungsprozesses habe ich gemerkt, 
-        dass ich meiner Intuition und meinem Körper vertrauen kann. Diese Erfahrungen haben mich ans integrativen <Link href="https://www.iac.ch/startseite">
-           <a>Ausbildungszentrum iac</a>
+        dass ich meiner Intuition und meinem Körper vertrauen kann. Diese Erfahrungen haben mich ans integrativen 
+        <Link href="https://www.iac.ch/startseite">
+           Ausbildungszentrum iac
             </Link> geführt, zur Ausbildung als Tanz- und Bewegungstherapeutin.</p>
       
       </div>{/*end meitem2*/}
@@ -130,7 +131,7 @@ export default function AboutMe() {
         «Dein Tanz» mich auf diesem Weg begleitet, erfüllt mich sehr. Meine Ausbildung in der Tanz- und Bewegungstherapie am iac befähigt mich, die Bewegung und 
       der authentische Tanz als kreatives Ausdrucksmittel 
       für meine Kurse zu verwenden. <small>Quelle Bild: <Link href="https://www.iac.ch/startseite">
-           <a>Ausbildungszentrum iac</a>
+           Ausbildungszentrum iac
             </Link></small>
     </p>
     </div>

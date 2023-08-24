@@ -6,8 +6,6 @@ import Image from 'next/image'
 export default function TanzStundeDetails2() {
 
   return (
-
-
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h1>Tanz, Bewegung & Entspannung für Kinder von 7 bis 11 Jahren</h1>
@@ -89,7 +87,9 @@ export default function TanzStundeDetails2() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.haus-zum-widder.ch/willkommen.html"><a target="_blank">Im Haus zum Widder</a></Link>, in 8400 Winterthur</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="https://www.haus-zum-widder.ch/willkommen.html" legacyBehavior>Im Haus zum Widder</Link>, in 8400 Winterthur</p></div>
                 	
                 </div>
 
@@ -110,7 +110,7 @@ export default function TanzStundeDetails2() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich" legacyBehavior>Regula Leemann</Link></p></div>
                   
                 </div>
 
@@ -128,8 +128,6 @@ export default function TanzStundeDetails2() {
      <FragenDetails />
 
      </div>
-
-      
-)
+  );
 
 }

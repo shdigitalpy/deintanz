@@ -6,8 +6,6 @@ import Image from 'next/image'
 export default function TanzStundeDetails3() {
 
   return (
-
-
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h1>Mutter/Vater - Kind- Zeit <br />von 4 bis 12 Jahren</h1>
@@ -96,7 +94,8 @@ gemalt werden.
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.babafe.ch/tanzraum.html"><a target="_blank">Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</a></Link></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>
+                  <Link href="https://www.babafe.ch/tanzraum.html" legacyBehavior>Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</Link></p></div>
                 	
                 </div>
 
@@ -117,7 +116,7 @@ gemalt werden.
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich" legacyBehavior>Regula Leemann</Link></p></div>
                   
                 </div>
 
@@ -150,8 +149,6 @@ gemalt werden.
 
 
      </div>
-
-      
-)
+  );
 
 }

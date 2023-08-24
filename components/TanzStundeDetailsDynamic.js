@@ -36,8 +36,6 @@ export default function TanzStundeDetailsDynamic({
   const datefrau1 = datefrau ? datefrau : ' '
 
   return (
-
-
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h1>Kurs - {title}</h1>
@@ -125,11 +123,11 @@ export default function TanzStundeDetailsDynamic({
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
                 	<div className={tanzstundeStyles.tanzflexitem2}><p>
 
-                  <Link href={standortes[0] ? standortes[0].adresseLink : '/'}><a target="_blank">
+                  <Link href={standortes[0] ? standortes[0].adresseLink : '/'} legacyBehavior>
 
                   {standortes[0] ? standortes[0].adresse : null}
 
-                  </a></Link></p>
+                  </Link></p>
 
                   </div>
                 </div>
@@ -155,7 +153,7 @@ export default function TanzStundeDetailsDynamic({
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich" legacyBehavior>Regula Leemann</Link></p></div>
                   
                 </div>
 
@@ -209,9 +207,7 @@ export default function TanzStundeDetailsDynamic({
      : null}
 
      </div>
-
-      
-)
+  );
 
 }
 

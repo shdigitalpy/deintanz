@@ -8,49 +8,44 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 export default function Nav ({toggle}) {
 
 
-return (
+return <>
+ 
+  <nav className={styles.nav}>
 
-  <>
-   
-    <nav className={styles.nav}>
+    <div className={styles.logo}>
+    <Link href="/" legacyBehavior>
+    
+    <Image
+    src="/images/deintanz-logo.png" // Route of the image file
+    height={68} // Desired size with correct aspect ratio
+    width={331} // Desired size with correct aspect ratio
+    alt="deintanz-logo"
+    />
+    
+    </Link>
+    </div>
 
-      <div className={styles.logo}>
-      <Link href="/">
-      <a>
-      <Image
-      src="/images/deintanz-logo.png" // Route of the image file
-      height={68} // Desired size with correct aspect ratio
-      width={331} // Desired size with correct aspect ratio
-      alt="deintanz-logo"
-      />
-      </a>
-      </Link>
-      </div>
+    <div className={styles.menu}>
 
-      <div className={styles.menu}>
-
-      <div className={styles.mainitem}><Link href="/kursuebersicht">
-        <a>Angebote</a>
-        
-        </Link></div>
-
+    <div className={styles.mainitem}><Link href="/kursuebersicht">
+      Angebote
       
-      <div className={styles.mainitem}><Link href="/ueber-mich">
-        <a>Über mich</a>
-        </Link></div>
-        
-      <div className={styles.mainitem}><Link href="/kontakt">
-        <a>Kontakt</a>
-        </Link></div>
+      </Link></div>
 
-      </div>
+    
+    <div className={styles.mainitem}><Link href="/ueber-mich">
+      Über mich
+      </Link></div>
+      
+    <div className={styles.mainitem}><Link href="/kontakt">
+      Kontakt
+      </Link></div>
 
-      <div className={styles.navicon}><GiHamburgerMenu onClick={toggle} /></div>
+    </div>
 
-       </nav>
+    <div className={styles.navicon}><GiHamburgerMenu onClick={toggle} /></div>
 
-  </>
+     </nav>
 
-
-)
+</>;
 }

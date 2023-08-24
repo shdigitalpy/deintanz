@@ -65,12 +65,12 @@ export default function Kursübersicht({ kurses }) {
 
   		<Head>
       <title>Kreativkurse Winterthur Kursübersicht | Dein Tanz</title>
-      <meta name="description" content="Kreativkurse Winterthur: Eine Übersicht von Dein Tanz Kursen für ✓ Kinder und ✓ Erwachsene"/>
+      <meta name="description" content="Kreativkurse Winterthur: Eine Übersicht von Dein Tanz Angeboten für ✓ Kinder und ✓ Erwachsene"/>
       
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Alle Kurse" description="Eine Übersicht von allen Dein Tanz Kursen für Kinder und Erwachsene" />
+      <AngeboteHeader title="Alle Angebote" description="Eine Übersicht von allen Dein Tanz Angeboten für Kinder und Erwachsene" />
       <br />
 
       <motion.div initial="hidden" animate="visible" variants={{

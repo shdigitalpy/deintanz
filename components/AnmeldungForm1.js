@@ -50,7 +50,9 @@ export default function AnmeldungForm() {
 
           <br />
 
-          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>, dann wäre es für jeden Kurs und alle geeignet.</p>
+          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die 
+
+          <Link href="#infos">Anmeldeinformationen</Link>, dann wäre es für jeden Kurs und alle geeignet.</p>
           
 
             </div>  

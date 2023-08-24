@@ -9,8 +9,6 @@ import KurseSlider from './KurseSlider'
 export default function TanzStundeDetails() {
 
   return (
-
-
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h1>Tanz, Bewegung & Entspannung für Kinder von 5 bis 10 Jahren</h1>
@@ -111,7 +109,9 @@ export default function TanzStundeDetails() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.babafe.ch/tanzraum.html"><a target="_blank">Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</a></Link></p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="https://www.babafe.ch/tanzraum.html" legacyBehavior>Tanzraum Wildbach, Wildbachstrasse 7, 8400 Winterthur</Link></p></div>
                 </div>
 
                 <div className={tanzstundeStyles.tanzflex}>
@@ -131,7 +131,11 @@ export default function TanzStundeDetails() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="/ueber-mich" legacyBehavior>Regula Leemann</Link>
+
+                  </p></div>
                   
                 </div>
 
@@ -189,7 +193,9 @@ export default function TanzStundeDetails() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.herzraum.yoga/"><a target="_blank">Herzraum Yoga, Zürcherstrasse 34, 8500 Frauenfeld</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="https://www.herzraum.yoga/" legacyBehavior>Herzraum Yoga, Zürcherstrasse 34, 8500 Frauenfeld</Link></p></div>
                   
                 </div>
 
@@ -210,7 +216,7 @@ export default function TanzStundeDetails() {
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich" legacyBehavior>Regula Leemann</Link></p></div>
                   
                 </div>
 
@@ -228,9 +234,7 @@ export default function TanzStundeDetails() {
      <FragenDetails />
 
      </div>
-
-      
-)
+  );
 
 }
 

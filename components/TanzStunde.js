@@ -5,8 +5,6 @@ import tanzstundeStyles from '../styles/tanzstunde.module.css'
 export default function TanzStunde() {
 
   return (
-
-
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
       <h2>Ermöglichen Sie Ihrem Kind einen Raum zur Entfaltung mit unseren Kursen</h2>
@@ -53,7 +51,11 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
                 <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                	<div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.haus-zum-widder.ch/willkommen.html"><a target="_blank">Im Haus zum Widder</a></Link>, in 8400 Winterthur</p></div>
+                	<div className={tanzstundeStyles.tanzflexitem2}><p>
+                  <Link href="https://www.haus-zum-widder.ch/willkommen.html">
+
+                  Im Haus zum Widder
+                  </Link>, in 8400 Winterthur</p></div>
                 	
                 </div>
 
@@ -74,13 +76,15 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="/ueber-mich">Regula Leemann</Link></p></div>
                   
                 </div>
 
 
-                <Link href="/kurs1" passHref>
-               <a className={tanzstundeStyles.btn}>Zu den Details</a>
+                <Link href="/kurs1" passHref className={tanzstundeStyles.btn}>
+               Zu den Details
                 </Link>
               
           </div>{/*end 1st tanzstunde*/}
@@ -121,7 +125,13 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Wo</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="https://www.haus-zum-widder.ch/willkommen.html"><a target="_blank">Im Haus zum Widder</a></Link>, in 8400 Winterthur</p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="https://www.haus-zum-widder.ch/willkommen.html">
+
+                  Im Haus zum Widder
+
+                  </Link>, in 8400 Winterthur</p></div>
                   
                 </div>
 
@@ -142,13 +152,15 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
                 <div className={tanzstundeStyles.tanzflex}>
 
                   <div className={tanzstundeStyles.tanzflexitem1}><p>Kursleitung</p> </div>
-                  <div className={tanzstundeStyles.tanzflexitem2}><p><Link href="/ueber-mich"><a>Regula Leemann</a></Link></p></div>
+                  <div className={tanzstundeStyles.tanzflexitem2}><p>
+
+                  <Link href="/ueber-mich">Regula Leemann</Link></p></div>
                   
                 </div>
 
 
-                <Link href="/kurs2" passHref>
-               <a className={tanzstundeStyles.btn}>Zu den Details</a>
+                <Link className={tanzstundeStyles.btn} href="/kurs2" passHref>
+               Zu den Details
                 </Link>
             
               
@@ -157,8 +169,6 @@ In kleinen Gruppen gebe ich den Kindern einen Raum sich frei zu entfalten und ga
      </div>
 
      </div>
-
-      
-)
+  );
 
 }

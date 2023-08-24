@@ -50,7 +50,9 @@ export default function AnmeldungForm() {
 
           <br />
 
-          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die <Link href="#infos"><a>Anmeldeinformationen</a></Link>.</p>
+          <p>Bevor Sie Ihr Kind anmelden, lesen Sie bitte die 
+
+          <Link href="#infos">Anmeldeinformationen</Link>.</p>
           
             
             </div>  

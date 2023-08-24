@@ -7,59 +7,55 @@ import fragenStyles from '../styles/fragen.module.css'
 export default function Fragen (props) {
 
 
-	return (
+	return <>
+        <div className={fragenStyles.probe}>
 
-		<>
-			<div className={fragenStyles.probe}>
+        <div className={fragenStyles.probe1}>
 
-			<div className={fragenStyles.probe1}>
+        <h4>Kurse für Kinder gesucht?</h4>
+        <p>Suchen Sie speziell nach Kursen für Kinder. Wir bieten Tanz, Bewegung & Entspannung für verschiedene Altersklassen.
+        Es ist möglich, dass jedes Kind zur kostenlosen Probelektion kommt.<br />
+        <br /> Weitere Informationen zu den <Link href="/kursekinder">
 
-        	<h4>Kurse für Kinder gesucht?</h4>
-        	<p>Suchen Sie speziell nach Kursen für Kinder. Wir bieten Tanz, Bewegung & Entspannung für verschiedene Altersklassen.
-        	Es ist möglich, dass jedes Kind zur kostenlosen Probelektion kommt.<br />
-		    <br /> Weitere Informationen zu den <Link href="/kursekinder">
+             Kursen für Kinder
 
-        		<a> Kursen für Kinder</a>
+            </Link>.</p>
+    
 
-        		</Link>.</p>
+
+        </div>
+
+
         
+        <div className={fragenStyles.probe2}>
+
+        <Link href="/kontakt" legacyBehavior>
+              <Image
+              src="/images/weitere-kurse.webp" // Route of the image file
+              height={3456} // Desired size with correct aspect ratio
+              width={5184} // Desired size with correct aspect ratio
+              alt="deintanz-logo"
+              />
+              </Link>
 
 
-			</div>
-
-
-        	
-        	<div className={fragenStyles.probe2}>
-
-        	<Link href="/kontakt">
-			      <a><Image
-			      src="/images/weitere-kurse.webp" // Route of the image file
-			      height={3456} // Desired size with correct aspect ratio
-			      width={5184} // Desired size with correct aspect ratio
-			      alt="deintanz-logo"
-			      /></a>
-			      </Link>
-
-
-			</div>
+        </div>
 
 
 
 
 
-      </div>{/*end element*/}
+  </div>{/*end element*/}
+
+  
 
       
 
-          
 
 
+  
 
-      
-
-		</>
-
-		)
+    </>;
 
 
 }

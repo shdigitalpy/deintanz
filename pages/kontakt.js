@@ -20,9 +20,7 @@ export default function Kontakt() {
 
 
 	return (
-
-		
-		<Layout>
+        <Layout>
 			
 		<Head>
 	     <title>Kontakt | Dein Tanz</title>
@@ -72,8 +70,9 @@ export default function Kontakt() {
        			<FontAwesomeIcon className={kontaktStyles.icon} icon={faEnvelope} size="3x" /><br />
        			<br /><br />
             <p>E-Mail</p>
-       			<p><Link href="emailto:regula@deintanz.ch">
-			      <a>regula@deintanz.ch</a>
+       			<p>
+            <Link href="emailto:regula@deintanz.ch">
+			      regula@deintanz.ch
 			      </Link></p>
        		</div>
 
@@ -81,8 +80,8 @@ export default function Kontakt() {
        			<FontAwesomeIcon className={kontaktStyles.icon} icon={faPhone} size="3x" /><br />
        			<br /><br />
             <p>Telefon</p>
-       			<p><Link href="tel:+41 78 763 30 65">
-          <a><p>+41 78 763 30 65</p></a>
+       			<p><Link href="tel:+41 78 763 30 65" legacyBehavior>
+          +41 78 763 30 65
           </Link></p>
        		</div>
 
@@ -91,10 +90,14 @@ export default function Kontakt() {
 
        <div className={kontaktStyles.kontakt}>
 
-      <Link href="/kursuebersicht">
-          <a className={kontaktStyles.link}>Direkt zu den Kreativkursen in Winterthur
-       <InfoIcon /></a>
-          </Link>
+       <div className={kontaktStyles.link}>
+      <Link  href="/kursuebersicht" legacyBehavior>
+          
+         Direkt zu den Kreativkursen in Winterthur
+       
+          </Link> <InfoIcon />
+
+          </div>
        
       </div>{/*end direkt zur anmeldung*/}
 
@@ -106,8 +109,10 @@ export default function Kontakt() {
        		<h2>Kursort – Tanzraum Wildbach, Winterthur</h2>
        		<br />
        		<br /><br />
-       		<Link href="https://www.google.com/maps/place/Wildbachstrasse+7,+8400+Winterthur/@47.4948913,8.7291992,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999eaf8ef463:0xb2544eb2cfee18f1!8m2!3d47.4948913!4d8.7313879">
-          <a target="_blank"><p>Tanzraum Wildbach,  Wildbachstrasse 7, 8400 Winterthur</p></a>
+       		<Link
+                href="https://www.google.com/maps/place/Wildbachstrasse+7,+8400+Winterthur/@47.4948913,8.7291992,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999eaf8ef463:0xb2544eb2cfee18f1!8m2!3d47.4948913!4d8.7313879"
+                legacyBehavior>
+          <p>Tanzraum Wildbach,  Wildbachstrasse 7, 8400 Winterthur</p>
           </Link>
           <br /><br />
 
@@ -139,7 +144,7 @@ export default function Kontakt() {
           <br />
           <br /><br />
           <Link href="https://www.google.com/maps?q=Herzraum+Yoga,+Z%C3%BCrcherstrasse+34,+8500+Frauenfeld&rlz=1C1CHBF_deCH934CH934&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjR__iSmIn0AhWF26QKHah_C3YQ_AUoAXoECAEQAw">
-          <a target="_blank"><p>Herzraum Yoga, Zürcherstrasse 34, 8500 Frauenfeld</p></a>
+          Herzraum
           </Link>
           <br /><br />
 
@@ -168,8 +173,7 @@ export default function Kontakt() {
 		
 
 			</Layout>
-
-		)
+    );
 
 
 }

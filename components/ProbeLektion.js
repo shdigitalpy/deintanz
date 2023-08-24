@@ -88,7 +88,7 @@ export default function ProbeLektion (props) {
       <h2>Wichtige Fragen</h2>
       <br />
       <h3>Eine klassiche <Link href="/">
-           <a><b>Tanzschule in Winterthur</b></a>
+           <b>Tanzschule in Winterthur</b>
             </Link> für Kinder?</h3>
       <p>Bei «Dein Tanz» kann Ihr Kind auf spielerische Weise die Vorzüge von Tanzen,
        Bewegen und Rhythmik lernen. Das Angebot ist keine klassische Tanzschule, vielmehr eine Möglichkeit für die Kinder, die Energie in die richtigen Bahnen zu lenken und spielerisch wichtige Fähigkeiten zu erlangen. Die Kinder lernen durch unsere Übungen auch den sozialen Umgang mit anderen Kindern.</p>

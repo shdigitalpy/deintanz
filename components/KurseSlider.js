@@ -6,8 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import mySwiper from '../styles/kurseslider.module.css'
 
 // Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
+import 'swiper/css';
 
 
 // import Swiper core and required modules

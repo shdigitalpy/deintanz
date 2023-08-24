@@ -43,258 +43,266 @@ export default function KurseOverview({ kurses }) {
   }, [inView]);
  
 
-  return (
+  return <>
 
-  		<>
+<div className={kursoverviewStyles.ang}>
 
-      <div className={kursoverviewStyles.ang}>
+<div className={kursoverviewStyles.ang1}>
 
-      <div className={kursoverviewStyles.ang1}>
 
+      {/*{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
+                  
+                   kurs ? 
 
-      		{/*{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
-						
-						 kurs ? 
+                   <>
+                  <h3>Für Kinder</h3>
+                  <p>Hier finden Sie unser Angebot für den Kreativen Tanzkurs für Kinder.</p>
 
-						 <>
-						<h3>Für Kinder</h3>
- 						<p>Hier finden Sie unser Angebot für den Kreativen Tanzkurs für Kinder.</p>
+                      </>
 
- 							</>
+                  : " "
+                   
+                  ))}*/}
+                  
+                  
+                  
+          <div className={kursoverviewStyles.angboxwrapper}>
 
-						: " "
-						 
-						))}*/}
-		              	
- 						
-		      			
-				<div className={kursoverviewStyles.angboxwrapper}>
+          {kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
+              <div className={kursoverviewStyles.angbox}>
+                      
 
-      			{kurses.filter(kurs => kurs.categoryValues.includes('for_kids')).map(kurs => (
-      				<div className={kursoverviewStyles.angbox}>
-		      				
+                  { kurs.description ? 
 
-      					{ kurs.description ? 
+                  <Link href={'/kurse/' + kurs.slug} passHref legacyBehavior>
+                  
+                  <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-		      			<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a >
-		      			<Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /></Link>
 
-	          /></a></Link>
 
 
+        : <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-	          : <Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /> }
 
-	          /> }
 
+        
+          { kurs.description ? 
 
-	          
-	          	{ kurs.description ? 
 
+          
+              <Link
+                  className={kursoverviewStyles.link}
+                  href={'/kurse/' + kurs.slug}
+                  passHref
+                  legacyBehavior>
+              
+          
+                  <p>{kurs.title}</p>
+                  </Link>
 
-	          	
-		       		<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a className={kursoverviewStyles.link}>
-	          	
-		       			<p>{kurs.title}</p>
-		        		</a></Link>
+              
 
-		        	
+                  : <p>{kurs.title} (Details folgen)</p> }
+                  
+                  </div>
 
-		        		: <p>{kurs.title} (Details folgen)</p> }
-		      			
-		      			</div>
+                          ))}
 
-								))}
+                  </div>
 
-		      			</div>
 
+                  <br />
+                  <br />
 
-		      			<br />
-		      			<br />
+                  {/*{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
+                  
+                   kurs ? 
 
-		      			{/*{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
-						
-						 kurs ? 
+                   <>
+                  <h3>Neu für Erwachsene ab Mai 2022</h3>
+                  <p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene.</p>
+                      </>
 
-						 <>
-						<h3>Neu für Erwachsene ab Mai 2022</h3>
-		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene.</p>
-		      				</>
+                  : " "
+                   
+                  ))}*/}
 
-						: " "
-						 
-						))}*/}
+                  
+                  
 
-		      			
-		      			
 
+                  <div className={kursoverviewStyles.angboxwrapper}>
+          {kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
+              <div className={kursoverviewStyles.angbox}>
+                      
 
-		      			<div className={kursoverviewStyles.angboxwrapper}>
-      			{kurses.filter(kurs => kurs.categoryValues.includes('adults')).map(kurs => (
-      				<div className={kursoverviewStyles.angbox}>
-		      				
+                  { kurs.description ? 
 
-      					{ kurs.description ? 
+                  <Link href={'/kurse/' + kurs.slug} passHref legacyBehavior>
+                  
+                  <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-		      			<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a>
-		      			<Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /></Link>
 
-	          /></a></Link>
 
 
+        : <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-	          : <Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /> }
 
-	          /> }
 
+        
+          { kurs.description ? 
 
-	          
-	          	{ kurs.description ? 
+              <Link
+                  className={kursoverviewStyles.link}
+                  href={'/kurse/' + kurs.slug}
+                  passHref
+                  legacyBehavior>
+                  
+          
+                   <p>{kurs.title}</p>
+                  </Link>
 
-		       		<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a className={kursoverviewStyles.link}>
-	          	
-		       			 <p>{kurs.title}</p>
-		        		</a></Link>
+                  : <p>{kurs.title} (Details folgen)</p> }
+                  
+                  </div>
 
-		        		: <p>{kurs.title} (Details folgen)</p> }
-		      			
-		      			</div>
+                          ))}
 
-								))}
+                  </div>
 
-		      			</div>
+                  <br />
+                  <br />
 
-		      			<br />
-		      			<br />
+                  {/*{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+                  
+                   kurs ? 
 
-		      			{/*{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
-						
-						 kurs ? 
+                   <>
+                  <h3>Mutter/Vater - Kind - Zeit</h3>
+                  <p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit Kind.</p>
 
-						 <>
-						<h3>Mutter/Vater - Kind - Zeit</h3>
-		      			<p>Nachfolgend finden Sie unsere Kreativkurse für Erwachsene mit Kind.</p>
+                  </>
 
-		      			</>
+                  : " "
+                   
+                  ))}*/}
 
-						: " "
-						 
-						))}*/}
+                  
+                  
 
-		      			
-		      			
+                  <div className={kursoverviewStyles.angboxwrapper}>
+          {kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
+              <div className={kursoverviewStyles.angbox}>
+                      
 
-		      			<div className={kursoverviewStyles.angboxwrapper}>
-      			{kurses.filter(kurs => kurs.categoryValues.includes('mother_father_kids')).map(kurs => (
-      				<div className={kursoverviewStyles.angbox}>
-		      				
+                  { kurs.description ? 
 
-      					{ kurs.description ? 
+                  <Link href={'/kurse/' + kurs.slug} passHref legacyBehavior>
+                  
+                  <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-		      			<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a>
-		      			<Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /></Link>
 
-	          /></a></Link>
 
 
+        : <Image 
+                  key={kurs.categoryValues} 
+            src={kurs.tanzstundeImage.url} // Route of the image file
+            height={300} // Desired size with correct aspect ratio
+            width={300} // Desired size with correct aspect ratio
+            alt={kurs.title}
+            className="resize"
+       
 
-	          : <Image 
-		      			key={kurs.categoryValues} 
-		          src={kurs.tanzstundeImage.url} // Route of the image file
-		          height={300} // Desired size with correct aspect ratio
-		          width={300} // Desired size with correct aspect ratio
-		          alt={kurs.title}
-		          className="resize"
-	         
+        /> }
 
-	          /> }
 
+        
+          { kurs.description ? 
 
-	          
-	          	{ kurs.description ? 
+              <Link
+                  className={kursoverviewStyles.link}
+                  href={'/kurse/' + kurs.slug}
+                  passHref
+                  legacyBehavior>
+                  
+          
+                   <p>{kurs.title}</p>
+                  </Link>
 
-		       		<Link href={'/kurse/' + kurs.slug} passHref>
-		      			<a className={kursoverviewStyles.link}>
-	          	
-		       			 <p>{kurs.title}</p>
-		        		</a></Link>
+                  : <p>{kurs.title} (Details folgen)</p> }
+                  
+                  </div>
 
-		        		: <p>{kurs.title} (Details folgen)</p> }
-		      			
-		      			</div>
+                          ))}
 
-								))}
+                  </div>
 
-		      			</div>
 
+           <motion.div whileHover={{
 
-		      	 <motion.div whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: .2
+                      }
 
-					        scale: 1.1,
-					        transition: {
-					          duration: .2
-					        }
 
+                    }}>
+          
 
-					      }}>
-		        
+             </motion.div>
 
-				   </motion.div>
+             <br />
+                  <br />
 
-				   <br />
-		      			<br />
+</div>{/*end ang1*/}
 
-   	</div>{/*end ang1*/}
 
+</div>{/*end ang*/}
 
-     </div>{/*end ang*/}
 
 
-   
 
 
-     </>
-      
-)
+</>;
 
 }
