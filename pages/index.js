@@ -84,7 +84,7 @@ Tanz, Bewegung und Entspannung. " />
               }
             },
           }}>
-              <h1>Wo sich Körper und Geist berühren</h1>
+              <h1>Wo sich Körper, Geist und Seele berühren</h1>
           </motion.div>
 
       </div>{/*end box*/}

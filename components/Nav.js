@@ -30,7 +30,7 @@ return (
       <div className={styles.menu}>
 
       <div className={styles.mainitem}><Link href="/kursuebersicht">
-        <a>Kurse</a>
+        <a>Angebote</a>
         
         </Link></div>
 
