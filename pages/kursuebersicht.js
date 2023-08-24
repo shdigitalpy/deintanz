@@ -70,7 +70,7 @@ export default function Kursübersicht({ kurses }) {
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AngeboteHeader title="Alle Angebote" description="Eine Übersicht von allen Dein Tanz Angeboten für Kinder und Erwachsene" />
+      <AngeboteHeader title="Alle Angebote" description="Eine Übersicht von allen Dein Tanz Angeboten" />
       <br />
 
       <motion.div initial="hidden" animate="visible" variants={{

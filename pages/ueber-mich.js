@@ -20,7 +20,7 @@ export default function UeberMich() {
 
 
 
-		<AngeboteHeader title="Über mich" description="Hier erfahren Sie mehr über meine Philosophie, meine Zukunftspläne und meine Ausbildung." />
+		<AngeboteHeader title="Über mich" description="Hier erfahren Sie mehr über meine Philosophie und meinen Werdegang" />
 
 
 		<motion.div initial="hidden" animate="visible" variants={{

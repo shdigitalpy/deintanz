@@ -63,7 +63,7 @@ export default function TanzStundeDetails() {
 
 
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
-               <h2>Details zum Kurs in Winterthur</h2>
+               <h2>Details</h2>
                 <br />
 
                 

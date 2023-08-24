@@ -93,47 +93,18 @@ export default function Kontakt() {
        <div className={kontaktStyles.link}>
       <Link  href="/kursuebersicht" legacyBehavior>
           
-         Direkt zu den Kreativkursen in Winterthur
+         Direkt zum Angebot
        
           </Link> <InfoIcon />
 
           </div>
+
+
        
       </div>{/*end direkt zur anmeldung*/}
 
-
-       <div className={kontaktStyles.maps}>
-
-       	<div className={kontaktStyles.mapsbox}>
-
-       		<h2>Kursort – Tanzraum Wildbach, Winterthur</h2>
-       		<br />
-       		<br /><br />
-       		<Link
-                href="https://www.google.com/maps/place/Wildbachstrasse+7,+8400+Winterthur/@47.4948913,8.7291992,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999eaf8ef463:0xb2544eb2cfee18f1!8m2!3d47.4948913!4d8.7313879"
-                legacyBehavior>
-          <p>Tanzraum Wildbach,  Wildbachstrasse 7, 8400 Winterthur</p>
-          </Link>
-          <br /><br />
-
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.7444617275314!2d8.72919921562665!3d47.49489127917752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999eaf8ef463%3A0xb2544eb2cfee18f1!2sWildbachstrasse%207%2C%208400%20Winterthur!5e0!3m2!1sde!2sch!4v1636481217252!5m2!1sde!2sch"
-              width="100%"
-              height="300px"
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              aria-hidden="false"
-              tabIndex="0"
-
-            />
-       		
-       	</div>{/*end mapsbox*/}
-
-
-        
-
-       </div>{/*end 3rd element*/}
+          <br/> <br/> <br/><br/> <br/> <br/>
+   
 
        {/*
         <div className={kontaktStyles.maps}>

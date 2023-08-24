@@ -145,7 +145,7 @@ export default function AboutMe() {
 
      <div ref={ref} className={aboutmeStyles.mewrapper2}>  
 
-     <motion.div animate={controls} className={aboutmeStyles.mebox2}>
+     <motion.div animate={controls} className={aboutmeStyles.mebox2} >
       <Image
           src="/images/1.svg" // Route of the image file
           height={150} // Desired size with correct aspect ratio
@@ -158,7 +158,7 @@ export default function AboutMe() {
       
     </motion.div>
 
-     <motion.div animate={controls} className={aboutmeStyles.mebox2}>
+     <motion.div animate={controls} className={aboutmeStyles.mebox2} style={{marginBottom:"10rem"}}>
      	
      	<h2>Meine Philosophie</h2>
      	<p>Ich möchte den Kindern und meinen zukünftigen Kunden einen Raum bieten, in dem sie sich entfalten und ganz sich selbst sein können in ihrer Einzigartigkeit. Ich eröffne ihnen neue Erfahrungsräume, ihrem Körper und ihrem Gefühl zu vertrauen und Neues zu entdecken. 
@@ -166,39 +166,7 @@ export default function AboutMe() {
     </motion.div>
 
 		 
-		<motion.div animate={controls} className={aboutmeStyles.mebox2}>
-      	<Image
-          src="/images/2.svg" // Route of the image file
-          height={150} // Desired size with correct aspect ratio
-          width={150} // Desired size with correct aspect ratio
-          alt="Icon"
-          className="roundedfull"
-
-          />
-		<h2>Meine Zukunftspläne</h2>
-     	<p>Mein Ziel ist es, nach meiner Ausbildung eine eigene Praxis als Tanz- und Bewegungstherapeutin zu gründen, in welcher ich Menschen - von Kindern bis in hohe Alter - in ihren persönlichen Prozessen begleiten darf. Wo sie sich ganz idividuell durch Tanz und Bewegung ausdrücken dürfen um so einen besseren Zugang zu sich und ihren Gefühlen zu finden, zur Ruhe kommen und neue Kraft schöpfen.</p>
-     	</motion.div>
-
-
-      <motion.div animate={controls} className={aboutmeStyles.mebox2}>
-        <Image
-          src="/images/1.svg" // Route of the image file
-          height={150} // Desired size with correct aspect ratio
-          width={150} // Desired size with correct aspect ratio
-          alt="Icon"
-          className="roundedfull"
-
-          />
-    <h2>Tanz-und Bewegungstherapie ist für mich</h2>
-      <p>Neue Ausdrucks- und Bewegungsformen über den Körper und die Imagination finden 
-      und diese ins Bewusstsein kommen zulassen. Dadurch kann man alte Muster loslassen und 
-      neue Wege gehen, neues persönliches Potenzial erkennen.
-      Man kommt immer mehr in Einklang mit sich selbst und seinen Mitmenschen.</p>
-      <br />
-     <p className={aboutmeStyles.psmall}>"Tanztherapie ist künstlerische und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und Wechselwirkung körperlicher, emotionaler, psychischer, kognitiver und sozialer Prozesse."
-     <br /> Aus dem Buch, Grundlagen der Tanztherapie von Susanne Bender </p>
-
-      </motion.div>
+		
 
 
       </div>

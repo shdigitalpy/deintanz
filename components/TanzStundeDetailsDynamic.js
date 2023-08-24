@@ -38,7 +38,7 @@ export default function TanzStundeDetailsDynamic({
   return (
     <div className={tanzstundeStyles.tanzstundewrapper}>
     <div className={tanzstundeStyles.tanzstundetext}>
-      <h1>Kurs - {title}</h1>
+      <h1>{title}</h1>
       <h2>{subtitle}</h2>
 
       </div>
@@ -84,7 +84,7 @@ export default function TanzStundeDetailsDynamic({
 
     {/*start winterthur */}
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
-               <h2>Details zum Kurs {standortes[0] ? standortes[0].name : null}</h2>
+               <h2>Details</h2>
                 <br />
 
                 

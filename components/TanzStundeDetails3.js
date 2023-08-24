@@ -62,7 +62,7 @@ gemalt werden.
 
 
           <div className={tanzstundeStyles.tanzstundeboxdetail}>
-               <h2>Details zum Kurs</h2>
+               <h2>Details</h2>
                 <br />
 
                 
