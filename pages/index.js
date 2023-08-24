@@ -76,7 +76,7 @@ Tanz, Bewegung und Entspannung. " />
               opacity: 0
             },
             visible: {
-              scale: 1,
+              scale: 1, 
               opacity: 1,
               transition: {
                 delay: .3,
