@@ -83,7 +83,7 @@ stattfinden.</p>
 
 
 
-       <div className={aboutmeStyles.mefull2}>
+       <div className={aboutmeStyles.mefull2} style={{background: "linear-gradient(90deg, rgba(253,220,128,0.75) 34%, rgba(234,90,86,0.75) 60%), url(../public/images/iac.jpg)"}}>
 
      <div className={aboutmeStyles.mefullbox2}>
 
@@ -100,14 +100,37 @@ Kreativität nutzen wollen, um sich mit eigenen Themen auseinanderzusetzen.</p>
 <p>Es gibt kein Richtig oder Falsch in der Tanz- und Bewegungstherapie.</p>
 <p>Zitat «Wichtig ist nicht, wie wir uns bewegen, sondern was uns bewegt.»- Trudi Schoop</p>
 <p>Was Tanz- und Bewegungstherapie bewirken kann:</p>
-<ul>
-<li>Die eigenen Ressourcen über den Körper entdecken und stärken.</li>
-<li>Zugang zu eigenen Gefühlen finden.</li>
-<li>Selbstregulation entwickeln.</li>
-<li>Prägungen und Muster erkennen.</li>
-<li>Die eigenen Bedürfnisse besser wahrnehmen können.</li>
-<li>Wieder mehr zu sich selbst finden.</li>
-<li>Mehr Handlungsfähigkeit und Selbstvertrauen erlangen.</li>
+
+
+<ul style={{ listStyle: 'none', paddingLeft: '20px' }}>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Die eigenen Ressourcen über den Körper entdecken und stärken.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Zugang zu eigenen Gefühlen finden.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Selbstregulation entwickeln.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Prägungen und Muster erkennen.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Die eigenen Bedürfnisse besser wahrnehmen können.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Wieder mehr zu sich selbst finden.
+  </li>
+  <li style={{ position: 'relative' }}>
+    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+    Mehr Handlungsfähigkeit und Selbstvertrauen erlangen.
+  </li>
 </ul>
       
 
