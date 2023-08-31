@@ -1,0 +1,131 @@
+import Link from 'next/link'
+import Head from 'next/head'
+import Image from 'next/image'
+import aboutmeStyles from '../styles/about.module.css'
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useAnimation } from "framer-motion"
+
+
+export default function BewegungsTherapie() {
+
+  const {ref, inView} = useInView({
+      threshold: 0.2
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+
+      console.log("use effect hook, inView = ", inView);
+
+      if(inView){
+        controls.start({
+          
+          x: 0,
+          transition: {
+            type: 'spring', duration: 2
+
+          }
+
+        });
+
+      }
+
+      if(!inView){
+        controls.start({x: '-100vw'});
+
+      }
+      
+
+  }, [inView]);
+  
+
+  return (
+
+  	<>
+  		<div className={aboutmeStyles.mefull2} style={{background:"white"}}>
+
+     <div className={aboutmeStyles.mefullbox2}>
+
+     <div className={aboutmeStyles.mefullboxitem1}>
+   
+       
+        <p>Tanz- und Bewegungstherapie, eine Fachrichtung der Kunsttherapien, ist eine künstlerische
+und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und
+Wechselwirkung körperlicher, emotionaler, psychischer, kognitiver und sozialer Prozesse.</p>
+
+          <p>In unserem Körper sind Erfahrungen, Prägungen und Muster gespeichert, die wir seit unserer
+Kindheit gemacht haben. Sogar pränatale Erregungs- und Bewegungsmuster begleiten uns.
+Einiges bleibt im Unbewussten verborgen, weshalb wir manchmal an unsere Grenzen stoßen,
+sowohl mit uns selbst als auch mit anderen, ohne zu wissen, wieso. Therapeutische
+Unterstützung stärkt vorhandene Ressourcen. Wir drücken uns kreativ und authentisch aus -
+durch Bewegung, Gefühls- und Körperwahrnehmung oder Imaginationen. Verborgene Anteile
+finden einen Weg in unser Bewusstsein, können integriert werden. Neues Potenzial entsteht,
+Schattenseiten können akzeptiert und transformiert werden. So finden wir Einklang mit uns und
+anderen.</p>
+
+ <p>Gerne begleite ich dich auf deinem kreativen und individuellen Weg zu mehr
+Handlungsfähigkeit, Selbstvertrauen und Verbundenheit zwischen Körper, Geist und Seele. Die
+Tanz- und Bewegungstherapie kann sowohl in Gruppenangeboten als auch in Einzelsitzungen
+stattfinden.</p>
+        
+        
+      </div>{/*end meitem1*/}
+
+      
+
+     </div>{/*end mewrapper*/}
+
+       </div> 
+
+
+
+
+       <div className={aboutmeStyles.mefull2}>
+
+     <div className={aboutmeStyles.mefullbox2}>
+
+     <div className={aboutmeStyles.mefullboxitem1}>
+
+       
+       
+
+
+        <h2>Für wen ist Tanz- und Bewegungstherapie</h2>
+        <p>«Vielleicht fragst du dich: Muss ich tanzen können oder sportlich sein?»</p>
+<p>Nein, das musst du nicht. Tanz- und Bewegungstherapie ist für alle, die Körper, Bewegung und
+Kreativität nutzen wollen, um sich mit eigenen Themen auseinanderzusetzen.</p>
+<p>Es gibt kein Richtig oder Falsch in der Tanz- und Bewegungstherapie.</p>
+<p>Zitat «Wichtig ist nicht, wie wir uns bewegen, sondern was uns bewegt.»- Trudi Schoop</p>
+<p>Was Tanz- und Bewegungstherapie bewirken kann:</p>
+<ul>
+<li>Die eigenen Ressourcen über den Körper entdecken und stärken.</li>
+<li>Zugang zu eigenen Gefühlen finden.</li>
+<li>Selbstregulation entwickeln.</li>
+<li>Prägungen und Muster erkennen.</li>
+<li>Die eigenen Bedürfnisse besser wahrnehmen können.</li>
+<li>Wieder mehr zu sich selbst finden.</li>
+<li>Mehr Handlungsfähigkeit und Selbstvertrauen erlangen.</li>
+</ul>
+      
+
+
+
+
+</div>{/*end meitem1*/}
+
+      
+
+     </div>{/*end mewrapper*/}
+
+       </div> 
+
+
+      </>
+)
+
+}
+
+

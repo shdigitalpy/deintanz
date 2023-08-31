@@ -33,6 +33,10 @@ return <>
       
       </Link></div>
 
+      <div className={styles.mainitem}><Link href="/bewegungstherapie">
+      Tanz- und Bewegungstherapie
+      </Link></div>
+
     
     <div className={styles.mainitem}><Link href="/ueber-mich">
       Über mich

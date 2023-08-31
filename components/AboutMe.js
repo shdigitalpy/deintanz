@@ -53,9 +53,19 @@ export default function AboutMe() {
        <div className={aboutmeStyles.meitem1}>
    
        <h2>Regula Leemann</h2>
-        <p>Ich bin <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin aus Winterthur und 
-        selbst Mami von zwei Kindern. Mein Leben ist nicht immer nur geradlinig verlaufen, verschiedene 
-        Herausforderungen habe ich erfolgreich gemeistert.</p>
+        <p>Ich bin Regula Leemann und wurde 1981 geboren. Zusammen mit meinen Kindern lebe ich in
+          Winterthur. 2023 habe ich meine dreijährige Ausbildung zur ressourcenorientierten Tanz- und
+          Bewegungstherapeutin am integrativen Ausbildungszentrum iac abgeschlossen und befinde
+          mich nun in der Aufbauausbildung zur prozessorientierten Tanz- und Bewegungstherapeutin.</p>
+
+          <p>Mein Leben ist eine bewegte Reise, die immer wieder geprägt war von vielfältigen Stationen
+          und Herausforderungen sowohl im Job als auch im Privaten. Auf dieser Reise unterstützt
+          haben mich stets die Natur, die Musik, die Bewegung, die Kreativität sowie die Menschen an
+          meiner Seite. Schon während meiner Ausbildung im Verkauf faszinierten mich die Menschen in
+          ihrer Einzigartigkeit. Ich begann darüber nachzudenken, was Menschen bewegt und wie ihre
+          Lebensgeschichten geformt wurden. Eigene persönliche Hürden verstärkten mein Interesse an
+          der Psyche, den zwischenmenschlichen Beziehungen und dem Körper. Dies führte mich
+          letztendlich zu meiner Ausbildung als Tanz- und Bewegungstherapeutin.</p>
         
         
       </div>{/*end meitem1*/}
@@ -96,13 +106,16 @@ export default function AboutMe() {
       </div>{/*end meitem1*/}
 
       <div className={aboutmeStyles.meitem2}>
-      <h2>Seinem Körper vertrauen</h2>
-        <p>Bei meinen eigenen Herausforderungen haben immer Bewegung, Tanz, die Musik, die Natur wie auch die 
-        Menschen an meiner Seite eine wichtige Rolle gespielt. Im Laufe meines eigenen Entwicklungsprozesses habe ich gemerkt, 
-        dass ich meiner Intuition und meinem Körper vertrauen kann. Diese Erfahrungen haben mich ans integrativen 
-        <Link href="https://www.iac.ch/startseite">
-           Ausbildungszentrum iac
-            </Link> geführt, zur Ausbildung als Tanz- und Bewegungstherapeutin.</p>
+      
+        <p>Von Anfang an war ich von dieser Form der Therapie begeistert, da sie das Zusammenspiel
+von Körper, Geist und Seele betont. Ich glaube daran, dass all unsere Erfahrungen und
+Prägungen in unserem Körper gespeichert sind. Durch kreative Ausdrucksformen und
+körperliche Arbeit konnte ich meine persönlichen und unbewussten Themen noch tiefer
+erforschen und mich stetig weiterentwickeln.</p>
+<p>Nun freue ich mich darauf, meine Erfahrungen weiterzugeben und Menschen auf ihrer eigenen
+Reise zu begleiten. Es ist meine Leidenschaft, Menschen dabei zu unterstützen, ihre
+körperliche und seelische Gesundheit zu fördern, innere Ressourcen zu entdecken und ihr
+volles Potenzial zu entfalten. Gemeinsam schaffen wir einen Raum für Wachstum und Heilung.</p>
       
       </div>{/*end meitem2*/}
 
@@ -115,25 +128,51 @@ export default function AboutMe() {
      <div className={aboutmeStyles.mefullbox2}>
 
      <div className={aboutmeStyles.mefullboxitem1}>
-     <Image
-          src="/images/iac-logo.png" // Route of the image file
-          height={110} // Desired size with correct aspect ratio
-          width={260} // Desired size with correct aspect ratio
-          alt="Icon"
-          className="roundedfull"
-
-          />
+     
         </div>
 
         <div className={aboutmeStyles.mefullboxitem2}>
-       <p>Am richtigen Ort angekommen ist es mir eine Freude, mich Schritt 
-        für Schritt auf dieses Berufsfeld zuzubewegen. Dass mein eigenes Projekt 
-        «Dein Tanz» mich auf diesem Weg begleitet, erfüllt mich sehr. Meine Ausbildung in der Tanz- und Bewegungstherapie am iac befähigt mich, die Bewegung und 
-      der authentische Tanz als kreatives Ausdrucksmittel 
-      für meine Kurse zu verwenden. <small>Quelle Bild: <Link href="https://www.iac.ch/startseite">
-           Ausbildungszentrum iac
-            </Link></small>
-    </p>
+       <h3>Ausbildungen</h3>
+       <br />
+        <p>2020 – 2023 ressourcenorientierte Tanz- und Bewegungstherapeutin, iac Integratives
+          Ausbildungszentrum Zürich</p>    
+
+          <br />
+          <p>2022 – 2023 Medizinische Grundlagen MG2, Apamed Fachschule, Jona</p>    
+
+          <br />
+          <br />
+          <h3>Weiterbildungen</h3>
+
+          <br />
+        <p>2023 KlientInnen- und Therapeutinnensicherheit MG3, Apamed Fachschule, Jona</p>    
+
+          <br />
+          <p>2022 Intensiv Modul «Malen und Bewegen», iac Integratives Ausbildungszentrum, Zürich</p>    
+
+          <br />
+
+           <p>2022 Kontaktimprovisation mit tanztherapeutischem Ansatz, iac Integratives Ausbildungszentrum, Zürich</p>    
+
+          <br />
+
+           <p>Ich besuche laufend, Lehrtherapie- und Supervisonsstunden und Weiterbildungen</p>    
+
+          <br />
+          <br />
+          <h3>Berufliche Tätigkeiten</h3>
+
+          <br />
+        <p>Seit 2022, tätig als selbständige Tanz- und Bewegungstherapeutin im Alters- und Pflegeheim Casa
+Solaris Kollbrunn</p>    
+
+          <br />
+          <p>Seit 2022 Selbständig bei, Dein Tanz, mit verschieden Gruppenangeboten für Kinder und Erwachsene</p>    
+
+          <br />
+
+        
+    
     </div>
      </div>
      </div>{/*end aboutme full*/}

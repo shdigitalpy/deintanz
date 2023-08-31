@@ -302,11 +302,15 @@ export default function FrontPage({ kurses }) {
           <br />
           <h3>Bewegung & Natur sind wichtige Bestandteile meines Lebens</h3>
           <br />
-          <p>Meine Name ist <b>Regula Leemann</b>, eine angehende Tanz- und Bewegungstherapeutin am <Link href="https://iac.ch/" legacyBehavior>
-             <a><b>integrativen Ausbildungszentrum iac</b></a>
-              </Link> und Mami von zwei Kindern. Ich freue mich Ihnen und Ihrem Kind, diese wertvollen Erfahrungen spielerisch näher zu bringen. <Link href="/ueber-mich" legacyBehavior>
-             <b>Mehr über mich</b>
-              </Link> </p>
+          <p>Ich bin Regula Leemann und wurde 1981 geboren. Zusammen mit meinen Kindern lebe ich in
+          Winterthur. 2023 habe ich meine dreijährige Ausbildung zur ressourcenorientierten Tanz- und
+          Bewegungstherapeutin am integrativen Ausbildungszentrum iac abgeschlossen und befinde
+          mich nun in der Aufbauausbildung zur prozessorientierten Tanz- und Bewegungstherapeutin.</p>
+          <br />
+              <Link style={{cursor:"pointer"}} href="/ueber-mich">
+         
+                   <b>Mehr über mich</b>
+              </Link> <br />
           <br />
           <Image
     src="/images/regula-leemann.jpg" // Route of the image file
@@ -365,11 +369,11 @@ Kreativität und das Wahrnehmen Deines Tanzes im Vordergrund steht.
 
  
 
-  <h3>In der Übersicht <Link href="/kursuebersicht" legacyBehavior>
+  <h3>In der <Link href="/kursuebersicht" legacyBehavior>
 
-      Kreativkurse
+      Übersicht
 
-      </Link> finden Sie alle Kurse von Dein Tanz.</h3>
+      </Link> finden Sie alle Angebote von Dein Tanz.</h3>
 
 
         
