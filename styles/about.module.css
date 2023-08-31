@@ -161,3 +161,39 @@
 .psmall {
 	font-size: 0.9rem;
 }
+
+
+.mefull3 {
+	padding: 5rem 0;
+	width: 100%;
+	min-height: 400px;
+  background: linear-gradient(90deg, rgba(253,220,128,0.95) 34%, rgba(234,90,86,0.95) 60%), url(../public/images/bewegung.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}
+
+
+.mefull4 {
+	padding: 5rem 0;
+	width: 100%;
+	min-height: 400px;
+  background: linear-gradient(90deg, rgba(253,220,128,0.25) 34%, rgba(234,90,86,0.25) 60%), url(../public/images/bewegung.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}

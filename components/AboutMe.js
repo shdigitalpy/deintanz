@@ -174,6 +174,8 @@ Solaris Kollbrunn</p>
         
     
     </div>
+
+    
      </div>
      </div>{/*end aboutme full*/}
 

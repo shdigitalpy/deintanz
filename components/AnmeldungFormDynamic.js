@@ -121,7 +121,7 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
               </div>
               <div class="col-75">
                 <input type="submit" value="Anmelden" onSubmit={sendEmail} />
-                {submitted && <h1 className={anmeldungStyles.h1success}>** Die Anmeldung war erfolgreich! Vielen Dank.</h1>}
+                {submitted && <h1 className={anmeldungStyles.h1success}>** Die Kontaktaufnahme war erfolgreich! Ich melde mich schnellstmöglich.</h1>}
 
               </div>
 

@@ -39,6 +39,9 @@ und körperorientierte Psychotherapie." />
             },
           }}> 
 			<BewegungsTherapie />
+
+			
+     
 			</motion.div>
 
 		</Layout>

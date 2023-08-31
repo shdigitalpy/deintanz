@@ -17,8 +17,10 @@ export default function FragenDetails ({contact_text, props}) {
 
         <RichText content={contact_text.raw} />
             </p>
-        <Link className={fragenStyles.btnfragen} href="/kontakt">
-        Kontakt
+        <Link  href="/kontakt">
+        
+        <span className={fragenStyles.btnfragen}>Kontakt</span>
+        
 
             </Link>
     

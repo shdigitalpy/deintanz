@@ -298,7 +298,7 @@ export default function FrontPage({ kurses }) {
       
 
       <div className={frontpageStyles.fpbox}>
-          <h2>Ich bin die Kursleiterin</h2>
+          <h2>Über mich</h2>
           <br />
           <h3>Bewegung & Natur sind wichtige Bestandteile meines Lebens</h3>
           <br />
@@ -333,23 +333,26 @@ export default function FrontPage({ kurses }) {
       <div className={frontpageStyles.fpbox}>
           <h2>Meine Angebote</h2>
           <br />
-          <h3>Tanz, Bewegung & Entspannung</h3>
+          <h3>Tanz- und Bewegungstherapie</h3>
           <br />
-          <p>Bei Dein Tanz, Brauchst Du oder Dein Kind keine Tanzkenntnisse, sondern Spass am freien
-Improvisieren Deines Tanzes und Deiner Bewegung.
-Die Kurse von Dein Tanz beginnen immer mit Entspannung – oder Köperwahrnehmungsübungen, um
-ins Zentrum unseres Körpers und ins „hier und jetzt» zu kommen.
-Aus dieser Köperwahrnehmung gehen wir in die Bewegung, die immer verschieden gestaltet sein
-kann. Durch kleine Anleitungen von mir probieren wir verschiedene Bewegungen und
-Tanzmöglichkeiten in verschiedenen Raumebenen aus und folgen dabei unserem Körperimpuls. Auch
-kommen mal Musikinstrumente und unsere Stimme zum Einsatz wie auch Papier und Malstifte um
-Erlebtes aufzuschreiben oder zu malen.
-Gemeinsam in der ganzen Gruppe, zu zweit oder alleine gibt es verschiedene Möglichkeiten unser
-Bewegungsrepertoire zu erweitern (mal kraftvoll, mal fein, mal hoch, mal tief, mal langsam, mal
-schnell, mal eckig, mal rund). Unserer Kreativität und Fantasie sind keine Grenzen gesetzt.
-Ich freue mich auf die vielfältigen Stunden mit Dir oder Deinem Kind. Wo nur der Spass, die
-Kreativität und das Wahrnehmen Deines Tanzes im Vordergrund steht.
-            </p>
+          <p>Tanz- und Bewegungstherapie, eine Fachrichtung der Kunsttherapien, ist eine künstlerische
+und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und
+Wechselwirkung körperlicher, emotionaler, psychischer, kognitiver und sozialer Prozesse.</p>
+
+          <p>In unserem Körper sind Erfahrungen, Prägungen und Muster gespeichert, die wir seit unserer
+Kindheit gemacht haben. Sogar pränatale Erregungs- und Bewegungsmuster begleiten uns.
+Einiges bleibt im Unbewussten verborgen, weshalb wir manchmal an unsere Grenzen stoßen,
+sowohl mit uns selbst als auch mit anderen, ohne zu wissen, wieso. Therapeutische
+Unterstützung stärkt vorhandene Ressourcen. Wir drücken uns kreativ und authentisch aus -
+durch Bewegung, Gefühls- und Körperwahrnehmung oder Imaginationen. Verborgene Anteile
+finden einen Weg in unser Bewusstsein, können integriert werden. Neues Potenzial entsteht,
+Schattenseiten können akzeptiert und transformiert werden. So finden wir Einklang mit uns und
+anderen.</p>
+
+ <p>Gerne begleite ich dich auf deinem kreativen und individuellen Weg zu mehr
+Handlungsfähigkeit, Selbstvertrauen und Verbundenheit zwischen Körper, Geist und Seele. Die
+Tanz- und Bewegungstherapie kann sowohl in Gruppenangeboten als auch in Einzelsitzungen
+stattfinden.</p>
           
       </div> 
 
@@ -405,10 +408,10 @@ Kreativität und das Wahrnehmen Deines Tanzes im Vordergrund steht.
   <div className={frontpageStyles.fpcontactbox}>
   <h4>Zögern Sie nicht, mich zu kontaktieren</h4><br />
   <br />
-  <p>Bei Fragen in Bezug auf die Kurse oder meine Person stehe ich Ihnen gerne vorab zur Verfügung. 
+  <p>Bei Fragen in Bezug auf das Angebot oder meine Person stehe ich Ihnen gerne vorab zur Verfügung. 
   Ich freue mich von Ihnen zu hören.</p>
   
-
+  <br />
   <motion.div whileHover={{
 
                       scale: 1.2,
@@ -418,8 +421,8 @@ Kreativität und das Wahrnehmen Deines Tanzes im Vordergrund steht.
 
 
                     }}>
-  <Link className={frontpageStyles.btn2} href="/kontakt" passHref legacyBehavior>
-      Zum Kontakt
+  <Link  href="/kontakt" passHref legacyBehavior>
+     <span className={frontpageStyles.btn2} >Zum Kontakt</span>
     </Link>
     </motion.div>
 

@@ -50,7 +50,7 @@ export default function Kontakt() {
 
       p=""
       title="Habe ich Ihr Interesse geweckt?"
-      p1="Wenn Sie Fragen zu meinen Angeboten haben oder eine Beratung wünschen, können Sie mich gerne per E-Mail oder per Telefon kontaktieren. Ich freue mich mit Ihnen oder Ihrem Kind eine schöne Zeit zu verbringen."/>
+      p1="Wenn Sie Fragen zu meinen Angeboten haben oder eine Beratung wünschen, können Sie mich gerne per E-Mail oder per Telefon kontaktieren."/>
 
       </motion.div>
       

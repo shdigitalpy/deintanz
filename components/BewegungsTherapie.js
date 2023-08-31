@@ -95,47 +95,14 @@ stattfinden.</p>
 
         <h2>Für wen ist Tanz- und Bewegungstherapie</h2>
         <p>«Vielleicht fragst du dich: Muss ich tanzen können oder sportlich sein?»</p>
-<p>Nein, das musst du nicht. Tanz- und Bewegungstherapie ist für alle, die Körper, Bewegung und
-Kreativität nutzen wollen, um sich mit eigenen Themen auseinanderzusetzen.</p>
-<p>Es gibt kein Richtig oder Falsch in der Tanz- und Bewegungstherapie.</p>
-<p>Zitat «Wichtig ist nicht, wie wir uns bewegen, sondern was uns bewegt.»- Trudi Schoop</p>
-<p>Was Tanz- und Bewegungstherapie bewirken kann:</p>
+        <p>Nein, das musst du nicht. Tanz- und Bewegungstherapie ist für alle, die Körper, Bewegung und
+        Kreativität nutzen wollen, um sich mit eigenen Themen auseinanderzusetzen.</p>
+        <p>Es gibt kein Richtig oder Falsch in der Tanz- und Bewegungstherapie.</p>
+        
+       
 
-
-<ul style={{ listStyle: 'none', paddingLeft: '20px' }}>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Die eigenen Ressourcen über den Körper entdecken und stärken.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Zugang zu eigenen Gefühlen finden.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Selbstregulation entwickeln.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Prägungen und Muster erkennen.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Die eigenen Bedürfnisse besser wahrnehmen können.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Wieder mehr zu sich selbst finden.
-  </li>
-  <li style={{ position: 'relative' }}>
-    <span style={{ position: 'absolute', left: '-20px' }}>•</span>
-    Mehr Handlungsfähigkeit und Selbstvertrauen erlangen.
-  </li>
-</ul>
-      
-
-
-
+        <br />
+        
 
 </div>{/*end meitem1*/}
 
@@ -143,7 +110,69 @@ Kreativität nutzen wollen, um sich mit eigenen Themen auseinanderzusetzen.</p>
 
      </div>{/*end mewrapper*/}
 
+
+
        </div> 
+
+        <div className={aboutmeStyles.mefull3} style={{background: "white"}}>
+
+     <div className={aboutmeStyles.mefullbox2} >
+     <div className={aboutmeStyles.mefullboxitem2}>
+
+       <h3>Was Tanz- und Bewegungstherapie bewirken kann:</h3>
+       <br />
+       <ul style={{ listStyle: 'none', paddingLeft: '20px',listStyle: "square inside"}}>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Die eigenen Ressourcen über den Körper entdecken und stärken.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Zugang zu eigenen Gefühlen finden.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Selbstregulation entwickeln.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Prägungen und Muster erkennen.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Die eigenen Bedürfnisse besser wahrnehmen können.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Wieder mehr zu sich selbst finden.
+          </li>
+          <li style={{ position: 'relative' }}>
+            <span style={{ position: 'absolute', left: '-20px' }}>•</span>
+            Mehr Handlungsfähigkeit und Selbstvertrauen erlangen.
+          </li>
+        </ul>
+
+        
+    
+    </div>
+
+      </div>
+     </div>{/*end aboutme full*/}
+
+
+        <div className={aboutmeStyles.mefull4}>
+
+     <div className={aboutmeStyles.mefullbox} style={{background: "linear-gradient(90deg, rgba(253,220,128,0.95) 34%, rgba(234,90,86,0.95) 60%), url(../public/images/iac.jpg)", padding:"3rem"}} >
+     <h5>Wichtig ist nicht, wie wir uns bewegen, sondern was uns bewegt.
+     </h5>
+     <br />
+       <h5>Trudi Schoop</h5>
+     </div>
+     </div>{/*end aboutme full*/}
+
+
+
+    
 
 
       </>

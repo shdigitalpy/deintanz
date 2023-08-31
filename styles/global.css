@@ -77,10 +77,15 @@ small {
   font-size: 0.7rem !important;
 }
 
+ul {
+  padding:2rem 0;
+
+}
 
 ul li {
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
   list-style-type: none;
+  margin-bottom:15px;
 }
 
 a {
