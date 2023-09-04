@@ -41,40 +41,8 @@ export default function TanzStundeDetailsDynamic({
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
 
-      </div>
-
-
-      <div className={tanzstundeStyles.twocolumnwrapper}>
-
-      <div className={tanzstundeStyles.twocolumn}>
-        
-
-      
-      <p>{description}</p>
-
-      </div>
-
-      <div className={tanzstundeStyles.twocolumn}>
-      <Image
-              src={image} // Route of the image file
-              height={300} // Desired size with correct aspect ratio
-              width={300} // Desired size with correct aspect ratio
-              alt="{title}"
-              className="roundedfull"
-           
-
-            />
-
-            <style jsx global>{`
-        .roundedfull {
-          border-radius: 50%;
-
-
-        }
-      `}</style>
-
-            </div>
-
+  
+          <RichText content={description} />
 
 
               </div>

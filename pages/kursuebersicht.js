@@ -29,7 +29,9 @@ export const getServerSideProps = async (pageContext) => {
     kurses {
       categoryValues
       title
-      description
+      description {
+        raw
+      }
       slug
       tanzstundeImage {
       url

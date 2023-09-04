@@ -45,12 +45,12 @@ export default function BewegungsTherapie() {
   return (
 
   	<>
-  		<div className={aboutmeStyles.mefull2} style={{background:"white"}}>
+  		<div className={aboutmeStyles.mefull2}>
 
      <div className={aboutmeStyles.mefullbox2}>
 
      <div className={aboutmeStyles.mefullboxitem1}>
-   
+    
        
         <p>Tanz- und Bewegungstherapie, eine Fachrichtung der Kunsttherapien, ist eine künstlerische
 und körperorientierte Psychotherapie. Sie beruht auf dem Prinzip der Einheit und
@@ -114,12 +114,24 @@ stattfinden.</p>
 
        </div> 
 
-        <div className={aboutmeStyles.mefull3} style={{background: "white"}}>
+        <div ref={ref} className={aboutmeStyles.mewrapper2}>  
 
-     <div className={aboutmeStyles.mefullbox2} >
-     <div className={aboutmeStyles.mefullboxitem2}>
+     <motion.div animate={controls} className={aboutmeStyles.mebox2} >
+      <Image
+          src="/images/1.svg" // Route of the image file
+          height={150} // Desired size with correct aspect ratio
+          width={150} // Desired size with correct aspect ratio
+          alt="Icon"
+          className="roundedfull"
 
-       <h3>Was Tanz- und Bewegungstherapie bewirken kann:</h3>
+          />
+      
+      
+    </motion.div>
+
+     <motion.div animate={controls} className={aboutmeStyles.mebox2} style={{marginBottom:"10rem"}}>
+      
+     <h3>Was Tanz- und Bewegungstherapie bewirken kann:</h3>
        <br />
        <ul style={{ listStyle: 'none', paddingLeft: '20px',listStyle: "square inside"}}>
           <li style={{ position: 'relative' }}>
@@ -152,15 +164,22 @@ stattfinden.</p>
           </li>
         </ul>
 
-        
+    </motion.div>
+
+     
     
-    </div>
+
 
       </div>
-     </div>{/*end aboutme full*/}
 
 
-        <div className={aboutmeStyles.mefull4}>
+
+      
+
+        
+
+
+        <div className={aboutmeStyles.mefull4} style={{padding:"15rem 0"}}>
 
      <div className={aboutmeStyles.mefullbox} style={{background: "linear-gradient(90deg, rgba(253,220,128,0.95) 34%, rgba(234,90,86,0.95) 60%), url(../public/images/iac.jpg)", padding:"3rem"}} >
      <h5>Wichtig ist nicht, wie wir uns bewegen, sondern was uns bewegt.

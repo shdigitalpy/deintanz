@@ -27,7 +27,9 @@ export const getServerSideProps = async (pageContext) => {
       categoryValues
       title
       slug
-      description
+      description {
+        raw
+      }
       tanzstundeImage {
       url
           }

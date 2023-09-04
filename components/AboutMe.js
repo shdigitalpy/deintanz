@@ -55,7 +55,7 @@ export default function AboutMe() {
        <h2>Regula Leemann</h2>
         <p>Ich bin Regula Leemann und wurde 1981 geboren. Zusammen mit meinen Kindern lebe ich in
           Winterthur. 2023 habe ich meine dreijährige Ausbildung zur ressourcenorientierten Tanz- und
-          Bewegungstherapeutin am integrativen Ausbildungszentrum iac abgeschlossen und befinde
+          Bewegungstherapeutin am integrativen <a href="https://www.iac.ch/" target="_blank"> Ausbildungszentrum iac</a> abgeschlossen und befinde
           mich nun in der Aufbauausbildung zur prozessorientierten Tanz- und Bewegungstherapeutin.</p>
 
           <p>Mein Leben ist eine bewegte Reise, die immer wieder geprägt war von vielfältigen Stationen
