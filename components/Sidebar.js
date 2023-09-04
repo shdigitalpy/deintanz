@@ -22,11 +22,11 @@ export default function Sidebar({isOpen, toggle}) {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <Link className={sidebarStyles.sidebarlink} href='/kursuebersicht'>Angebote</Link>
+        <Link href='/kursuebersicht'><span className={sidebarStyles.sidebarlink}>Angebote</span></Link>
         
-        <Link className={sidebarStyles.sidebarlink} href='/bewegungstherapie'>Tanz- und Bewegungstherapie</Link>
+        <Link href='/bewegungstherapie'><span className={sidebarStyles.sidebarlink}>Tanz- und Bewegungstherapie</span></Link>
 
-        <Link className={sidebarStyles.sidebarlink} href='/ueber-mich'>Über mich</Link>
+        <Link href='/ueber-mich'><span className={sidebarStyles.sidebarlink}>Über mich</span></Link>
       </SidebarMenu>
       <SideBtnWrap>
         <Link href='/kontakt'>
