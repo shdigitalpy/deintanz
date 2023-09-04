@@ -24,7 +24,7 @@ export default function Sidebar({isOpen, toggle}) {
       <SidebarMenu>
         <Link href='/kursuebersicht'><span className={sidebarStyles.sidebarlink}>Angebote</span></Link>
         
-        <Link href='/bewegungstherapie'><span className={sidebarStyles.sidebarlink}>Tanz- und Bewegungstherapie</span></Link>
+        <Link href='/bewegungstherapie'><span className={sidebarStyles.sidebarlink}>Tanz- und<br /> Bewegungstherapie</span></Link>
 
         <Link href='/ueber-mich'><span className={sidebarStyles.sidebarlink}>Über mich</span></Link>
       </SidebarMenu>
