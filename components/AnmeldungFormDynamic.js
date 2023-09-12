@@ -10,7 +10,7 @@ import { RichText } from '@graphcms/rich-text-react-renderer';
 
 export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, title }) {
 
-
+  console.log('unten', text_unten)
   const [submitted, setSubmitted] = React.useState(false);
 
   function sendEmail(e) {
@@ -138,10 +138,20 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
 
           </div>
 
+          {text_unten[0] ?
+
+              <>
+
           <div id="infos" className={anmeldungStyles.anmeldeinfos}>
                 
             <div className={anmeldungStyles.anmeldebox}>
-              <h2>Allgemeine Informationen zur Anmeldung</h2>
+              
+              
+
+              <h2>Allgemeine Informationen zur Anmeldung</h2> 
+
+             
+              
               <br/>
 
 
@@ -153,7 +163,11 @@ export default function AnmeldungForm({ text_anmeldung, text_oben, text_unten, t
        
 
 
-      </div>
+          </div>
+
+           </> : null }
+
+     
 
       </div>
 

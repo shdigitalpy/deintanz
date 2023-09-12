@@ -147,9 +147,7 @@ const Kurse = ({ kurse }) => {
         <KurseSliderDynamic images={kurse.sliderBilder} />
 
 
-        {kurse.anmeldeform_text ?
-
-        <>
+        
         <AnmeldungFormDynamic
           text_oben={kurse.anmeldeform_text}
           text_unten={kurse.anmeldeform_text_below}
@@ -157,9 +155,7 @@ const Kurse = ({ kurse }) => {
           title={kurse.title}
         />
 
-        </>
-
-        : null }
+        
       </Layout>
     </>
   );
