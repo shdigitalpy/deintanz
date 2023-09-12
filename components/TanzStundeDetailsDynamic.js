@@ -58,12 +58,27 @@ export default function TanzStundeDetailsDynamic({
                 
                 <br />
 
-                <div className={tanzstundeStyles.tanzflex}>
+                
+
+                  { was ? 
+
+                  <>
+
+                  <div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Was</p> </div>
                 	<div className={tanzstundeStyles.tanzflexitem2}><p>{was}</p></div>
+
+
+                  </div>
+
+                  </>
+
+                  : null }
                 	
-                </div>
+                { zielgruppe ? 
+
+                  <>
 
                <div className={tanzstundeStyles.tanzflex}>
 
@@ -72,7 +87,15 @@ export default function TanzStundeDetailsDynamic({
                 	
                 </div>
 
+                </>
+
+                  : null }
+
                 
+
+                { date ? 
+
+                  <>
 
                         <div className={tanzstundeStyles.tanzflex}>
 
@@ -85,6 +108,10 @@ export default function TanzStundeDetailsDynamic({
                   
                   
                 </div>
+
+                </>
+
+                  : null }
 
                 <div className={tanzstundeStyles.tanzflex}>
 
@@ -111,12 +138,22 @@ export default function TanzStundeDetailsDynamic({
                 	
                 </div>
         		
+
+            { kleidung ? 
+
+                  <>
+
+
         		<div className={tanzstundeStyles.tanzflex}>
 
                 	<div className={tanzstundeStyles.tanzflexitem1}><p>Kleidung</p> </div>
                 	<div className={tanzstundeStyles.tanzflexitem2}><p>{kleidung}</p></div>
                 	
                 </div>
+
+                </>
+
+                  : null }
 
                 <div className={tanzstundeStyles.tanzflex}>
 

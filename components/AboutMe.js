@@ -123,9 +123,9 @@ volles Potenzial zu entfalten. Gemeinsam schaffen wir einen Raum für Wachstum u
 
     
 
-      <div className={aboutmeStyles.mefull2}>
+      <div className={aboutmeStyles.mefullabout}>
 
-     <div className={aboutmeStyles.mefullbox2}>
+     <div className={aboutmeStyles.mefullbox3}>
 
      <div className={aboutmeStyles.mefullboxitem1}>
      
@@ -179,12 +179,9 @@ Solaris Kollbrunn</p>
      </div>
      </div>{/*end aboutme full*/}
 
-     
+  
 
-     <br />
-      <br />
-
-     <div ref={ref} className={aboutmeStyles.mewrapper2}>  
+     <div ref={ref} className={aboutmeStyles.mewrapper2} style={{backgroundColor:"white", margin:"0", paddingTop:"5rem"}}>  
 
      <motion.div animate={controls} className={aboutmeStyles.mebox2} >
       <Image
@@ -199,12 +196,20 @@ Solaris Kollbrunn</p>
       
     </motion.div>
 
-     <motion.div animate={controls} className={aboutmeStyles.mebox2} style={{marginBottom:"10rem"}}>
-     	
-     	<h2>Meine Philosophie</h2>
-     	<p>Ich möchte den Kindern und meinen zukünftigen Kunden einen Raum bieten, in dem sie sich entfalten und ganz sich selbst sein können in ihrer Einzigartigkeit. Ich eröffne ihnen neue Erfahrungsräume, ihrem Körper und ihrem Gefühl zu vertrauen und Neues zu entdecken. 
-		</p>
-    </motion.div>
+    <motion.div animate={controls} className={aboutmeStyles.mebox2} style={{ marginBottom: "10rem" }}>
+  <h2>Meine Arbeitsweise</h2>
+  <h3>Wie ich arbeite</h3>
+  <br /><br />
+  <b>Wertfrei für dich da</b><br />
+  Als Tanz- und Bewegungstherapeutin schaffe ich einen wertfreien Raum, in dem du dich frei und ohne Wertung ausdrücken kannst. Ich arbeite auf Augenhöhe, höre aufmerksam zu und begleite dich authentisch.<br /><br />
+  <b>Deine Freiheit, dein Tempo</b><br />
+  Du bist einzigartig und dein Therapieprozess sollte es auch sein. Bei mir bestimmst du das Tempo. Ich bin hier, um dich auf deiner Reise zu unterstützen.<br /><br />
+  <b>Empathie und Präsenz</b><br />
+  Empathisch und präsent stehe ich dir zur Seite, um deine inneren Herausforderungen anzugehen.<br /><br />
+  <b>Schweigepflicht</b><br />
+  Als Therapeutin unterliege ich der Schweigepflicht. Deine Daten und Themen sind bei mir sicher.
+</motion.div>
+
 
 		 
 		
