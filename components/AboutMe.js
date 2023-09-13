@@ -123,7 +123,7 @@ volles Potenzial zu entfalten. Gemeinsam schaffen wir einen Raum für Wachstum u
 
     
 
-      <div className={aboutmeStyles.mefullabout}>
+      <div className={aboutmeStyles.mefullabout} style={{margin:"0", padding:"5rem"}}>
 
      <div className={aboutmeStyles.mefullbox3}>
 
