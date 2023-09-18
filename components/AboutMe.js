@@ -198,11 +198,11 @@ Solaris Kollbrunn</p>
 
     <motion.div animate={controls} className={aboutmeStyles.mebox2} style={{ marginBottom: "10rem" }}>
   <h2>Meine Arbeitsweise</h2>
-  <h3>Wie ich arbeite</h3>
+  
   <br /><br />
   <b>Wertfrei für dich da</b><br />
   Als Tanz- und Bewegungstherapeutin schaffe ich einen wertfreien Raum, in dem du dich frei und ohne Wertung ausdrücken kannst. Ich arbeite auf Augenhöhe, höre aufmerksam zu und begleite dich authentisch.<br /><br />
-  <b>Deine Freiheit, dein Tempo</b><br />
+  <br /><b>Deine Freiheit, dein Tempo</b><br />
   Du bist einzigartig und dein Therapieprozess sollte es auch sein. Bei mir bestimmst du das Tempo. Ich bin hier, um dich auf deiner Reise zu unterstützen.<br /><br />
   <b>Empathie und Präsenz</b><br />
   Empathisch und präsent stehe ich dir zur Seite, um deine inneren Herausforderungen anzugehen.<br /><br />
